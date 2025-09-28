@@ -1,0 +1,9 @@
+{
+  "method_category": "Deformable CNNs",
+  "model": "Resnet_HAN_DCN",
+  "accuracy": 70.95959595959596,
+  "precision": 70.56610777975999,
+  "recall": 68.99189606859457,
+  "f1_score": 69.2133189285475,
+  "training_epochs": 50
+}

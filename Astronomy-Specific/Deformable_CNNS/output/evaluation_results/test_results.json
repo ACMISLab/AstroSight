@@ -1,0 +1,57 @@
+{
+  "dataset": "Test",
+  "accuracy": 70.95959595959596,
+  "macro_precision": 70.56610777975999,
+  "macro_recall": 68.99189606859457,
+  "macro_f1": 69.2133189285475,
+  "per_class_results": {
+    "A:round_elliptical": {
+      "precision": 79.03323262839879,
+      "recall": 81.75,
+      "f1_score": 80.36866359447005,
+      "support": 1600
+    },
+    "B:in_between_elliptical": {
+      "precision": 82.13689482470785,
+      "recall": 61.5,
+      "f1_score": 70.33595425303788,
+      "support": 1600
+    },
+    "C:cigar_shaped_elliptical": {
+      "precision": 74.70383275261324,
+      "recall": 72.28590694538099,
+      "f1_score": 73.47498286497601,
+      "support": 1483
+    },
+    "D:edge_on": {
+      "precision": 73.70941990420437,
+      "recall": 86.5625,
+      "f1_score": 79.62058062661684,
+      "support": 1600
+    },
+    "E:barred_spirals": {
+      "precision": 86.24000000000001,
+      "recall": 67.375,
+      "f1_score": 75.64912280701755,
+      "support": 1600
+    },
+    "F:unbarred_spirals": {
+      "precision": 54.17448405253283,
+      "recall": 72.1875,
+      "f1_score": 61.89710610932476,
+      "support": 1600
+    },
+    "G:irregular": {
+      "precision": 57.9133510167993,
+      "recall": 55.27426160337553,
+      "f1_score": 56.56303972366149,
+      "support": 1185
+    },
+    "H:merger": {
+      "precision": 56.61764705882353,
+      "recall": 55.00000000000001,
+      "f1_score": 55.79710144927537,
+      "support": 420
+    }
+  }
+}
