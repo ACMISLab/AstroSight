@@ -1,0 +1,63 @@
+{
+    "barred_spirals": {
+        "precision": 0.75,
+        "recall": 0.7125890736342043,
+        "f1-score": 0.730816077953715,
+        "support": 421.0
+    },
+    "cigar_shaped_elliptical": {
+        "precision": 0.8409825468648998,
+        "recall": 0.813125,
+        "f1-score": 0.8268191928821099,
+        "support": 1600.0
+    },
+    "edge_on": {
+        "precision": 0.821917808219178,
+        "recall": 0.825,
+        "f1-score": 0.8234560199625702,
+        "support": 1600.0
+    },
+    "in_between_elliptical": {
+        "precision": 0.7757009345794392,
+        "recall": 0.778125,
+        "f1-score": 0.7769110764430577,
+        "support": 1600.0
+    },
+    "irregular": {
+        "precision": 0.8047808764940239,
+        "recall": 0.88375,
+        "f1-score": 0.8424188263330354,
+        "support": 1600.0
+    },
+    "merger": {
+        "precision": 0.7151639344262295,
+        "recall": 0.5885328836424958,
+        "f1-score": 0.6456984273820536,
+        "support": 1186.0
+    },
+    "round_elliptical": {
+        "precision": 0.7670141017780503,
+        "recall": 0.8435603506405934,
+        "f1-score": 0.8034682080924855,
+        "support": 1483.0
+    },
+    "unbarred_spirals": {
+        "precision": 0.6881377551020408,
+        "recall": 0.674375,
+        "f1-score": 0.6811868686868687,
+        "support": 1600.0
+    },
+    "accuracy": 0.7761947700631199,
+    "macro avg": {
+        "precision": 0.7704622446829827,
+        "recall": 0.7648821634896616,
+        "f1-score": 0.766346837216987,
+        "support": 11090.0
+    },
+    "weighted avg": {
+        "precision": 0.7747383420362207,
+        "recall": 0.7761947700631199,
+        "f1-score": 0.774236468096214,
+        "support": 11090.0
+    }
+}
