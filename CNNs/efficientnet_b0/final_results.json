@@ -1,0 +1,28 @@
+{
+  "model": "EfficientNet-B0",
+  "config": {
+    "model_name": "EfficientNet-B0",
+    "learning_rate": 0.0001,
+    "optimizer": "Adam",
+    "batch_size": 64,
+    "max_epochs": 30,
+    "early_stopping_patience": 10,
+    "num_classes": 8,
+    "image_size": 224,
+    "use_augmentation": true,
+    "augmentation": {
+      "horizontal_flip": 0.5,
+      "rotation_degrees": 15
+    },
+    "data_root": "/mnt/acmis_hby/Galaxy-Zoo-Classification/Contrast_experiment/Modern CNNs/Galaxy-Classification-Using-CNN/output_dataset",
+    "output_dir": "/mnt/acmis_hby/Galaxy-Zoo-Classification/Contrast_experiment/RETRAIN_BASELINE_UNIFIED/outputs/efficientnet_b0",
+    "device": "cuda:1",
+    "num_workers": 8,
+    "seed": 42
+  },
+  "best_val_acc": 77.9783393501805,
+  "test_acc": 76.6726780883679,
+  "test_loss": 0.6791025436558258,
+  "actual_epochs": 16,
+  "training_date": "2025-11-07T12:07:20.914981"
+}
