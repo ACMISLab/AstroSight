@@ -43,7 +43,17 @@ For reproducing baseline model experiments, install PyTorch and navigate to the 
 
 ## 📥 Dataset
 
-The galaxy classification datasets are provided in JSONL format:
-- `dataset/Galaxy_morphology/` - Galaxy morphological classification data
-- `dataset/Galaxy_attributes/` - Galaxy attribute regression data
+The galaxy classification datasets are provided in JSONL format and publicly available:
+- **Galaxy Morphology Classification**: [🤗 kk1999ddk/galaxy-morphology-classification](https://huggingface.co/datasets/kk1999ddk/galaxy-morphology-classification)
+- **Galaxy Attribute Prediction**: [🤗 kk1999ddk/galaxy-attribute-prediction](https://huggingface.co/datasets/kk1999ddk/galaxy-attribute-prediction)  
+
+
+## 🤖 Pretrained Models
+
+Our trained AstroSight models are publicly available:
+
+- **AstroSight Classification Model**: [🤗 kk1999ddk/AstroSight](https://huggingface.co/kk1999ddk/AstroSight)
+  - Fine-tuned for galaxy morphology classification and attribute prediction
+  - If you need any other model weights mentioned in the paper, please feel free to contact us.
+
 
