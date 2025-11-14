@@ -1,11 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-8-Class Galaxy Classification using Zernike Moments and Machine Learning
-对比实验：基于Zernike矩的星系形态分类
-
-修正版本 - 解决了数据标签匹配、权重计算等关键问题
-"""
 
 import json
 import os
