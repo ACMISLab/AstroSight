@@ -1,0 +1,3368 @@
+nohup: ignoring input
+🚀 HAN-DCN Galaxy Classification
+   使用设备: GPU 0
+   PyTorch版本: 2.5.1
+
+📊 数据集统计:
+   训练集: 43796 样本
+   验证集: 554 样本
+   测试集: 11090 样本
+   类别数: 8
+   类别名称: ['barred_spirals', 'cigar_shaped_elliptical', 'edge_on', 'in_between_elliptical', 'irregular', 'merger', 'round_elliptical', 'unbarred_spirals']
+
+🏗️ 模型信息:
+   模型: HAN-DCN (Hierarchical Attention Network + Deformable CNN)
+   总参数: 4,005,045
+   输入尺寸: 224×224
+
+🚀 开始训练HAN-DCN...
+
+Epoch [1/100]
+/mnt/acmis_hby/Paper_experiment_one/legacy_galaxy-master/han_dcn_galaxy_classification.py:130: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+  Batch [0/1368] Loss: 2.0836
+  Batch [50/1368] Loss: 2.0279
+  Batch [100/1368] Loss: 2.0278
+  Batch [150/1368] Loss: 1.9795
+  Batch [200/1368] Loss: 1.9817
+  Batch [250/1368] Loss: 2.0471
+  Batch [300/1368] Loss: 2.0427
+  Batch [350/1368] Loss: 1.9688
+  Batch [400/1368] Loss: 1.8983
+  Batch [450/1368] Loss: 2.0190
+  Batch [500/1368] Loss: 1.9024
+  Batch [550/1368] Loss: 1.9945
+  Batch [600/1368] Loss: 1.7053
+  Batch [650/1368] Loss: 1.7909
+  Batch [700/1368] Loss: 1.9216
+  Batch [750/1368] Loss: 1.9530
+  Batch [800/1368] Loss: 1.9148
+  Batch [850/1368] Loss: 1.8575
+  Batch [900/1368] Loss: 1.9251
+  Batch [950/1368] Loss: 1.8598
+  Batch [1000/1368] Loss: 1.8477
+  Batch [1050/1368] Loss: 1.9036
+  Batch [1100/1368] Loss: 2.0145
+  Batch [1150/1368] Loss: 1.9360
+  Batch [1200/1368] Loss: 1.7320
+  Batch [1250/1368] Loss: 1.8838
+  Batch [1300/1368] Loss: 1.9002
+  Batch [1350/1368] Loss: 1.9216
+/mnt/acmis_hby/Paper_experiment_one/legacy_galaxy-master/han_dcn_galaxy_classification.py:172: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+  Train Loss: 1.9012, Train Acc: 0.2813
+  Val Loss: 1.7903, Val Acc: 0.3448
+  LR: 0.000001
+  ✨ 新的最佳模型! Acc: 0.3448
+
+Epoch [2/100]
+  Batch [0/1368] Loss: 1.7269
+  Batch [50/1368] Loss: 1.8341
+  Batch [100/1368] Loss: 1.6167
+  Batch [150/1368] Loss: 1.7848
+  Batch [200/1368] Loss: 1.7417
+  Batch [250/1368] Loss: 1.7568
+  Batch [300/1368] Loss: 1.5913
+  Batch [350/1368] Loss: 1.5611
+  Batch [400/1368] Loss: 1.9805
+  Batch [450/1368] Loss: 1.5922
+  Batch [500/1368] Loss: 1.9074
+  Batch [550/1368] Loss: 1.8580
+  Batch [600/1368] Loss: 1.5774
+  Batch [650/1368] Loss: 1.8327
+  Batch [700/1368] Loss: 1.8369
+  Batch [750/1368] Loss: 1.7963
+  Batch [800/1368] Loss: 1.8233
+  Batch [850/1368] Loss: 1.6880
+  Batch [900/1368] Loss: 1.6024
+  Batch [950/1368] Loss: 1.7570
+  Batch [1000/1368] Loss: 2.1191
+  Batch [1050/1368] Loss: 1.5717
+  Batch [1100/1368] Loss: 1.9173
+  Batch [1150/1368] Loss: 1.6398
+  Batch [1200/1368] Loss: 1.6495
+  Batch [1250/1368] Loss: 1.6769
+  Batch [1300/1368] Loss: 1.6962
+  Batch [1350/1368] Loss: 1.6580
+  Train Loss: 1.7958, Train Acc: 0.3328
+  Val Loss: 1.7168, Val Acc: 0.3809
+  LR: 0.000101
+  ✨ 新的最佳模型! Acc: 0.3809
+
+Epoch [3/100]
+  Batch [0/1368] Loss: 1.9054
+  Batch [50/1368] Loss: 1.7829
+  Batch [100/1368] Loss: 1.6138
+  Batch [150/1368] Loss: 1.6124
+  Batch [200/1368] Loss: 1.4938
+  Batch [250/1368] Loss: 1.7589
+  Batch [300/1368] Loss: 1.7795
+  Batch [350/1368] Loss: 1.6855
+  Batch [400/1368] Loss: 1.7401
+  Batch [450/1368] Loss: 1.5351
+  Batch [500/1368] Loss: 1.8686
+  Batch [550/1368] Loss: 1.6180
+  Batch [600/1368] Loss: 1.6157
+  Batch [650/1368] Loss: 1.5108
+  Batch [700/1368] Loss: 1.3931
+  Batch [750/1368] Loss: 1.6389
+  Batch [800/1368] Loss: 1.5522
+  Batch [850/1368] Loss: 1.2817
+  Batch [900/1368] Loss: 1.5703
+  Batch [950/1368] Loss: 1.1316
+  Batch [1000/1368] Loss: 1.6718
+  Batch [1050/1368] Loss: 1.2287
+  Batch [1100/1368] Loss: 1.1377
+  Batch [1150/1368] Loss: 1.2723
+  Batch [1200/1368] Loss: 1.3737
+  Batch [1250/1368] Loss: 1.5937
+  Batch [1300/1368] Loss: 1.3479
+  Batch [1350/1368] Loss: 1.1668
+  Train Loss: 1.5424, Train Acc: 0.4185
+  Val Loss: 1.6925, Val Acc: 0.4242
+  LR: 0.000201
+  ✨ 新的最佳模型! Acc: 0.4242
+
+Epoch [4/100]
+  Batch [0/1368] Loss: 1.2431
+  Batch [50/1368] Loss: 1.4594
+  Batch [100/1368] Loss: 1.4568
+  Batch [150/1368] Loss: 1.3300
+  Batch [200/1368] Loss: 1.5785
+  Batch [250/1368] Loss: 1.3470
+  Batch [300/1368] Loss: 1.3113
+  Batch [350/1368] Loss: 1.4385
+  Batch [400/1368] Loss: 1.3525
+  Batch [450/1368] Loss: 1.6001
+  Batch [500/1368] Loss: 1.2323
+  Batch [550/1368] Loss: 1.4169
+  Batch [600/1368] Loss: 1.4667
+  Batch [650/1368] Loss: 1.2537
+  Batch [700/1368] Loss: 1.5259
+  Batch [750/1368] Loss: 1.3255
+  Batch [800/1368] Loss: 1.4755
+  Batch [850/1368] Loss: 1.5187
+  Batch [900/1368] Loss: 1.1953
+  Batch [950/1368] Loss: 1.1997
+  Batch [1000/1368] Loss: 1.3972
+  Batch [1050/1368] Loss: 1.4684
+  Batch [1100/1368] Loss: 1.5172
+  Batch [1150/1368] Loss: 1.4061
+  Batch [1200/1368] Loss: 1.3228
+  Batch [1250/1368] Loss: 1.3279
+  Batch [1300/1368] Loss: 1.4058
+  Batch [1350/1368] Loss: 1.3181
+  Train Loss: 1.3656, Train Acc: 0.4831
+  Val Loss: 1.4406, Val Acc: 0.4549
+  LR: 0.000300
+  ✨ 新的最佳模型! Acc: 0.4549
+
+Epoch [5/100]
+  Batch [0/1368] Loss: 1.5274
+  Batch [50/1368] Loss: 1.3099
+  Batch [100/1368] Loss: 1.2998
+  Batch [150/1368] Loss: 1.4409
+  Batch [200/1368] Loss: 1.5111
+  Batch [250/1368] Loss: 1.3592
+  Batch [300/1368] Loss: 1.3381
+  Batch [350/1368] Loss: 1.6457
+  Batch [400/1368] Loss: 1.2465
+  Batch [450/1368] Loss: 1.2599
+  Batch [500/1368] Loss: 1.2703
+  Batch [550/1368] Loss: 1.1526
+  Batch [600/1368] Loss: 1.2090
+  Batch [650/1368] Loss: 1.2046
+  Batch [700/1368] Loss: 1.1477
+  Batch [750/1368] Loss: 1.3953
+  Batch [800/1368] Loss: 1.1501
+  Batch [850/1368] Loss: 1.5061
+  Batch [900/1368] Loss: 1.2043
+  Batch [950/1368] Loss: 1.6481
+  Batch [1000/1368] Loss: 1.4250
+  Batch [1050/1368] Loss: 1.4137
+  Batch [1100/1368] Loss: 1.5679
+  Batch [1150/1368] Loss: 1.2685
+  Batch [1200/1368] Loss: 1.3481
+  Batch [1250/1368] Loss: 1.1149
+  Batch [1300/1368] Loss: 1.0340
+  Batch [1350/1368] Loss: 1.1691
+  Train Loss: 1.3631, Train Acc: 0.4807
+  Val Loss: 1.5071, Val Acc: 0.3809
+  LR: 0.000400
+
+Epoch [6/100]
+  Batch [0/1368] Loss: 1.4726
+  Batch [50/1368] Loss: 1.2890
+  Batch [100/1368] Loss: 1.3775
+  Batch [150/1368] Loss: 1.2660
+  Batch [200/1368] Loss: 1.2334
+  Batch [250/1368] Loss: 1.7457
+  Batch [300/1368] Loss: 1.8515
+  Batch [350/1368] Loss: 1.3837
+  Batch [400/1368] Loss: 1.3512
+  Batch [450/1368] Loss: 1.4461
+  Batch [500/1368] Loss: 1.2009
+  Batch [550/1368] Loss: 1.4161
+  Batch [600/1368] Loss: 1.3943
+  Batch [650/1368] Loss: 1.0892
+  Batch [700/1368] Loss: 1.0944
+  Batch [750/1368] Loss: 1.2393
+  Batch [800/1368] Loss: 1.4630
+  Batch [850/1368] Loss: 1.5175
+  Batch [900/1368] Loss: 1.3384
+  Batch [950/1368] Loss: 1.4203
+  Batch [1000/1368] Loss: 1.5606
+  Batch [1050/1368] Loss: 1.3940
+  Batch [1100/1368] Loss: 1.3569
+  Batch [1150/1368] Loss: 1.3635
+  Batch [1200/1368] Loss: 1.3220
+  Batch [1250/1368] Loss: 1.4615
+  Batch [1300/1368] Loss: 1.5627
+  Batch [1350/1368] Loss: 1.2504
+  Train Loss: 1.3910, Train Acc: 0.4721
+  Val Loss: 1.5104, Val Acc: 0.4386
+  LR: 0.000497
+
+Epoch [7/100]
+  Batch [0/1368] Loss: 1.3747
+  Batch [50/1368] Loss: 1.4085
+  Batch [100/1368] Loss: 1.2919
+  Batch [150/1368] Loss: 1.3849
+  Batch [200/1368] Loss: 1.2041
+  Batch [250/1368] Loss: 1.4626
+  Batch [300/1368] Loss: 1.2236
+  Batch [350/1368] Loss: 1.5298
+  Batch [400/1368] Loss: 1.4733
+  Batch [450/1368] Loss: 1.3644
+  Batch [500/1368] Loss: 1.4037
+  Batch [550/1368] Loss: 1.2448
+  Batch [600/1368] Loss: 1.1450
+  Batch [650/1368] Loss: 1.2632
+  Batch [700/1368] Loss: 1.4039
+  Batch [750/1368] Loss: 1.3541
+  Batch [800/1368] Loss: 1.5434
+  Batch [850/1368] Loss: 1.1452
+  Batch [900/1368] Loss: 1.2602
+  Batch [950/1368] Loss: 1.1408
+  Batch [1000/1368] Loss: 1.2720
+  Batch [1050/1368] Loss: 1.3555
+  Batch [1100/1368] Loss: 1.5477
+  Batch [1150/1368] Loss: 1.6352
+  Batch [1200/1368] Loss: 1.4271
+  Batch [1250/1368] Loss: 1.3816
+  Batch [1300/1368] Loss: 1.3945
+  Batch [1350/1368] Loss: 1.3101
+  Train Loss: 1.3961, Train Acc: 0.4692
+  Val Loss: 1.5860, Val Acc: 0.4188
+  LR: 0.000496
+
+Epoch [8/100]
+  Batch [0/1368] Loss: 1.3719
+  Batch [50/1368] Loss: 1.3863
+  Batch [100/1368] Loss: 1.5906
+  Batch [150/1368] Loss: 1.3816
+  Batch [200/1368] Loss: 1.6048
+  Batch [250/1368] Loss: 1.0943
+  Batch [300/1368] Loss: 1.1650
+  Batch [350/1368] Loss: 1.3024
+  Batch [400/1368] Loss: 1.4199
+  Batch [450/1368] Loss: 1.3830
+  Batch [500/1368] Loss: 1.3691
+  Batch [550/1368] Loss: 1.4484
+  Batch [600/1368] Loss: 1.3035
+  Batch [650/1368] Loss: 1.2865
+  Batch [700/1368] Loss: 1.3078
+  Batch [750/1368] Loss: 1.3524
+  Batch [800/1368] Loss: 1.4090
+  Batch [850/1368] Loss: 1.4353
+  Batch [900/1368] Loss: 1.2992
+  Batch [950/1368] Loss: 1.5663
+  Batch [1000/1368] Loss: 1.1603
+  Batch [1050/1368] Loss: 1.3153
+  Batch [1100/1368] Loss: 1.3103
+  Batch [1150/1368] Loss: 1.2060
+  Batch [1200/1368] Loss: 1.2075
+  Batch [1250/1368] Loss: 1.2533
+  Batch [1300/1368] Loss: 1.4301
+  Batch [1350/1368] Loss: 1.1739
+  Train Loss: 1.3694, Train Acc: 0.4775
+  Val Loss: 1.4288, Val Acc: 0.4747
+  LR: 0.000494
+  ✨ 新的最佳模型! Acc: 0.4747
+
+Epoch [9/100]
+  Batch [0/1368] Loss: 2.1037
+  Batch [50/1368] Loss: 1.1142
+  Batch [100/1368] Loss: 1.5320
+  Batch [150/1368] Loss: 1.4708
+  Batch [200/1368] Loss: 1.3918
+  Batch [250/1368] Loss: 1.3647
+  Batch [300/1368] Loss: 1.2539
+  Batch [350/1368] Loss: 1.3052
+  Batch [400/1368] Loss: 1.3032
+  Batch [450/1368] Loss: 1.2893
+  Batch [500/1368] Loss: 1.3983
+  Batch [550/1368] Loss: 0.9901
+  Batch [600/1368] Loss: 1.3672
+  Batch [650/1368] Loss: 0.9228
+  Batch [700/1368] Loss: 1.5486
+  Batch [750/1368] Loss: 1.2758
+  Batch [800/1368] Loss: 1.1832
+  Batch [850/1368] Loss: 1.1903
+  Batch [900/1368] Loss: 1.7142
+  Batch [950/1368] Loss: 1.3657
+  Batch [1000/1368] Loss: 1.2962
+  Batch [1050/1368] Loss: 1.2544
+  Batch [1100/1368] Loss: 1.2964
+  Batch [1150/1368] Loss: 1.2640
+  Batch [1200/1368] Loss: 1.5491
+  Batch [1250/1368] Loss: 1.1330
+  Batch [1300/1368] Loss: 1.2488
+  Batch [1350/1368] Loss: 1.3179
+  Train Loss: 1.3402, Train Acc: 0.4923
+  Val Loss: 1.5155, Val Acc: 0.4495
+  LR: 0.000492
+
+Epoch [10/100]
+  Batch [0/1368] Loss: 1.4436
+  Batch [50/1368] Loss: 1.2200
+  Batch [100/1368] Loss: 1.3240
+  Batch [150/1368] Loss: 1.3052
+  Batch [200/1368] Loss: 1.6662
+  Batch [250/1368] Loss: 1.4061
+  Batch [300/1368] Loss: 1.1956
+  Batch [350/1368] Loss: 1.1133
+  Batch [400/1368] Loss: 1.2351
+  Batch [450/1368] Loss: 1.0979
+  Batch [500/1368] Loss: 1.5236
+  Batch [550/1368] Loss: 1.1722
+  Batch [600/1368] Loss: 1.5062
+  Batch [650/1368] Loss: 1.5205
+  Batch [700/1368] Loss: 1.4208
+  Batch [750/1368] Loss: 1.2285
+  Batch [800/1368] Loss: 1.1865
+  Batch [850/1368] Loss: 1.0490
+  Batch [900/1368] Loss: 1.1007
+  Batch [950/1368] Loss: 1.1723
+  Batch [1000/1368] Loss: 1.1016
+  Batch [1050/1368] Loss: 1.1190
+  Batch [1100/1368] Loss: 1.3280
+  Batch [1150/1368] Loss: 1.4142
+  Batch [1200/1368] Loss: 1.3709
+  Batch [1250/1368] Loss: 1.3023
+  Batch [1300/1368] Loss: 1.0940
+  Batch [1350/1368] Loss: 1.2508
+  Train Loss: 1.3061, Train Acc: 0.5058
+  Val Loss: 1.4153, Val Acc: 0.4152
+  LR: 0.000490
+
+Epoch [11/100]
+  Batch [0/1368] Loss: 1.1259
+  Batch [50/1368] Loss: 1.6250
+  Batch [100/1368] Loss: 1.2951
+  Batch [150/1368] Loss: 1.3746
+  Batch [200/1368] Loss: 1.2014
+  Batch [250/1368] Loss: 1.6367
+  Batch [300/1368] Loss: 1.1812
+  Batch [350/1368] Loss: 1.6948
+  Batch [400/1368] Loss: 1.2562
+  Batch [450/1368] Loss: 1.4481
+  Batch [500/1368] Loss: 1.4681
+  Batch [550/1368] Loss: 1.1127
+  Batch [600/1368] Loss: 1.3195
+  Batch [650/1368] Loss: 1.1307
+  Batch [700/1368] Loss: 1.0684
+  Batch [750/1368] Loss: 0.9619
+  Batch [800/1368] Loss: 1.0539
+  Batch [850/1368] Loss: 1.4113
+  Batch [900/1368] Loss: 1.1752
+  Batch [950/1368] Loss: 1.5833
+  Batch [1000/1368] Loss: 1.3101
+  Batch [1050/1368] Loss: 1.2049
+  Batch [1100/1368] Loss: 1.3146
+  Batch [1150/1368] Loss: 0.9296
+  Batch [1200/1368] Loss: 1.2061
+  Batch [1250/1368] Loss: 1.5127
+  Batch [1300/1368] Loss: 1.3315
+  Batch [1350/1368] Loss: 1.4662
+  Train Loss: 1.2776, Train Acc: 0.5176
+  Val Loss: 1.6699, Val Acc: 0.4350
+  LR: 0.000488
+
+Epoch [12/100]
+  Batch [0/1368] Loss: 1.0279
+  Batch [50/1368] Loss: 1.4318
+  Batch [100/1368] Loss: 1.5676
+  Batch [150/1368] Loss: 1.2775
+  Batch [200/1368] Loss: 1.1851
+  Batch [250/1368] Loss: 1.2405
+  Batch [300/1368] Loss: 1.2162
+  Batch [350/1368] Loss: 1.4069
+  Batch [400/1368] Loss: 1.0112
+  Batch [450/1368] Loss: 1.2709
+  Batch [500/1368] Loss: 1.1545
+  Batch [550/1368] Loss: 1.1617
+  Batch [600/1368] Loss: 1.0751
+  Batch [650/1368] Loss: 0.9955
+  Batch [700/1368] Loss: 1.2005
+  Batch [750/1368] Loss: 0.9093
+  Batch [800/1368] Loss: 1.2528
+  Batch [850/1368] Loss: 1.2842
+  Batch [900/1368] Loss: 1.4974
+  Batch [950/1368] Loss: 1.3601
+  Batch [1000/1368] Loss: 1.1906
+  Batch [1050/1368] Loss: 1.5472
+  Batch [1100/1368] Loss: 1.2870
+  Batch [1150/1368] Loss: 1.1685
+  Batch [1200/1368] Loss: 1.1155
+  Batch [1250/1368] Loss: 1.3702
+  Batch [1300/1368] Loss: 1.3646
+  Batch [1350/1368] Loss: 1.1579
+  Train Loss: 1.2601, Train Acc: 0.5278
+  Val Loss: 1.2615, Val Acc: 0.5036
+  LR: 0.000486
+  ✨ 新的最佳模型! Acc: 0.5036
+
+Epoch [13/100]
+  Batch [0/1368] Loss: 1.1167
+  Batch [50/1368] Loss: 1.0193
+  Batch [100/1368] Loss: 1.3040
+  Batch [150/1368] Loss: 1.3859
+  Batch [200/1368] Loss: 1.3731
+  Batch [250/1368] Loss: 1.0879
+  Batch [300/1368] Loss: 1.1868
+  Batch [350/1368] Loss: 1.2560
+  Batch [400/1368] Loss: 1.4261
+  Batch [450/1368] Loss: 1.0042
+  Batch [500/1368] Loss: 1.0942
+  Batch [550/1368] Loss: 1.3452
+  Batch [600/1368] Loss: 1.0063
+  Batch [650/1368] Loss: 1.1023
+  Batch [700/1368] Loss: 1.3613
+  Batch [750/1368] Loss: 1.2911
+  Batch [800/1368] Loss: 1.6829
+  Batch [850/1368] Loss: 1.0947
+  Batch [900/1368] Loss: 1.0403
+  Batch [950/1368] Loss: 1.3419
+  Batch [1000/1368] Loss: 1.4211
+  Batch [1050/1368] Loss: 1.5161
+  Batch [1100/1368] Loss: 1.3766
+  Batch [1150/1368] Loss: 1.1622
+  Batch [1200/1368] Loss: 1.5119
+  Batch [1250/1368] Loss: 1.2844
+  Batch [1300/1368] Loss: 1.1479
+  Batch [1350/1368] Loss: 1.1134
+  Train Loss: 1.2438, Train Acc: 0.5324
+  Val Loss: 1.2991, Val Acc: 0.5217
+  LR: 0.000483
+  ✨ 新的最佳模型! Acc: 0.5217
+
+Epoch [14/100]
+  Batch [0/1368] Loss: 1.3957
+  Batch [50/1368] Loss: 1.1164
+  Batch [100/1368] Loss: 1.4399
+  Batch [150/1368] Loss: 1.2308
+  Batch [200/1368] Loss: 1.0798
+  Batch [250/1368] Loss: 1.0505
+  Batch [300/1368] Loss: 1.5294
+  Batch [350/1368] Loss: 1.0505
+  Batch [400/1368] Loss: 1.5544
+  Batch [450/1368] Loss: 1.3020
+  Batch [500/1368] Loss: 1.2746
+  Batch [550/1368] Loss: 1.3357
+  Batch [600/1368] Loss: 1.2891
+  Batch [650/1368] Loss: 1.4090
+  Batch [700/1368] Loss: 1.0514
+  Batch [750/1368] Loss: 1.2364
+  Batch [800/1368] Loss: 1.2373
+  Batch [850/1368] Loss: 1.1412
+  Batch [900/1368] Loss: 0.9608
+  Batch [950/1368] Loss: 1.0604
+  Batch [1000/1368] Loss: 1.1576
+  Batch [1050/1368] Loss: 1.4139
+  Batch [1100/1368] Loss: 0.9800
+  Batch [1150/1368] Loss: 1.3834
+  Batch [1200/1368] Loss: 1.0639
+  Batch [1250/1368] Loss: 1.1922
+  Batch [1300/1368] Loss: 1.1823
+  Batch [1350/1368] Loss: 1.1904
+  Train Loss: 1.2224, Train Acc: 0.5435
+  Val Loss: 1.2073, Val Acc: 0.5505
+  LR: 0.000480
+  ✨ 新的最佳模型! Acc: 0.5505
+
+Epoch [15/100]
+  Batch [0/1368] Loss: 1.3723
+  Batch [50/1368] Loss: 1.0790
+  Batch [100/1368] Loss: 1.0939
+  Batch [150/1368] Loss: 1.3999
+  Batch [200/1368] Loss: 0.9274
+  Batch [250/1368] Loss: 1.4705
+  Batch [300/1368] Loss: 1.0237
+  Batch [350/1368] Loss: 1.5063
+  Batch [400/1368] Loss: 1.3804
+  Batch [450/1368] Loss: 1.2584
+  Batch [500/1368] Loss: 1.1520
+  Batch [550/1368] Loss: 1.1196
+  Batch [600/1368] Loss: 1.3796
+  Batch [650/1368] Loss: 1.1263
+  Batch [700/1368] Loss: 1.4099
+  Batch [750/1368] Loss: 1.3835
+  Batch [800/1368] Loss: 1.3277
+  Batch [850/1368] Loss: 1.3399
+  Batch [900/1368] Loss: 1.1841
+  Batch [950/1368] Loss: 1.4233
+  Batch [1000/1368] Loss: 1.3587
+  Batch [1050/1368] Loss: 0.9472
+  Batch [1100/1368] Loss: 1.1796
+  Batch [1150/1368] Loss: 1.2318
+  Batch [1200/1368] Loss: 1.4612
+  Batch [1250/1368] Loss: 1.0456
+  Batch [1300/1368] Loss: 1.3956
+  Batch [1350/1368] Loss: 1.3785
+  Train Loss: 1.2117, Train Acc: 0.5468
+  Val Loss: 1.8454, Val Acc: 0.3466
+  LR: 0.000477
+
+Epoch [16/100]
+  Batch [0/1368] Loss: 1.1912
+  Batch [50/1368] Loss: 1.1503
+  Batch [100/1368] Loss: 0.9994
+  Batch [150/1368] Loss: 1.2745
+  Batch [200/1368] Loss: 1.5695
+  Batch [250/1368] Loss: 1.1481
+  Batch [300/1368] Loss: 1.4089
+  Batch [350/1368] Loss: 1.2966
+  Batch [400/1368] Loss: 1.2714
+  Batch [450/1368] Loss: 1.4334
+  Batch [500/1368] Loss: 1.1725
+  Batch [550/1368] Loss: 1.2732
+  Batch [600/1368] Loss: 1.2041
+  Batch [650/1368] Loss: 1.3818
+  Batch [700/1368] Loss: 1.3053
+  Batch [750/1368] Loss: 1.3648
+  Batch [800/1368] Loss: 1.2443
+  Batch [850/1368] Loss: 1.0800
+  Batch [900/1368] Loss: 1.2517
+  Batch [950/1368] Loss: 1.3442
+  Batch [1000/1368] Loss: 1.0930
+  Batch [1050/1368] Loss: 1.0273
+  Batch [1100/1368] Loss: 1.2506
+  Batch [1150/1368] Loss: 1.3461
+  Batch [1200/1368] Loss: 1.0719
+  Batch [1250/1368] Loss: 1.0793
+  Batch [1300/1368] Loss: 1.3842
+  Batch [1350/1368] Loss: 1.4374
+  Train Loss: 1.2038, Train Acc: 0.5506
+  Val Loss: 1.1574, Val Acc: 0.5830
+  LR: 0.000473
+  ✨ 新的最佳模型! Acc: 0.5830
+
+Epoch [17/100]
+  Batch [0/1368] Loss: 1.1257
+  Batch [50/1368] Loss: 1.0439
+  Batch [100/1368] Loss: 1.3585
+  Batch [150/1368] Loss: 1.1455
+  Batch [200/1368] Loss: 1.3895
+  Batch [250/1368] Loss: 1.5145
+  Batch [300/1368] Loss: 1.3814
+  Batch [350/1368] Loss: 1.4041
+  Batch [400/1368] Loss: 1.2556
+  Batch [450/1368] Loss: 1.0539
+  Batch [500/1368] Loss: 1.0226
+  Batch [550/1368] Loss: 1.6664
+  Batch [600/1368] Loss: 1.2588
+  Batch [650/1368] Loss: 1.0799
+  Batch [700/1368] Loss: 0.8752
+  Batch [750/1368] Loss: 0.9782
+  Batch [800/1368] Loss: 1.1641
+  Batch [850/1368] Loss: 1.2271
+  Batch [900/1368] Loss: 1.2103
+  Batch [950/1368] Loss: 1.1735
+  Batch [1000/1368] Loss: 1.3011
+  Batch [1050/1368] Loss: 1.1120
+  Batch [1100/1368] Loss: 1.5391
+  Batch [1150/1368] Loss: 1.1344
+  Batch [1200/1368] Loss: 0.8830
+  Batch [1250/1368] Loss: 1.2150
+  Batch [1300/1368] Loss: 1.0901
+  Batch [1350/1368] Loss: 1.2709
+  Train Loss: 1.1851, Train Acc: 0.5591
+  Val Loss: 1.3675, Val Acc: 0.4910
+  LR: 0.000470
+
+Epoch [18/100]
+  Batch [0/1368] Loss: 1.0815
+  Batch [50/1368] Loss: 1.7116
+  Batch [100/1368] Loss: 1.5918
+  Batch [150/1368] Loss: 0.9770
+  Batch [200/1368] Loss: 1.1293
+  Batch [250/1368] Loss: 1.2500
+  Batch [300/1368] Loss: 1.3271
+  Batch [350/1368] Loss: 1.2266
+  Batch [400/1368] Loss: 1.0033
+  Batch [450/1368] Loss: 1.2475
+  Batch [500/1368] Loss: 1.2108
+  Batch [550/1368] Loss: 1.0951
+  Batch [600/1368] Loss: 0.9838
+  Batch [650/1368] Loss: 1.1461
+  Batch [700/1368] Loss: 1.3138
+  Batch [750/1368] Loss: 1.2117
+  Batch [800/1368] Loss: 1.1279
+  Batch [850/1368] Loss: 1.1888
+  Batch [900/1368] Loss: 1.1732
+  Batch [950/1368] Loss: 1.1353
+  Batch [1000/1368] Loss: 1.1937
+  Batch [1050/1368] Loss: 1.1581
+  Batch [1100/1368] Loss: 1.1664
+  Batch [1150/1368] Loss: 1.5618
+  Batch [1200/1368] Loss: 1.2496
+  Batch [1250/1368] Loss: 1.3202
+  Batch [1300/1368] Loss: 0.9500
+  Batch [1350/1368] Loss: 1.3567
+  Train Loss: 1.1811, Train Acc: 0.5629
+  Val Loss: 1.2297, Val Acc: 0.5397
+  LR: 0.000466
+
+Epoch [19/100]
+  Batch [0/1368] Loss: 2.0185
+  Batch [50/1368] Loss: 1.1105
+  Batch [100/1368] Loss: 1.1216
+  Batch [150/1368] Loss: 1.4429
+  Batch [200/1368] Loss: 1.0377
+  Batch [250/1368] Loss: 1.4876
+  Batch [300/1368] Loss: 1.2069
+  Batch [350/1368] Loss: 1.5076
+  Batch [400/1368] Loss: 1.1349
+  Batch [450/1368] Loss: 1.1768
+  Batch [500/1368] Loss: 1.2951
+  Batch [550/1368] Loss: 1.2235
+  Batch [600/1368] Loss: 1.3776
+  Batch [650/1368] Loss: 1.0718
+  Batch [700/1368] Loss: 1.1562
+  Batch [750/1368] Loss: 1.1612
+  Batch [800/1368] Loss: 0.9427
+  Batch [850/1368] Loss: 1.3703
+  Batch [900/1368] Loss: 1.2223
+  Batch [950/1368] Loss: 1.4481
+  Batch [1000/1368] Loss: 1.0606
+  Batch [1050/1368] Loss: 1.0623
+  Batch [1100/1368] Loss: 1.2634
+  Batch [1150/1368] Loss: 0.8648
+  Batch [1200/1368] Loss: 1.2173
+  Batch [1250/1368] Loss: 1.2003
+  Batch [1300/1368] Loss: 1.1392
+  Batch [1350/1368] Loss: 1.1511
+  Train Loss: 1.1606, Train Acc: 0.5693
+  Val Loss: 1.1644, Val Acc: 0.5903
+  LR: 0.000462
+  ✨ 新的最佳模型! Acc: 0.5903
+
+Epoch [20/100]
+  Batch [0/1368] Loss: 1.1965
+  Batch [50/1368] Loss: 1.0216
+  Batch [100/1368] Loss: 1.0637
+  Batch [150/1368] Loss: 1.3253
+  Batch [200/1368] Loss: 1.1082
+  Batch [250/1368] Loss: 1.0188
+  Batch [300/1368] Loss: 1.2833
+  Batch [350/1368] Loss: 1.0159
+  Batch [400/1368] Loss: 0.8948
+  Batch [450/1368] Loss: 1.3606
+  Batch [500/1368] Loss: 1.0654
+  Batch [550/1368] Loss: 1.0323
+  Batch [600/1368] Loss: 1.0124
+  Batch [650/1368] Loss: 1.3620
+  Batch [700/1368] Loss: 1.4836
+  Batch [750/1368] Loss: 1.1540
+  Batch [800/1368] Loss: 1.1277
+  Batch [850/1368] Loss: 1.3571
+  Batch [900/1368] Loss: 1.3052
+  Batch [950/1368] Loss: 1.0645
+  Batch [1000/1368] Loss: 0.8994
+  Batch [1050/1368] Loss: 0.8617
+  Batch [1100/1368] Loss: 1.1890
+  Batch [1150/1368] Loss: 1.2396
+  Batch [1200/1368] Loss: 1.2424
+  Batch [1250/1368] Loss: 0.8623
+  Batch [1300/1368] Loss: 1.3855
+  Batch [1350/1368] Loss: 1.1929
+  Train Loss: 1.1498, Train Acc: 0.5729
+  Val Loss: 1.2715, Val Acc: 0.5361
+  LR: 0.000458
+
+Epoch [21/100]
+  Batch [0/1368] Loss: 1.0838
+  Batch [50/1368] Loss: 1.2551
+  Batch [100/1368] Loss: 1.0716
+  Batch [150/1368] Loss: 1.4505
+  Batch [200/1368] Loss: 1.1987
+  Batch [250/1368] Loss: 1.1116
+  Batch [300/1368] Loss: 1.0863
+  Batch [350/1368] Loss: 0.8945
+  Batch [400/1368] Loss: 1.1129
+  Batch [450/1368] Loss: 1.3994
+  Batch [500/1368] Loss: 1.2894
+  Batch [550/1368] Loss: 1.0438
+  Batch [600/1368] Loss: 1.1236
+  Batch [650/1368] Loss: 1.4017
+  Batch [700/1368] Loss: 1.1640
+  Batch [750/1368] Loss: 1.0696
+  Batch [800/1368] Loss: 1.0708
+  Batch [850/1368] Loss: 1.0119
+  Batch [900/1368] Loss: 1.0054
+  Batch [950/1368] Loss: 1.4816
+  Batch [1000/1368] Loss: 0.7745
+  Batch [1050/1368] Loss: 1.1384
+  Batch [1100/1368] Loss: 0.8776
+  Batch [1150/1368] Loss: 0.9562
+  Batch [1200/1368] Loss: 1.2125
+  Batch [1250/1368] Loss: 1.1785
+  Batch [1300/1368] Loss: 0.8451
+  Batch [1350/1368] Loss: 1.3701
+  Train Loss: 1.1430, Train Acc: 0.5761
+  Val Loss: 1.1835, Val Acc: 0.5542
+  LR: 0.000453
+
+Epoch [22/100]
+  Batch [0/1368] Loss: 1.2138
+  Batch [50/1368] Loss: 1.1725
+  Batch [100/1368] Loss: 1.1661
+  Batch [150/1368] Loss: 0.9406
+  Batch [200/1368] Loss: 0.9171
+  Batch [250/1368] Loss: 1.1709
+  Batch [300/1368] Loss: 1.1570
+  Batch [350/1368] Loss: 1.1058
+  Batch [400/1368] Loss: 1.0607
+  Batch [450/1368] Loss: 1.0474
+  Batch [500/1368] Loss: 0.9617
+  Batch [550/1368] Loss: 1.2887
+  Batch [600/1368] Loss: 1.1391
+  Batch [650/1368] Loss: 1.2170
+  Batch [700/1368] Loss: 1.3039
+  Batch [750/1368] Loss: 0.9251
+  Batch [800/1368] Loss: 0.9792
+  Batch [850/1368] Loss: 1.2374
+  Batch [900/1368] Loss: 0.9455
+  Batch [950/1368] Loss: 1.1734
+  Batch [1000/1368] Loss: 1.3745
+  Batch [1050/1368] Loss: 1.3241
+  Batch [1100/1368] Loss: 1.2190
+  Batch [1150/1368] Loss: 0.8612
+  Batch [1200/1368] Loss: 0.9559
+  Batch [1250/1368] Loss: 1.1645
+  Batch [1300/1368] Loss: 1.3352
+  Batch [1350/1368] Loss: 1.1805
+  Train Loss: 1.1431, Train Acc: 0.5797
+  Val Loss: 1.2702, Val Acc: 0.5451
+  LR: 0.000449
+
+Epoch [23/100]
+  Batch [0/1368] Loss: 1.0974
+  Batch [50/1368] Loss: 1.3326
+  Batch [100/1368] Loss: 1.0831
+  Batch [150/1368] Loss: 1.0789
+  Batch [200/1368] Loss: 1.0138
+  Batch [250/1368] Loss: 1.2208
+  Batch [300/1368] Loss: 0.8499
+  Batch [350/1368] Loss: 1.1849
+  Batch [400/1368] Loss: 0.8950
+  Batch [450/1368] Loss: 1.5518
+  Batch [500/1368] Loss: 1.0093
+  Batch [550/1368] Loss: 1.1988
+  Batch [600/1368] Loss: 1.1853
+  Batch [650/1368] Loss: 1.0071
+  Batch [700/1368] Loss: 1.1347
+  Batch [750/1368] Loss: 1.2199
+  Batch [800/1368] Loss: 1.2374
+  Batch [850/1368] Loss: 1.2345
+  Batch [900/1368] Loss: 1.1095
+  Batch [950/1368] Loss: 1.2144
+  Batch [1000/1368] Loss: 1.1177
+  Batch [1050/1368] Loss: 0.8463
+  Batch [1100/1368] Loss: 1.1866
+  Batch [1150/1368] Loss: 1.1220
+  Batch [1200/1368] Loss: 1.0612
+  Batch [1250/1368] Loss: 1.2191
+  Batch [1300/1368] Loss: 1.4032
+  Batch [1350/1368] Loss: 1.1059
+  Train Loss: 1.1355, Train Acc: 0.5786
+  Val Loss: 1.1152, Val Acc: 0.5957
+  LR: 0.000444
+  ✨ 新的最佳模型! Acc: 0.5957
+
+Epoch [24/100]
+  Batch [0/1368] Loss: 1.4930
+  Batch [50/1368] Loss: 1.2928
+  Batch [100/1368] Loss: 1.1942
+  Batch [150/1368] Loss: 1.0494
+  Batch [200/1368] Loss: 1.3731
+  Batch [250/1368] Loss: 1.1315
+  Batch [300/1368] Loss: 1.3197
+  Batch [350/1368] Loss: 0.8004
+  Batch [400/1368] Loss: 1.1784
+  Batch [450/1368] Loss: 1.2149
+  Batch [500/1368] Loss: 1.2994
+  Batch [550/1368] Loss: 1.3428
+  Batch [600/1368] Loss: 0.9610
+  Batch [650/1368] Loss: 1.2884
+  Batch [700/1368] Loss: 0.9344
+  Batch [750/1368] Loss: 1.2490
+  Batch [800/1368] Loss: 1.1748
+  Batch [850/1368] Loss: 1.3576
+  Batch [900/1368] Loss: 0.8069
+  Batch [950/1368] Loss: 1.2367
+  Batch [1000/1368] Loss: 1.3321
+  Batch [1050/1368] Loss: 0.9928
+  Batch [1100/1368] Loss: 1.2094
+  Batch [1150/1368] Loss: 1.1013
+  Batch [1200/1368] Loss: 1.0576
+  Batch [1250/1368] Loss: 1.2315
+  Batch [1300/1368] Loss: 1.0868
+  Batch [1350/1368] Loss: 1.1575
+  Train Loss: 1.1248, Train Acc: 0.5864
+  Val Loss: 1.1520, Val Acc: 0.5722
+  LR: 0.000439
+
+Epoch [25/100]
+  Batch [0/1368] Loss: 1.1236
+  Batch [50/1368] Loss: 0.8442
+  Batch [100/1368] Loss: 1.1987
+  Batch [150/1368] Loss: 0.9619
+  Batch [200/1368] Loss: 1.1476
+  Batch [250/1368] Loss: 1.0453
+  Batch [300/1368] Loss: 1.0100
+  Batch [350/1368] Loss: 1.2425
+  Batch [400/1368] Loss: 1.1375
+  Batch [450/1368] Loss: 1.3680
+  Batch [500/1368] Loss: 1.0556
+  Batch [550/1368] Loss: 1.3845
+  Batch [600/1368] Loss: 1.2482
+  Batch [650/1368] Loss: 1.1028
+  Batch [700/1368] Loss: 1.6983
+  Batch [750/1368] Loss: 1.2064
+  Batch [800/1368] Loss: 1.4087
+  Batch [850/1368] Loss: 1.2854
+  Batch [900/1368] Loss: 1.4780
+  Batch [950/1368] Loss: 1.3806
+  Batch [1000/1368] Loss: 1.2324
+  Batch [1050/1368] Loss: 1.2453
+  Batch [1100/1368] Loss: 0.8030
+  Batch [1150/1368] Loss: 1.3117
+  Batch [1200/1368] Loss: 1.0426
+  Batch [1250/1368] Loss: 0.9866
+  Batch [1300/1368] Loss: 0.8522
+  Batch [1350/1368] Loss: 1.0545
+  Train Loss: 1.1157, Train Acc: 0.5886
+  Val Loss: 1.0634, Val Acc: 0.6191
+  LR: 0.000434
+  ✨ 新的最佳模型! Acc: 0.6191
+
+Epoch [26/100]
+  Batch [0/1368] Loss: 1.1697
+  Batch [50/1368] Loss: 1.1394
+  Batch [100/1368] Loss: 1.1930
+  Batch [150/1368] Loss: 1.0535
+  Batch [200/1368] Loss: 1.1596
+  Batch [250/1368] Loss: 1.2738
+  Batch [300/1368] Loss: 1.0917
+  Batch [350/1368] Loss: 1.0870
+  Batch [400/1368] Loss: 0.8950
+  Batch [450/1368] Loss: 1.0966
+  Batch [500/1368] Loss: 1.0519
+  Batch [550/1368] Loss: 1.4844
+  Batch [600/1368] Loss: 1.0897
+  Batch [650/1368] Loss: 0.9452
+  Batch [700/1368] Loss: 1.2489
+  Batch [750/1368] Loss: 1.1160
+  Batch [800/1368] Loss: 0.9215
+  Batch [850/1368] Loss: 1.3326
+  Batch [900/1368] Loss: 0.9970
+  Batch [950/1368] Loss: 1.0087
+  Batch [1000/1368] Loss: 0.7477
+  Batch [1050/1368] Loss: 1.0050
+  Batch [1100/1368] Loss: 1.4384
+  Batch [1150/1368] Loss: 1.3710
+  Batch [1200/1368] Loss: 1.0784
+  Batch [1250/1368] Loss: 0.9305
+  Batch [1300/1368] Loss: 0.9703
+  Batch [1350/1368] Loss: 0.9952
+  Train Loss: 1.1089, Train Acc: 0.5880
+  Val Loss: 1.7988, Val Acc: 0.4043
+  LR: 0.000428
+
+Epoch [27/100]
+  Batch [0/1368] Loss: 0.9262
+  Batch [50/1368] Loss: 1.0271
+  Batch [100/1368] Loss: 1.0081
+  Batch [150/1368] Loss: 1.2644
+  Batch [200/1368] Loss: 1.3680
+  Batch [250/1368] Loss: 1.2854
+  Batch [300/1368] Loss: 0.9907
+  Batch [350/1368] Loss: 1.2965
+  Batch [400/1368] Loss: 1.0884
+  Batch [450/1368] Loss: 0.7471
+  Batch [500/1368] Loss: 0.9059
+  Batch [550/1368] Loss: 1.1971
+  Batch [600/1368] Loss: 0.9523
+  Batch [650/1368] Loss: 1.3312
+  Batch [700/1368] Loss: 1.2194
+  Batch [750/1368] Loss: 1.1657
+  Batch [800/1368] Loss: 1.2331
+  Batch [850/1368] Loss: 0.8838
+  Batch [900/1368] Loss: 1.0173
+  Batch [950/1368] Loss: 0.7886
+  Batch [1000/1368] Loss: 1.0402
+  Batch [1050/1368] Loss: 0.9538
+  Batch [1100/1368] Loss: 1.0229
+  Batch [1150/1368] Loss: 1.1473
+  Batch [1200/1368] Loss: 1.1182
+  Batch [1250/1368] Loss: 1.2914
+  Batch [1300/1368] Loss: 1.3186
+  Batch [1350/1368] Loss: 0.9103
+  Train Loss: 1.1008, Train Acc: 0.5966
+  Val Loss: 1.1023, Val Acc: 0.6209
+  LR: 0.000423
+  ✨ 新的最佳模型! Acc: 0.6209
+
+Epoch [28/100]
+  Batch [0/1368] Loss: 0.9731
+  Batch [50/1368] Loss: 1.2791
+  Batch [100/1368] Loss: 0.9937
+  Batch [150/1368] Loss: 0.9617
+  Batch [200/1368] Loss: 1.2898
+  Batch [250/1368] Loss: 0.9808
+  Batch [300/1368] Loss: 1.2795
+  Batch [350/1368] Loss: 1.1044
+  Batch [400/1368] Loss: 0.9095
+  Batch [450/1368] Loss: 1.3628
+  Batch [500/1368] Loss: 1.2553
+  Batch [550/1368] Loss: 1.0019
+  Batch [600/1368] Loss: 1.3402
+  Batch [650/1368] Loss: 1.4770
+  Batch [700/1368] Loss: 1.0758
+  Batch [750/1368] Loss: 1.5177
+  Batch [800/1368] Loss: 1.0484
+  Batch [850/1368] Loss: 1.0565
+  Batch [900/1368] Loss: 1.3371
+  Batch [950/1368] Loss: 1.2711
+  Batch [1000/1368] Loss: 1.1794
+  Batch [1050/1368] Loss: 0.9743
+  Batch [1100/1368] Loss: 1.4373
+  Batch [1150/1368] Loss: 1.0360
+  Batch [1200/1368] Loss: 0.9136
+  Batch [1250/1368] Loss: 0.9927
+  Batch [1300/1368] Loss: 1.0237
+  Batch [1350/1368] Loss: 1.3994
+  Train Loss: 1.0976, Train Acc: 0.5968
+  Val Loss: 1.8392, Val Acc: 0.3718
+  LR: 0.000417
+
+Epoch [29/100]
+  Batch [0/1368] Loss: 1.2359
+  Batch [50/1368] Loss: 1.2453
+  Batch [100/1368] Loss: 1.2087
+  Batch [150/1368] Loss: 1.1235
+  Batch [200/1368] Loss: 0.9297
+  Batch [250/1368] Loss: 0.9440
+  Batch [300/1368] Loss: 0.9890
+  Batch [350/1368] Loss: 1.3036
+  Batch [400/1368] Loss: 1.1542
+  Batch [450/1368] Loss: 1.1295
+  Batch [500/1368] Loss: 1.1103
+  Batch [550/1368] Loss: 1.4043
+  Batch [600/1368] Loss: 1.0695
+  Batch [650/1368] Loss: 1.3282
+  Batch [700/1368] Loss: 1.1406
+  Batch [750/1368] Loss: 1.1401
+  Batch [800/1368] Loss: 1.0753
+  Batch [850/1368] Loss: 1.2058
+  Batch [900/1368] Loss: 0.9562
+  Batch [950/1368] Loss: 1.0642
+  Batch [1000/1368] Loss: 1.0124
+  Batch [1050/1368] Loss: 1.1816
+  Batch [1100/1368] Loss: 1.0849
+  Batch [1150/1368] Loss: 0.9639
+  Batch [1200/1368] Loss: 1.2459
+  Batch [1250/1368] Loss: 1.4095
+  Batch [1300/1368] Loss: 0.9384
+  Batch [1350/1368] Loss: 1.0418
+  Train Loss: 1.0893, Train Acc: 0.5989
+  Val Loss: 1.1528, Val Acc: 0.5758
+  LR: 0.000411
+
+Epoch [30/100]
+  Batch [0/1368] Loss: 1.1147
+  Batch [50/1368] Loss: 1.0298
+  Batch [100/1368] Loss: 0.9051
+  Batch [150/1368] Loss: 1.2923
+  Batch [200/1368] Loss: 0.9070
+  Batch [250/1368] Loss: 1.3657
+  Batch [300/1368] Loss: 1.2405
+  Batch [350/1368] Loss: 1.1209
+  Batch [400/1368] Loss: 1.5179
+  Batch [450/1368] Loss: 0.8548
+  Batch [500/1368] Loss: 1.0617
+  Batch [550/1368] Loss: 1.2460
+  Batch [600/1368] Loss: 1.0082
+  Batch [650/1368] Loss: 1.1868
+  Batch [700/1368] Loss: 1.1479
+  Batch [750/1368] Loss: 1.2775
+  Batch [800/1368] Loss: 0.9677
+  Batch [850/1368] Loss: 1.2949
+  Batch [900/1368] Loss: 1.0215
+  Batch [950/1368] Loss: 1.4526
+  Batch [1000/1368] Loss: 1.3015
+  Batch [1050/1368] Loss: 0.9193
+  Batch [1100/1368] Loss: 0.9832
+  Batch [1150/1368] Loss: 0.8727
+  Batch [1200/1368] Loss: 1.0351
+  Batch [1250/1368] Loss: 0.9272
+  Batch [1300/1368] Loss: 1.3409
+  Batch [1350/1368] Loss: 0.8475
+  Train Loss: 1.0838, Train Acc: 0.6002
+  Val Loss: 1.2166, Val Acc: 0.5181
+  LR: 0.000405
+
+Epoch [31/100]
+  Batch [0/1368] Loss: 0.7260
+  Batch [50/1368] Loss: 0.8652
+  Batch [100/1368] Loss: 0.8953
+  Batch [150/1368] Loss: 1.5173
+  Batch [200/1368] Loss: 1.2172
+  Batch [250/1368] Loss: 1.1170
+  Batch [300/1368] Loss: 1.0498
+  Batch [350/1368] Loss: 1.2562
+  Batch [400/1368] Loss: 1.0199
+  Batch [450/1368] Loss: 0.9354
+  Batch [500/1368] Loss: 1.0034
+  Batch [550/1368] Loss: 1.0270
+  Batch [600/1368] Loss: 1.1207
+  Batch [650/1368] Loss: 1.5301
+  Batch [700/1368] Loss: 0.9363
+  Batch [750/1368] Loss: 0.9135
+  Batch [800/1368] Loss: 0.9349
+  Batch [850/1368] Loss: 1.0232
+  Batch [900/1368] Loss: 1.1583
+  Batch [950/1368] Loss: 1.1231
+  Batch [1000/1368] Loss: 0.9290
+  Batch [1050/1368] Loss: 1.1817
+  Batch [1100/1368] Loss: 0.6917
+  Batch [1150/1368] Loss: 1.0664
+  Batch [1200/1368] Loss: 1.0027
+  Batch [1250/1368] Loss: 0.8472
+  Batch [1300/1368] Loss: 1.2305
+  Batch [1350/1368] Loss: 1.1396
+  Train Loss: 1.0720, Train Acc: 0.6084
+  Val Loss: 1.1336, Val Acc: 0.5433
+  LR: 0.000399
+
+Epoch [32/100]
+  Batch [0/1368] Loss: 0.9777
+  Batch [50/1368] Loss: 1.0548
+  Batch [100/1368] Loss: 1.0639
+  Batch [150/1368] Loss: 1.3265
+  Batch [200/1368] Loss: 1.1392
+  Batch [250/1368] Loss: 1.1544
+  Batch [300/1368] Loss: 1.1720
+  Batch [350/1368] Loss: 0.9229
+  Batch [400/1368] Loss: 0.8431
+  Batch [450/1368] Loss: 1.1642
+  Batch [500/1368] Loss: 1.2913
+  Batch [550/1368] Loss: 0.8764
+  Batch [600/1368] Loss: 1.1727
+  Batch [650/1368] Loss: 0.7761
+  Batch [700/1368] Loss: 1.2207
+  Batch [750/1368] Loss: 0.7667
+  Batch [800/1368] Loss: 0.7779
+  Batch [850/1368] Loss: 1.2543
+  Batch [900/1368] Loss: 1.3792
+  Batch [950/1368] Loss: 1.2694
+  Batch [1000/1368] Loss: 1.1560
+  Batch [1050/1368] Loss: 1.3714
+  Batch [1100/1368] Loss: 0.8166
+  Batch [1150/1368] Loss: 1.1611
+  Batch [1200/1368] Loss: 1.1031
+  Batch [1250/1368] Loss: 0.9380
+  Batch [1300/1368] Loss: 1.4787
+  Batch [1350/1368] Loss: 1.2026
+  Train Loss: 1.0641, Train Acc: 0.6113
+  Val Loss: 0.9910, Val Acc: 0.6390
+  LR: 0.000393
+  ✨ 新的最佳模型! Acc: 0.6390
+
+Epoch [33/100]
+  Batch [0/1368] Loss: 1.1242
+  Batch [50/1368] Loss: 1.1644
+  Batch [100/1368] Loss: 0.8666
+  Batch [150/1368] Loss: 1.1284
+  Batch [200/1368] Loss: 0.8185
+  Batch [250/1368] Loss: 0.8491
+  Batch [300/1368] Loss: 1.0220
+  Batch [350/1368] Loss: 0.8615
+  Batch [400/1368] Loss: 1.3898
+  Batch [450/1368] Loss: 1.3981
+  Batch [500/1368] Loss: 1.5025
+  Batch [550/1368] Loss: 0.9051
+  Batch [600/1368] Loss: 1.2779
+  Batch [650/1368] Loss: 0.7374
+  Batch [700/1368] Loss: 1.2046
+  Batch [750/1368] Loss: 0.7834
+  Batch [800/1368] Loss: 1.1424
+  Batch [850/1368] Loss: 1.5352
+  Batch [900/1368] Loss: 1.1423
+  Batch [950/1368] Loss: 0.9600
+  Batch [1000/1368] Loss: 0.9436
+  Batch [1050/1368] Loss: 0.9290
+  Batch [1100/1368] Loss: 0.7292
+  Batch [1150/1368] Loss: 0.9291
+  Batch [1200/1368] Loss: 1.0028
+  Batch [1250/1368] Loss: 0.8540
+  Batch [1300/1368] Loss: 1.1958
+  Batch [1350/1368] Loss: 1.0936
+  Train Loss: 1.0593, Train Acc: 0.6117
+  Val Loss: 1.1200, Val Acc: 0.5939
+  LR: 0.000386
+
+Epoch [34/100]
+  Batch [0/1368] Loss: 0.9579
+  Batch [50/1368] Loss: 0.9454
+  Batch [100/1368] Loss: 1.1257
+  Batch [150/1368] Loss: 1.4519
+  Batch [200/1368] Loss: 1.1467
+  Batch [250/1368] Loss: 1.2475
+  Batch [300/1368] Loss: 1.0209
+  Batch [350/1368] Loss: 1.1104
+  Batch [400/1368] Loss: 1.1012
+  Batch [450/1368] Loss: 1.0196
+  Batch [500/1368] Loss: 0.8872
+  Batch [550/1368] Loss: 1.0633
+  Batch [600/1368] Loss: 0.8144
+  Batch [650/1368] Loss: 1.1396
+  Batch [700/1368] Loss: 0.9038
+  Batch [750/1368] Loss: 1.1363
+  Batch [800/1368] Loss: 1.4615
+  Batch [850/1368] Loss: 0.9996
+  Batch [900/1368] Loss: 1.2445
+  Batch [950/1368] Loss: 1.3019
+  Batch [1000/1368] Loss: 1.2149
+  Batch [1050/1368] Loss: 0.7400
+  Batch [1100/1368] Loss: 1.2620
+  Batch [1150/1368] Loss: 1.0985
+  Batch [1200/1368] Loss: 1.4797
+  Batch [1250/1368] Loss: 0.8684
+  Batch [1300/1368] Loss: 1.1103
+  Batch [1350/1368] Loss: 1.2153
+  Train Loss: 1.0623, Train Acc: 0.6104
+  Val Loss: 1.0264, Val Acc: 0.6462
+  LR: 0.000380
+  ✨ 新的最佳模型! Acc: 0.6462
+
+Epoch [35/100]
+  Batch [0/1368] Loss: 1.1750
+  Batch [50/1368] Loss: 1.1235
+  Batch [100/1368] Loss: 1.0209
+  Batch [150/1368] Loss: 1.0199
+  Batch [200/1368] Loss: 1.1810
+  Batch [250/1368] Loss: 0.8710
+  Batch [300/1368] Loss: 0.8890
+  Batch [350/1368] Loss: 1.3056
+  Batch [400/1368] Loss: 0.8052
+  Batch [450/1368] Loss: 0.9360
+  Batch [500/1368] Loss: 0.8612
+  Batch [550/1368] Loss: 1.0460
+  Batch [600/1368] Loss: 0.9902
+  Batch [650/1368] Loss: 0.9860
+  Batch [700/1368] Loss: 1.0948
+  Batch [750/1368] Loss: 1.2666
+  Batch [800/1368] Loss: 0.8399
+  Batch [850/1368] Loss: 1.1682
+  Batch [900/1368] Loss: 1.0633
+  Batch [950/1368] Loss: 1.2137
+  Batch [1000/1368] Loss: 0.7753
+  Batch [1050/1368] Loss: 0.9266
+  Batch [1100/1368] Loss: 0.9843
+  Batch [1150/1368] Loss: 0.8531
+  Batch [1200/1368] Loss: 0.7207
+  Batch [1250/1368] Loss: 0.7872
+  Batch [1300/1368] Loss: 1.0072
+  Batch [1350/1368] Loss: 1.2033
+  Train Loss: 1.0503, Train Acc: 0.6118
+  Val Loss: 1.0969, Val Acc: 0.6065
+  LR: 0.000373
+
+Epoch [36/100]
+  Batch [0/1368] Loss: 1.0763
+  Batch [50/1368] Loss: 1.0843
+  Batch [100/1368] Loss: 1.2001
+  Batch [150/1368] Loss: 1.0805
+  Batch [200/1368] Loss: 1.0684
+  Batch [250/1368] Loss: 1.1388
+  Batch [300/1368] Loss: 1.2778
+  Batch [350/1368] Loss: 0.9337
+  Batch [400/1368] Loss: 1.0418
+  Batch [450/1368] Loss: 1.2789
+  Batch [500/1368] Loss: 1.0081
+  Batch [550/1368] Loss: 0.9551
+  Batch [600/1368] Loss: 1.0290
+  Batch [650/1368] Loss: 0.9893
+  Batch [700/1368] Loss: 0.9840
+  Batch [750/1368] Loss: 1.0111
+  Batch [800/1368] Loss: 1.0134
+  Batch [850/1368] Loss: 0.8283
+  Batch [900/1368] Loss: 0.8149
+  Batch [950/1368] Loss: 1.2608
+  Batch [1000/1368] Loss: 1.1305
+  Batch [1050/1368] Loss: 1.4178
+  Batch [1100/1368] Loss: 1.0303
+  Batch [1150/1368] Loss: 1.1662
+  Batch [1200/1368] Loss: 1.0719
+  Batch [1250/1368] Loss: 1.2974
+  Batch [1300/1368] Loss: 0.8436
+  Batch [1350/1368] Loss: 1.1200
+  Train Loss: 1.0468, Train Acc: 0.6174
+  Val Loss: 1.1349, Val Acc: 0.5957
+  LR: 0.000366
+
+Epoch [37/100]
+  Batch [0/1368] Loss: 1.5854
+  Batch [50/1368] Loss: 1.0417
+  Batch [100/1368] Loss: 0.9681
+  Batch [150/1368] Loss: 1.1402
+  Batch [200/1368] Loss: 0.7951
+  Batch [250/1368] Loss: 1.1379
+  Batch [300/1368] Loss: 1.5053
+  Batch [350/1368] Loss: 0.8125
+  Batch [400/1368] Loss: 1.4139
+  Batch [450/1368] Loss: 1.0651
+  Batch [500/1368] Loss: 1.3539
+  Batch [550/1368] Loss: 1.0634
+  Batch [600/1368] Loss: 0.8995
+  Batch [650/1368] Loss: 0.8975
+  Batch [700/1368] Loss: 1.0367
+  Batch [750/1368] Loss: 0.8633
+  Batch [800/1368] Loss: 1.1014
+  Batch [850/1368] Loss: 1.1706
+  Batch [900/1368] Loss: 0.7309
+  Batch [950/1368] Loss: 1.5635
+  Batch [1000/1368] Loss: 1.2181
+  Batch [1050/1368] Loss: 0.9242
+  Batch [1100/1368] Loss: 1.2191
+  Batch [1150/1368] Loss: 0.8854
+  Batch [1200/1368] Loss: 1.2823
+  Batch [1250/1368] Loss: 1.1553
+  Batch [1300/1368] Loss: 1.1046
+  Batch [1350/1368] Loss: 1.0028
+  Train Loss: 1.0312, Train Acc: 0.6211
+  Val Loss: 1.3062, Val Acc: 0.5578
+  LR: 0.000359
+
+Epoch [38/100]
+  Batch [0/1368] Loss: 0.9978
+  Batch [50/1368] Loss: 1.0518
+  Batch [100/1368] Loss: 0.9576
+  Batch [150/1368] Loss: 1.0196
+  Batch [200/1368] Loss: 0.9616
+  Batch [250/1368] Loss: 0.9795
+  Batch [300/1368] Loss: 1.0499
+  Batch [350/1368] Loss: 0.9908
+  Batch [400/1368] Loss: 1.1329
+  Batch [450/1368] Loss: 0.9874
+  Batch [500/1368] Loss: 0.8359
+  Batch [550/1368] Loss: 1.0413
+  Batch [600/1368] Loss: 1.0908
+  Batch [650/1368] Loss: 0.9871
+  Batch [700/1368] Loss: 0.8479
+  Batch [750/1368] Loss: 0.9952
+  Batch [800/1368] Loss: 0.8332
+  Batch [850/1368] Loss: 0.9281
+  Batch [900/1368] Loss: 1.1385
+  Batch [950/1368] Loss: 1.0477
+  Batch [1000/1368] Loss: 1.0170
+  Batch [1050/1368] Loss: 0.9810
+  Batch [1100/1368] Loss: 1.2200
+  Batch [1150/1368] Loss: 1.0253
+  Batch [1200/1368] Loss: 0.9487
+  Batch [1250/1368] Loss: 1.0428
+  Batch [1300/1368] Loss: 0.9974
+  Batch [1350/1368] Loss: 0.9293
+  Train Loss: 1.0285, Train Acc: 0.6214
+  Val Loss: 1.0441, Val Acc: 0.5957
+  LR: 0.000352
+
+Epoch [39/100]
+  Batch [0/1368] Loss: 1.1518
+  Batch [50/1368] Loss: 0.7957
+  Batch [100/1368] Loss: 0.8707
+  Batch [150/1368] Loss: 0.9759
+  Batch [200/1368] Loss: 0.8950
+  Batch [250/1368] Loss: 1.1708
+  Batch [300/1368] Loss: 1.1900
+  Batch [350/1368] Loss: 1.0444
+  Batch [400/1368] Loss: 0.9968
+  Batch [450/1368] Loss: 0.7152
+  Batch [500/1368] Loss: 0.8758
+  Batch [550/1368] Loss: 1.2149
+  Batch [600/1368] Loss: 0.6439
+  Batch [650/1368] Loss: 1.0004
+  Batch [700/1368] Loss: 1.2532
+  Batch [750/1368] Loss: 0.9266
+  Batch [800/1368] Loss: 1.1622
+  Batch [850/1368] Loss: 0.8439
+  Batch [900/1368] Loss: 1.0316
+  Batch [950/1368] Loss: 1.2838
+  Batch [1000/1368] Loss: 0.8374
+  Batch [1050/1368] Loss: 1.0002
+  Batch [1100/1368] Loss: 1.0392
+  Batch [1150/1368] Loss: 1.0498
+  Batch [1200/1368] Loss: 1.1567
+  Batch [1250/1368] Loss: 0.7531
+  Batch [1300/1368] Loss: 1.0269
+  Batch [1350/1368] Loss: 0.9748
+  Train Loss: 1.0245, Train Acc: 0.6240
+  Val Loss: 1.0285, Val Acc: 0.6390
+  LR: 0.000345
+
+Epoch [40/100]
+  Batch [0/1368] Loss: 1.0819
+  Batch [50/1368] Loss: 1.1822
+  Batch [100/1368] Loss: 1.0356
+  Batch [150/1368] Loss: 0.7669
+  Batch [200/1368] Loss: 1.0584
+  Batch [250/1368] Loss: 1.0407
+  Batch [300/1368] Loss: 1.1793
+  Batch [350/1368] Loss: 0.8838
+  Batch [400/1368] Loss: 1.0423
+  Batch [450/1368] Loss: 1.0517
+  Batch [500/1368] Loss: 0.9151
+  Batch [550/1368] Loss: 0.8481
+  Batch [600/1368] Loss: 0.7390
+  Batch [650/1368] Loss: 0.8342
+  Batch [700/1368] Loss: 0.9585
+  Batch [750/1368] Loss: 0.8787
+  Batch [800/1368] Loss: 1.1697
+  Batch [850/1368] Loss: 1.0642
+  Batch [900/1368] Loss: 0.9220
+  Batch [950/1368] Loss: 1.3953
+  Batch [1000/1368] Loss: 1.4244
+  Batch [1050/1368] Loss: 0.7001
+  Batch [1100/1368] Loss: 1.0808
+  Batch [1150/1368] Loss: 1.0727
+  Batch [1200/1368] Loss: 1.2779
+  Batch [1250/1368] Loss: 1.0670
+  Batch [1300/1368] Loss: 1.1903
+  Batch [1350/1368] Loss: 1.4013
+  Train Loss: 1.0210, Train Acc: 0.6266
+  Val Loss: 1.3241, Val Acc: 0.5199
+  LR: 0.000338
+
+Epoch [41/100]
+  Batch [0/1368] Loss: 1.2176
+  Batch [50/1368] Loss: 1.0645
+  Batch [100/1368] Loss: 1.4195
+  Batch [150/1368] Loss: 1.3419
+  Batch [200/1368] Loss: 0.7954
+  Batch [250/1368] Loss: 0.9340
+  Batch [300/1368] Loss: 0.7537
+  Batch [350/1368] Loss: 1.0322
+  Batch [400/1368] Loss: 0.9094
+  Batch [450/1368] Loss: 0.7669
+  Batch [500/1368] Loss: 0.8699
+  Batch [550/1368] Loss: 0.7017
+  Batch [600/1368] Loss: 0.6179
+  Batch [650/1368] Loss: 1.2190
+  Batch [700/1368] Loss: 0.8755
+  Batch [750/1368] Loss: 1.1711
+  Batch [800/1368] Loss: 1.0422
+  Batch [850/1368] Loss: 0.8377
+  Batch [900/1368] Loss: 1.0270
+  Batch [950/1368] Loss: 1.0642
+  Batch [1000/1368] Loss: 0.8189
+  Batch [1050/1368] Loss: 0.9896
+  Batch [1100/1368] Loss: 1.0009
+  Batch [1150/1368] Loss: 1.0036
+  Batch [1200/1368] Loss: 0.8486
+  Batch [1250/1368] Loss: 0.8868
+  Batch [1300/1368] Loss: 0.8566
+  Batch [1350/1368] Loss: 0.9946
+  Train Loss: 1.0165, Train Acc: 0.6269
+  Val Loss: 1.0298, Val Acc: 0.6029
+  LR: 0.000331
+
+Epoch [42/100]
+  Batch [0/1368] Loss: 0.9275
+  Batch [50/1368] Loss: 0.9214
+  Batch [100/1368] Loss: 0.9987
+  Batch [150/1368] Loss: 0.8751
+  Batch [200/1368] Loss: 1.0012
+  Batch [250/1368] Loss: 0.9800
+  Batch [300/1368] Loss: 1.0248
+  Batch [350/1368] Loss: 1.3979
+  Batch [400/1368] Loss: 1.0584
+  Batch [450/1368] Loss: 1.0692
+  Batch [500/1368] Loss: 0.9014
+  Batch [550/1368] Loss: 0.8248
+  Batch [600/1368] Loss: 1.0006
+  Batch [650/1368] Loss: 1.2517
+  Batch [700/1368] Loss: 1.0908
+  Batch [750/1368] Loss: 0.8414
+  Batch [800/1368] Loss: 0.9102
+  Batch [850/1368] Loss: 0.7431
+  Batch [900/1368] Loss: 1.0133
+  Batch [950/1368] Loss: 1.2434
+  Batch [1000/1368] Loss: 1.0617
+  Batch [1050/1368] Loss: 0.7443
+  Batch [1100/1368] Loss: 0.8318
+  Batch [1150/1368] Loss: 1.1310
+  Batch [1200/1368] Loss: 0.6857
+  Batch [1250/1368] Loss: 1.2015
+  Batch [1300/1368] Loss: 1.0010
+  Batch [1350/1368] Loss: 1.2116
+  Train Loss: 1.0127, Train Acc: 0.6299
+  Val Loss: 1.1096, Val Acc: 0.5903
+  LR: 0.000323
+
+Epoch [43/100]
+  Batch [0/1368] Loss: 1.0025
+  Batch [50/1368] Loss: 0.8720
+  Batch [100/1368] Loss: 1.1575
+  Batch [150/1368] Loss: 0.9666
+  Batch [200/1368] Loss: 0.9990
+  Batch [250/1368] Loss: 0.8847
+  Batch [300/1368] Loss: 1.2591
+  Batch [350/1368] Loss: 1.1351
+  Batch [400/1368] Loss: 1.1616
+  Batch [450/1368] Loss: 0.9802
+  Batch [500/1368] Loss: 0.8602
+  Batch [550/1368] Loss: 1.1011
+  Batch [600/1368] Loss: 1.1888
+  Batch [650/1368] Loss: 0.9356
+  Batch [700/1368] Loss: 1.3212
+  Batch [750/1368] Loss: 0.8722
+  Batch [800/1368] Loss: 0.9108
+  Batch [850/1368] Loss: 0.8289
+  Batch [900/1368] Loss: 1.1340
+  Batch [950/1368] Loss: 0.9077
+  Batch [1000/1368] Loss: 1.3075
+  Batch [1050/1368] Loss: 1.0487
+  Batch [1100/1368] Loss: 0.8226
+  Batch [1150/1368] Loss: 1.0057
+  Batch [1200/1368] Loss: 1.1246
+  Batch [1250/1368] Loss: 1.3004
+  Batch [1300/1368] Loss: 1.3387
+  Batch [1350/1368] Loss: 0.9842
+  Train Loss: 1.0057, Train Acc: 0.6294
+  Val Loss: 0.9653, Val Acc: 0.6426
+  LR: 0.000316
+
+Epoch [44/100]
+  Batch [0/1368] Loss: 0.6735
+  Batch [50/1368] Loss: 1.0920
+  Batch [100/1368] Loss: 1.1487
+  Batch [150/1368] Loss: 0.7801
+  Batch [200/1368] Loss: 1.1268
+  Batch [250/1368] Loss: 1.1240
+  Batch [300/1368] Loss: 1.0977
+  Batch [350/1368] Loss: 1.1401
+  Batch [400/1368] Loss: 0.8764
+  Batch [450/1368] Loss: 0.8591
+  Batch [500/1368] Loss: 0.9096
+  Batch [550/1368] Loss: 0.7176
+  Batch [600/1368] Loss: 1.1968
+  Batch [650/1368] Loss: 0.7256
+  Batch [700/1368] Loss: 0.9825
+  Batch [750/1368] Loss: 0.7171
+  Batch [800/1368] Loss: 0.9981
+  Batch [850/1368] Loss: 0.7591
+  Batch [900/1368] Loss: 0.9563
+  Batch [950/1368] Loss: 1.3043
+  Batch [1000/1368] Loss: 1.0567
+  Batch [1050/1368] Loss: 1.1155
+  Batch [1100/1368] Loss: 0.8584
+  Batch [1150/1368] Loss: 1.1844
+  Batch [1200/1368] Loss: 1.0633
+  Batch [1250/1368] Loss: 1.0412
+  Batch [1300/1368] Loss: 1.1923
+  Batch [1350/1368] Loss: 0.8129
+  Train Loss: 1.0047, Train Acc: 0.6309
+  Val Loss: 1.1209, Val Acc: 0.5957
+  LR: 0.000308
+
+Epoch [45/100]
+  Batch [0/1368] Loss: 1.2010
+  Batch [50/1368] Loss: 1.0145
+  Batch [100/1368] Loss: 0.9553
+  Batch [150/1368] Loss: 1.4210
+  Batch [200/1368] Loss: 1.0490
+  Batch [250/1368] Loss: 1.2458
+  Batch [300/1368] Loss: 1.1888
+  Batch [350/1368] Loss: 1.0779
+  Batch [400/1368] Loss: 1.2984
+  Batch [450/1368] Loss: 0.7984
+  Batch [500/1368] Loss: 1.0082
+  Batch [550/1368] Loss: 0.9550
+  Batch [600/1368] Loss: 0.8238
+  Batch [650/1368] Loss: 0.8399
+  Batch [700/1368] Loss: 1.0733
+  Batch [750/1368] Loss: 0.8339
+  Batch [800/1368] Loss: 1.1474
+  Batch [850/1368] Loss: 1.0942
+  Batch [900/1368] Loss: 0.8058
+  Batch [950/1368] Loss: 0.7941
+  Batch [1000/1368] Loss: 1.2152
+  Batch [1050/1368] Loss: 1.1827
+  Batch [1100/1368] Loss: 1.0612
+  Batch [1150/1368] Loss: 0.8197
+  Batch [1200/1368] Loss: 0.9931
+  Batch [1250/1368] Loss: 1.3358
+  Batch [1300/1368] Loss: 0.8207
+  Batch [1350/1368] Loss: 0.7020
+  Train Loss: 0.9933, Train Acc: 0.6379
+  Val Loss: 1.0587, Val Acc: 0.5884
+  LR: 0.000301
+
+Epoch [46/100]
+  Batch [0/1368] Loss: 0.7684
+  Batch [50/1368] Loss: 1.0097
+  Batch [100/1368] Loss: 0.8784
+  Batch [150/1368] Loss: 1.2241
+  Batch [200/1368] Loss: 1.2892
+  Batch [250/1368] Loss: 0.7583
+  Batch [300/1368] Loss: 0.8660
+  Batch [350/1368] Loss: 0.7063
+  Batch [400/1368] Loss: 0.9908
+  Batch [450/1368] Loss: 0.6788
+  Batch [500/1368] Loss: 1.2114
+  Batch [550/1368] Loss: 0.5227
+  Batch [600/1368] Loss: 1.1079
+  Batch [650/1368] Loss: 1.2629
+  Batch [700/1368] Loss: 0.8912
+  Batch [750/1368] Loss: 0.8433
+  Batch [800/1368] Loss: 0.8544
+  Batch [850/1368] Loss: 1.0487
+  Batch [900/1368] Loss: 0.9347
+  Batch [950/1368] Loss: 1.0322
+  Batch [1000/1368] Loss: 0.7808
+  Batch [1050/1368] Loss: 0.8094
+  Batch [1100/1368] Loss: 0.9247
+  Batch [1150/1368] Loss: 1.2222
+  Batch [1200/1368] Loss: 0.9989
+  Batch [1250/1368] Loss: 1.2234
+  Batch [1300/1368] Loss: 0.9033
+  Batch [1350/1368] Loss: 0.7243
+  Train Loss: 0.9973, Train Acc: 0.6352
+  Val Loss: 0.9837, Val Acc: 0.6733
+  LR: 0.000293
+  ✨ 新的最佳模型! Acc: 0.6733
+
+Epoch [47/100]
+  Batch [0/1368] Loss: 1.0363
+  Batch [50/1368] Loss: 1.0087
+  Batch [100/1368] Loss: 1.0549
+  Batch [150/1368] Loss: 0.9764
+  Batch [200/1368] Loss: 0.8931
+  Batch [250/1368] Loss: 0.9971
+  Batch [300/1368] Loss: 0.8252
+  Batch [350/1368] Loss: 1.2078
+  Batch [400/1368] Loss: 1.1729
+  Batch [450/1368] Loss: 0.9524
+  Batch [500/1368] Loss: 1.0466
+  Batch [550/1368] Loss: 0.9774
+  Batch [600/1368] Loss: 1.1482
+  Batch [650/1368] Loss: 1.2712
+  Batch [700/1368] Loss: 0.9083
+  Batch [750/1368] Loss: 0.8447
+  Batch [800/1368] Loss: 0.9127
+  Batch [850/1368] Loss: 1.0305
+  Batch [900/1368] Loss: 0.9257
+  Batch [950/1368] Loss: 0.9979
+  Batch [1000/1368] Loss: 1.0071
+  Batch [1050/1368] Loss: 0.9117
+  Batch [1100/1368] Loss: 0.7583
+  Batch [1150/1368] Loss: 1.1007
+  Batch [1200/1368] Loss: 1.0930
+  Batch [1250/1368] Loss: 1.0039
+  Batch [1300/1368] Loss: 0.9519
+  Batch [1350/1368] Loss: 0.9682
+  Train Loss: 0.9903, Train Acc: 0.6372
+  Val Loss: 1.1817, Val Acc: 0.5632
+  LR: 0.000286
+
+Epoch [48/100]
+  Batch [0/1368] Loss: 1.3007
+  Batch [50/1368] Loss: 0.8931
+  Batch [100/1368] Loss: 1.1457
+  Batch [150/1368] Loss: 0.7618
+  Batch [200/1368] Loss: 0.8073
+  Batch [250/1368] Loss: 1.0135
+  Batch [300/1368] Loss: 1.0673
+  Batch [350/1368] Loss: 1.0564
+  Batch [400/1368] Loss: 1.2110
+  Batch [450/1368] Loss: 0.9572
+  Batch [500/1368] Loss: 0.6425
+  Batch [550/1368] Loss: 0.9472
+  Batch [600/1368] Loss: 0.8265
+  Batch [650/1368] Loss: 1.0924
+  Batch [700/1368] Loss: 0.9624
+  Batch [750/1368] Loss: 0.9827
+  Batch [800/1368] Loss: 1.0080
+  Batch [850/1368] Loss: 0.9011
+  Batch [900/1368] Loss: 1.0516
+  Batch [950/1368] Loss: 0.8359
+  Batch [1000/1368] Loss: 1.0129
+  Batch [1050/1368] Loss: 0.8329
+  Batch [1100/1368] Loss: 1.0152
+  Batch [1150/1368] Loss: 0.8736
+  Batch [1200/1368] Loss: 1.1221
+  Batch [1250/1368] Loss: 0.8681
+  Batch [1300/1368] Loss: 0.9030
+  Batch [1350/1368] Loss: 1.0024
+  Train Loss: 0.9851, Train Acc: 0.6417
+  Val Loss: 0.9625, Val Acc: 0.6570
+  LR: 0.000278
+
+Epoch [49/100]
+  Batch [0/1368] Loss: 0.8181
+  Batch [50/1368] Loss: 1.3595
+  Batch [100/1368] Loss: 1.1784
+  Batch [150/1368] Loss: 0.8915
+  Batch [200/1368] Loss: 0.9656
+  Batch [250/1368] Loss: 1.1348
+  Batch [300/1368] Loss: 1.1063
+  Batch [350/1368] Loss: 0.9649
+  Batch [400/1368] Loss: 1.1356
+  Batch [450/1368] Loss: 0.6176
+  Batch [500/1368] Loss: 0.7646
+  Batch [550/1368] Loss: 0.9475
+  Batch [600/1368] Loss: 0.9799
+  Batch [650/1368] Loss: 1.0355
+  Batch [700/1368] Loss: 0.7255
+  Batch [750/1368] Loss: 0.9932
+  Batch [800/1368] Loss: 1.0026
+  Batch [850/1368] Loss: 0.9142
+  Batch [900/1368] Loss: 0.9745
+  Batch [950/1368] Loss: 0.9292
+  Batch [1000/1368] Loss: 1.0095
+  Batch [1050/1368] Loss: 0.9188
+  Batch [1100/1368] Loss: 1.0815
+  Batch [1150/1368] Loss: 0.9109
+  Batch [1200/1368] Loss: 0.9594
+  Batch [1250/1368] Loss: 1.2608
+  Batch [1300/1368] Loss: 1.0092
+  Batch [1350/1368] Loss: 0.9594
+  Train Loss: 0.9772, Train Acc: 0.6437
+  Val Loss: 1.1700, Val Acc: 0.6137
+  LR: 0.000270
+
+Epoch [50/100]
+  Batch [0/1368] Loss: 1.2212
+  Batch [50/1368] Loss: 0.8643
+  Batch [100/1368] Loss: 1.2342
+  Batch [150/1368] Loss: 0.9058
+  Batch [200/1368] Loss: 0.9502
+  Batch [250/1368] Loss: 1.0578
+  Batch [300/1368] Loss: 1.0606
+  Batch [350/1368] Loss: 0.7453
+  Batch [400/1368] Loss: 0.7958
+  Batch [450/1368] Loss: 0.8926
+  Batch [500/1368] Loss: 0.7017
+  Batch [550/1368] Loss: 0.8115
+  Batch [600/1368] Loss: 1.1566
+  Batch [650/1368] Loss: 0.9519
+  Batch [700/1368] Loss: 0.7798
+  Batch [750/1368] Loss: 1.0829
+  Batch [800/1368] Loss: 1.1691
+  Batch [850/1368] Loss: 0.8648
+  Batch [900/1368] Loss: 1.4792
+  Batch [950/1368] Loss: 0.9759
+  Batch [1000/1368] Loss: 1.0554
+  Batch [1050/1368] Loss: 0.8851
+  Batch [1100/1368] Loss: 0.7856
+  Batch [1150/1368] Loss: 0.9464
+  Batch [1200/1368] Loss: 0.6596
+  Batch [1250/1368] Loss: 0.8747
+  Batch [1300/1368] Loss: 1.3591
+  Batch [1350/1368] Loss: 0.8461
+  Train Loss: 0.9773, Train Acc: 0.6439
+  Val Loss: 0.9514, Val Acc: 0.6588
+  LR: 0.000263
+
+Epoch [51/100]
+  Batch [0/1368] Loss: 0.6283
+  Batch [50/1368] Loss: 1.1645
+  Batch [100/1368] Loss: 0.7149
+  Batch [150/1368] Loss: 0.7907
+  Batch [200/1368] Loss: 1.0741
+  Batch [250/1368] Loss: 0.9800
+  Batch [300/1368] Loss: 1.1359
+  Batch [350/1368] Loss: 1.0512
+  Batch [400/1368] Loss: 1.0778
+  Batch [450/1368] Loss: 0.8045
+  Batch [500/1368] Loss: 0.8442
+  Batch [550/1368] Loss: 0.8677
+  Batch [600/1368] Loss: 0.9366
+  Batch [650/1368] Loss: 1.0114
+  Batch [700/1368] Loss: 0.8404
+  Batch [750/1368] Loss: 0.8189
+  Batch [800/1368] Loss: 1.1432
+  Batch [850/1368] Loss: 0.7475
+  Batch [900/1368] Loss: 1.1234
+  Batch [950/1368] Loss: 1.0483
+  Batch [1000/1368] Loss: 0.9747
+  Batch [1050/1368] Loss: 0.7366
+  Batch [1100/1368] Loss: 1.2830
+  Batch [1150/1368] Loss: 0.8876
+  Batch [1200/1368] Loss: 1.0958
+  Batch [1250/1368] Loss: 0.6757
+  Batch [1300/1368] Loss: 1.0404
+  Batch [1350/1368] Loss: 0.7392
+  Train Loss: 0.9704, Train Acc: 0.6467
+  Val Loss: 0.9608, Val Acc: 0.6516
+  LR: 0.000255
+
+Epoch [52/100]
+  Batch [0/1368] Loss: 0.8116
+  Batch [50/1368] Loss: 1.1562
+  Batch [100/1368] Loss: 1.0300
+  Batch [150/1368] Loss: 1.1644
+  Batch [200/1368] Loss: 0.6102
+  Batch [250/1368] Loss: 0.9306
+  Batch [300/1368] Loss: 1.2462
+  Batch [350/1368] Loss: 0.7252
+  Batch [400/1368] Loss: 0.7368
+  Batch [450/1368] Loss: 1.0601
+  Batch [500/1368] Loss: 1.2179
+  Batch [550/1368] Loss: 1.0019
+  Batch [600/1368] Loss: 1.2142
+  Batch [650/1368] Loss: 0.9108
+  Batch [700/1368] Loss: 0.8074
+  Batch [750/1368] Loss: 0.9015
+  Batch [800/1368] Loss: 0.9802
+  Batch [850/1368] Loss: 0.8281
+  Batch [900/1368] Loss: 0.8097
+  Batch [950/1368] Loss: 1.2270
+  Batch [1000/1368] Loss: 1.1224
+  Batch [1050/1368] Loss: 0.8083
+  Batch [1100/1368] Loss: 1.3429
+  Batch [1150/1368] Loss: 0.8377
+  Batch [1200/1368] Loss: 0.6817
+  Batch [1250/1368] Loss: 1.1735
+  Batch [1300/1368] Loss: 0.9206
+  Batch [1350/1368] Loss: 1.0706
+  Train Loss: 0.9666, Train Acc: 0.6471
+  Val Loss: 0.9019, Val Acc: 0.6679
+  LR: 0.000247
+
+Epoch [53/100]
+  Batch [0/1368] Loss: 0.8549
+  Batch [50/1368] Loss: 0.8139
+  Batch [100/1368] Loss: 1.0676
+  Batch [150/1368] Loss: 0.8589
+  Batch [200/1368] Loss: 0.7384
+  Batch [250/1368] Loss: 0.9578
+  Batch [300/1368] Loss: 0.9156
+  Batch [350/1368] Loss: 0.9317
+  Batch [400/1368] Loss: 0.8764
+  Batch [450/1368] Loss: 0.7537
+  Batch [500/1368] Loss: 0.8175
+  Batch [550/1368] Loss: 0.6384
+  Batch [600/1368] Loss: 1.1216
+  Batch [650/1368] Loss: 0.7104
+  Batch [700/1368] Loss: 1.1360
+  Batch [750/1368] Loss: 1.0084
+  Batch [800/1368] Loss: 1.0549
+  Batch [850/1368] Loss: 1.0097
+  Batch [900/1368] Loss: 0.9981
+  Batch [950/1368] Loss: 1.2067
+  Batch [1000/1368] Loss: 0.8103
+  Batch [1050/1368] Loss: 1.0438
+  Batch [1100/1368] Loss: 1.1352
+  Batch [1150/1368] Loss: 0.8581
+  Batch [1200/1368] Loss: 1.0230
+  Batch [1250/1368] Loss: 0.7551
+  Batch [1300/1368] Loss: 0.8006
+  Batch [1350/1368] Loss: 0.9897
+  Train Loss: 0.9608, Train Acc: 0.6473
+  Val Loss: 1.0873, Val Acc: 0.6047
+  LR: 0.000240
+
+Epoch [54/100]
+  Batch [0/1368] Loss: 0.7359
+  Batch [50/1368] Loss: 1.0482
+  Batch [100/1368] Loss: 1.0369
+  Batch [150/1368] Loss: 0.8479
+  Batch [200/1368] Loss: 1.2875
+  Batch [250/1368] Loss: 0.9959
+  Batch [300/1368] Loss: 0.7216
+  Batch [350/1368] Loss: 0.7156
+  Batch [400/1368] Loss: 1.0378
+  Batch [450/1368] Loss: 0.9464
+  Batch [500/1368] Loss: 1.0640
+  Batch [550/1368] Loss: 1.1607
+  Batch [600/1368] Loss: 1.5580
+  Batch [650/1368] Loss: 0.6792
+  Batch [700/1368] Loss: 0.9322
+  Batch [750/1368] Loss: 0.9581
+  Batch [800/1368] Loss: 1.1139
+  Batch [850/1368] Loss: 0.8799
+  Batch [900/1368] Loss: 0.8689
+  Batch [950/1368] Loss: 1.1545
+  Batch [1000/1368] Loss: 0.9884
+  Batch [1050/1368] Loss: 1.1264
+  Batch [1100/1368] Loss: 0.8036
+  Batch [1150/1368] Loss: 1.0250
+  Batch [1200/1368] Loss: 0.7250
+  Batch [1250/1368] Loss: 0.9658
+  Batch [1300/1368] Loss: 0.6550
+  Batch [1350/1368] Loss: 1.0718
+  Train Loss: 0.9532, Train Acc: 0.6510
+  Val Loss: 0.8932, Val Acc: 0.6444
+  LR: 0.000232
+
+Epoch [55/100]
+  Batch [0/1368] Loss: 1.2122
+  Batch [50/1368] Loss: 0.9686
+  Batch [100/1368] Loss: 0.8940
+  Batch [150/1368] Loss: 0.9131
+  Batch [200/1368] Loss: 0.8948
+  Batch [250/1368] Loss: 0.8455
+  Batch [300/1368] Loss: 0.8514
+  Batch [350/1368] Loss: 0.9946
+  Batch [400/1368] Loss: 1.1436
+  Batch [450/1368] Loss: 1.0961
+  Batch [500/1368] Loss: 0.8273
+  Batch [550/1368] Loss: 0.7634
+  Batch [600/1368] Loss: 0.9291
+  Batch [650/1368] Loss: 1.0034
+  Batch [700/1368] Loss: 0.7664
+  Batch [750/1368] Loss: 0.9709
+  Batch [800/1368] Loss: 0.6320
+  Batch [850/1368] Loss: 0.7577
+  Batch [900/1368] Loss: 1.0255
+  Batch [950/1368] Loss: 1.0391
+  Batch [1000/1368] Loss: 0.9303
+  Batch [1050/1368] Loss: 1.2290
+  Batch [1100/1368] Loss: 1.1899
+  Batch [1150/1368] Loss: 1.1006
+  Batch [1200/1368] Loss: 0.9170
+  Batch [1250/1368] Loss: 0.8623
+  Batch [1300/1368] Loss: 1.1736
+  Batch [1350/1368] Loss: 0.9285
+  Train Loss: 0.9505, Train Acc: 0.6535
+  Val Loss: 0.9299, Val Acc: 0.6444
+  LR: 0.000224
+
+Epoch [56/100]
+  Batch [0/1368] Loss: 1.1319
+  Batch [50/1368] Loss: 0.8709
+  Batch [100/1368] Loss: 0.8457
+  Batch [150/1368] Loss: 1.1841
+  Batch [200/1368] Loss: 1.1501
+  Batch [250/1368] Loss: 0.6905
+  Batch [300/1368] Loss: 0.8989
+  Batch [350/1368] Loss: 0.7626
+  Batch [400/1368] Loss: 0.7217
+  Batch [450/1368] Loss: 0.8486
+  Batch [500/1368] Loss: 0.5233
+  Batch [550/1368] Loss: 0.9985
+  Batch [600/1368] Loss: 1.0169
+  Batch [650/1368] Loss: 1.1154
+  Batch [700/1368] Loss: 0.9359
+  Batch [750/1368] Loss: 0.9698
+  Batch [800/1368] Loss: 1.0150
+  Batch [850/1368] Loss: 1.3424
+  Batch [900/1368] Loss: 1.1017
+  Batch [950/1368] Loss: 0.8645
+  Batch [1000/1368] Loss: 0.7603
+  Batch [1050/1368] Loss: 0.9880
+  Batch [1100/1368] Loss: 0.8324
+  Batch [1150/1368] Loss: 1.0737
+  Batch [1200/1368] Loss: 0.8368
+  Batch [1250/1368] Loss: 0.8413
+  Batch [1300/1368] Loss: 0.9922
+  Batch [1350/1368] Loss: 0.9539
+  Train Loss: 0.9465, Train Acc: 0.6551
+  Val Loss: 0.8705, Val Acc: 0.6895
+  LR: 0.000217
+  ✨ 新的最佳模型! Acc: 0.6895
+
+Epoch [57/100]
+  Batch [0/1368] Loss: 0.8865
+  Batch [50/1368] Loss: 0.6659
+  Batch [100/1368] Loss: 0.8081
+  Batch [150/1368] Loss: 0.7397
+  Batch [200/1368] Loss: 0.7988
+  Batch [250/1368] Loss: 1.1186
+  Batch [300/1368] Loss: 0.9704
+  Batch [350/1368] Loss: 0.7565
+  Batch [400/1368] Loss: 0.7481
+  Batch [450/1368] Loss: 1.1588
+  Batch [500/1368] Loss: 1.0164
+  Batch [550/1368] Loss: 0.7363
+  Batch [600/1368] Loss: 0.8779
+  Batch [650/1368] Loss: 0.7540
+  Batch [700/1368] Loss: 0.8957
+  Batch [750/1368] Loss: 0.6961
+  Batch [800/1368] Loss: 0.9136
+  Batch [850/1368] Loss: 0.8175
+  Batch [900/1368] Loss: 1.2992
+  Batch [950/1368] Loss: 1.1516
+  Batch [1000/1368] Loss: 0.7022
+  Batch [1050/1368] Loss: 0.6524
+  Batch [1100/1368] Loss: 1.0097
+  Batch [1150/1368] Loss: 0.9179
+  Batch [1200/1368] Loss: 0.6941
+  Batch [1250/1368] Loss: 1.1246
+  Batch [1300/1368] Loss: 1.0373
+  Batch [1350/1368] Loss: 0.9891
+  Train Loss: 0.9451, Train Acc: 0.6576
+  Val Loss: 0.8986, Val Acc: 0.6715
+  LR: 0.000209
+
+Epoch [58/100]
+  Batch [0/1368] Loss: 0.9401
+  Batch [50/1368] Loss: 0.8830
+  Batch [100/1368] Loss: 0.8677
+  Batch [150/1368] Loss: 0.9428
+  Batch [200/1368] Loss: 0.7616
+  Batch [250/1368] Loss: 0.8669
+  Batch [300/1368] Loss: 1.0707
+  Batch [350/1368] Loss: 0.8175
+  Batch [400/1368] Loss: 0.7866
+  Batch [450/1368] Loss: 1.1295
+  Batch [500/1368] Loss: 0.6622
+  Batch [550/1368] Loss: 1.1908
+  Batch [600/1368] Loss: 0.7384
+  Batch [650/1368] Loss: 1.0367
+  Batch [700/1368] Loss: 0.7389
+  Batch [750/1368] Loss: 1.0611
+  Batch [800/1368] Loss: 0.9088
+  Batch [850/1368] Loss: 0.8073
+  Batch [900/1368] Loss: 0.9157
+  Batch [950/1368] Loss: 0.9460
+  Batch [1000/1368] Loss: 0.9551
+  Batch [1050/1368] Loss: 1.0453
+  Batch [1100/1368] Loss: 0.9247
+  Batch [1150/1368] Loss: 0.8506
+  Batch [1200/1368] Loss: 1.0170
+  Batch [1250/1368] Loss: 0.7295
+  Batch [1300/1368] Loss: 0.9180
+  Batch [1350/1368] Loss: 0.7711
+  Train Loss: 0.9381, Train Acc: 0.6574
+  Val Loss: 1.0456, Val Acc: 0.6264
+  LR: 0.000202
+
+Epoch [59/100]
+  Batch [0/1368] Loss: 1.1186
+  Batch [50/1368] Loss: 0.9810
+  Batch [100/1368] Loss: 0.6593
+  Batch [150/1368] Loss: 1.1336
+  Batch [200/1368] Loss: 1.0736
+  Batch [250/1368] Loss: 1.0541
+  Batch [300/1368] Loss: 0.9311
+  Batch [350/1368] Loss: 0.8435
+  Batch [400/1368] Loss: 0.6530
+  Batch [450/1368] Loss: 0.6296
+  Batch [500/1368] Loss: 1.2583
+  Batch [550/1368] Loss: 0.6638
+  Batch [600/1368] Loss: 0.8277
+  Batch [650/1368] Loss: 0.7941
+  Batch [700/1368] Loss: 0.6082
+  Batch [750/1368] Loss: 0.9388
+  Batch [800/1368] Loss: 1.0426
+  Batch [850/1368] Loss: 0.8530
+  Batch [900/1368] Loss: 0.9822
+  Batch [950/1368] Loss: 1.0894
+  Batch [1000/1368] Loss: 0.9619
+  Batch [1050/1368] Loss: 0.7429
+  Batch [1100/1368] Loss: 1.1236
+  Batch [1150/1368] Loss: 0.6749
+  Batch [1200/1368] Loss: 1.1666
+  Batch [1250/1368] Loss: 1.2106
+  Batch [1300/1368] Loss: 1.1010
+  Batch [1350/1368] Loss: 0.9226
+  Train Loss: 0.9327, Train Acc: 0.6582
+  Val Loss: 0.8945, Val Acc: 0.6625
+  LR: 0.000194
+
+Epoch [60/100]
+  Batch [0/1368] Loss: 0.8246
+  Batch [50/1368] Loss: 0.6554
+  Batch [100/1368] Loss: 0.7813
+  Batch [150/1368] Loss: 0.8613
+  Batch [200/1368] Loss: 0.7610
+  Batch [250/1368] Loss: 0.7846
+  Batch [300/1368] Loss: 0.6401
+  Batch [350/1368] Loss: 0.7825
+  Batch [400/1368] Loss: 1.2354
+  Batch [450/1368] Loss: 0.9108
+  Batch [500/1368] Loss: 1.1384
+  Batch [550/1368] Loss: 1.0330
+  Batch [600/1368] Loss: 0.7680
+  Batch [650/1368] Loss: 1.1258
+  Batch [700/1368] Loss: 0.9321
+  Batch [750/1368] Loss: 1.0036
+  Batch [800/1368] Loss: 0.9018
+  Batch [850/1368] Loss: 0.5391
+  Batch [900/1368] Loss: 1.2961
+  Batch [950/1368] Loss: 0.8791
+  Batch [1000/1368] Loss: 0.6972
+  Batch [1050/1368] Loss: 1.0912
+  Batch [1100/1368] Loss: 1.0742
+  Batch [1150/1368] Loss: 0.8262
+  Batch [1200/1368] Loss: 0.9414
+  Batch [1250/1368] Loss: 0.9122
+  Batch [1300/1368] Loss: 0.7288
+  Batch [1350/1368] Loss: 1.0086
+  Train Loss: 0.9291, Train Acc: 0.6610
+  Val Loss: 0.9480, Val Acc: 0.6534
+  LR: 0.000187
+
+Epoch [61/100]
+  Batch [0/1368] Loss: 0.8351
+  Batch [50/1368] Loss: 1.4048
+  Batch [100/1368] Loss: 0.9378
+  Batch [150/1368] Loss: 1.0398
+  Batch [200/1368] Loss: 0.9280
+  Batch [250/1368] Loss: 1.0672
+  Batch [300/1368] Loss: 0.8655
+  Batch [350/1368] Loss: 0.9976
+  Batch [400/1368] Loss: 0.9998
+  Batch [450/1368] Loss: 0.7030
+  Batch [500/1368] Loss: 1.1143
+  Batch [550/1368] Loss: 0.7267
+  Batch [600/1368] Loss: 1.0073
+  Batch [650/1368] Loss: 0.9921
+  Batch [700/1368] Loss: 0.7482
+  Batch [750/1368] Loss: 1.2628
+  Batch [800/1368] Loss: 0.9979
+  Batch [850/1368] Loss: 0.7876
+  Batch [900/1368] Loss: 1.1380
+  Batch [950/1368] Loss: 0.9071
+  Batch [1000/1368] Loss: 1.2809
+  Batch [1050/1368] Loss: 1.1057
+  Batch [1100/1368] Loss: 0.8613
+  Batch [1150/1368] Loss: 1.0703
+  Batch [1200/1368] Loss: 0.6012
+  Batch [1250/1368] Loss: 1.2833
+  Batch [1300/1368] Loss: 1.0898
+  Batch [1350/1368] Loss: 1.1796
+  Train Loss: 0.9272, Train Acc: 0.6610
+  Val Loss: 0.9278, Val Acc: 0.6805
+  LR: 0.000179
+
+Epoch [62/100]
+  Batch [0/1368] Loss: 0.6603
+  Batch [50/1368] Loss: 0.7117
+  Batch [100/1368] Loss: 1.0481
+  Batch [150/1368] Loss: 1.2447
+  Batch [200/1368] Loss: 0.5940
+  Batch [250/1368] Loss: 1.0577
+  Batch [300/1368] Loss: 0.9675
+  Batch [350/1368] Loss: 1.2449
+  Batch [400/1368] Loss: 0.9267
+  Batch [450/1368] Loss: 0.7932
+  Batch [500/1368] Loss: 0.9156
+  Batch [550/1368] Loss: 1.0932
+  Batch [600/1368] Loss: 0.7490
+  Batch [650/1368] Loss: 0.6516
+  Batch [700/1368] Loss: 1.1003
+  Batch [750/1368] Loss: 1.0461
+  Batch [800/1368] Loss: 0.8333
+  Batch [850/1368] Loss: 0.6582
+  Batch [900/1368] Loss: 1.0543
+  Batch [950/1368] Loss: 0.8502
+  Batch [1000/1368] Loss: 0.8672
+  Batch [1050/1368] Loss: 0.8289
+  Batch [1100/1368] Loss: 1.0486
+  Batch [1150/1368] Loss: 0.8271
+  Batch [1200/1368] Loss: 0.7787
+  Batch [1250/1368] Loss: 0.8917
+  Batch [1300/1368] Loss: 0.7468
+  Batch [1350/1368] Loss: 1.0738
+  Train Loss: 0.9200, Train Acc: 0.6654
+  Val Loss: 0.9391, Val Acc: 0.6516
+  LR: 0.000172
+
+Epoch [63/100]
+  Batch [0/1368] Loss: 0.8676
+  Batch [50/1368] Loss: 1.1056
+  Batch [100/1368] Loss: 0.8315
+  Batch [150/1368] Loss: 1.0850
+  Batch [200/1368] Loss: 1.0621
+  Batch [250/1368] Loss: 1.3725
+  Batch [300/1368] Loss: 1.1113
+  Batch [350/1368] Loss: 1.4112
+  Batch [400/1368] Loss: 1.4936
+  Batch [450/1368] Loss: 1.0919
+  Batch [500/1368] Loss: 0.9650
+  Batch [550/1368] Loss: 1.1170
+  Batch [600/1368] Loss: 1.2105
+  Batch [650/1368] Loss: 1.0924
+  Batch [700/1368] Loss: 0.8429
+  Batch [750/1368] Loss: 0.9660
+  Batch [800/1368] Loss: 0.8204
+  Batch [850/1368] Loss: 0.7252
+  Batch [900/1368] Loss: 1.1336
+  Batch [950/1368] Loss: 1.0171
+  Batch [1000/1368] Loss: 1.1656
+  Batch [1050/1368] Loss: 0.7286
+  Batch [1100/1368] Loss: 0.6597
+  Batch [1150/1368] Loss: 1.1782
+  Batch [1200/1368] Loss: 1.3019
+  Batch [1250/1368] Loss: 0.7638
+  Batch [1300/1368] Loss: 1.0319
+  Batch [1350/1368] Loss: 0.8152
+  Train Loss: 0.9192, Train Acc: 0.6666
+  Val Loss: 0.8885, Val Acc: 0.6643
+  LR: 0.000165
+
+Epoch [64/100]
+  Batch [0/1368] Loss: 0.7192
+  Batch [50/1368] Loss: 0.7868
+  Batch [100/1368] Loss: 0.9047
+  Batch [150/1368] Loss: 0.9968
+  Batch [200/1368] Loss: 0.9780
+  Batch [250/1368] Loss: 0.8795
+  Batch [300/1368] Loss: 0.9459
+  Batch [350/1368] Loss: 0.8024
+  Batch [400/1368] Loss: 0.8099
+  Batch [450/1368] Loss: 0.7995
+  Batch [500/1368] Loss: 0.7628
+  Batch [550/1368] Loss: 1.0313
+  Batch [600/1368] Loss: 1.1083
+  Batch [650/1368] Loss: 0.8887
+  Batch [700/1368] Loss: 0.8841
+  Batch [750/1368] Loss: 1.0978
+  Batch [800/1368] Loss: 0.8135
+  Batch [850/1368] Loss: 0.6469
+  Batch [900/1368] Loss: 1.0656
+  Batch [950/1368] Loss: 1.0033
+  Batch [1000/1368] Loss: 0.8393
+  Batch [1050/1368] Loss: 1.0000
+  Batch [1100/1368] Loss: 0.7575
+  Batch [1150/1368] Loss: 0.9427
+  Batch [1200/1368] Loss: 1.1604
+  Batch [1250/1368] Loss: 0.9417
+  Batch [1300/1368] Loss: 0.8502
+  Batch [1350/1368] Loss: 0.8695
+  Train Loss: 0.9138, Train Acc: 0.6666
+  Val Loss: 0.8745, Val Acc: 0.6679
+  LR: 0.000158
+
+Epoch [65/100]
+  Batch [0/1368] Loss: 0.6627
+  Batch [50/1368] Loss: 1.0078
+  Batch [100/1368] Loss: 1.0354
+  Batch [150/1368] Loss: 0.6763
+  Batch [200/1368] Loss: 1.1487
+  Batch [250/1368] Loss: 0.9165
+  Batch [300/1368] Loss: 1.1921
+  Batch [350/1368] Loss: 0.8837
+  Batch [400/1368] Loss: 0.7714
+  Batch [450/1368] Loss: 0.7415
+  Batch [500/1368] Loss: 0.9120
+  Batch [550/1368] Loss: 0.8803
+  Batch [600/1368] Loss: 0.9497
+  Batch [650/1368] Loss: 0.9129
+  Batch [700/1368] Loss: 0.8153
+  Batch [750/1368] Loss: 0.7358
+  Batch [800/1368] Loss: 0.9653
+  Batch [850/1368] Loss: 0.7448
+  Batch [900/1368] Loss: 1.1414
+  Batch [950/1368] Loss: 1.1401
+  Batch [1000/1368] Loss: 0.9849
+  Batch [1050/1368] Loss: 0.8690
+  Batch [1100/1368] Loss: 0.9380
+  Batch [1150/1368] Loss: 1.1330
+  Batch [1200/1368] Loss: 1.1519
+  Batch [1250/1368] Loss: 1.1011
+  Batch [1300/1368] Loss: 0.9877
+  Batch [1350/1368] Loss: 0.9719
+  Train Loss: 0.9088, Train Acc: 0.6689
+  Val Loss: 0.8545, Val Acc: 0.6877
+  LR: 0.000151
+
+Epoch [66/100]
+  Batch [0/1368] Loss: 1.0686
+  Batch [50/1368] Loss: 1.2616
+  Batch [100/1368] Loss: 0.9889
+  Batch [150/1368] Loss: 0.7395
+  Batch [200/1368] Loss: 0.5798
+  Batch [250/1368] Loss: 0.8403
+  Batch [300/1368] Loss: 0.7393
+  Batch [350/1368] Loss: 0.9460
+  Batch [400/1368] Loss: 1.0870
+  Batch [450/1368] Loss: 0.7718
+  Batch [500/1368] Loss: 1.0240
+  Batch [550/1368] Loss: 0.6987
+  Batch [600/1368] Loss: 1.1775
+  Batch [650/1368] Loss: 0.6060
+  Batch [700/1368] Loss: 0.7949
+  Batch [750/1368] Loss: 0.8826
+  Batch [800/1368] Loss: 0.8376
+  Batch [850/1368] Loss: 0.8303
+  Batch [900/1368] Loss: 0.8795
+  Batch [950/1368] Loss: 1.0474
+  Batch [1000/1368] Loss: 0.7092
+  Batch [1050/1368] Loss: 1.0779
+  Batch [1100/1368] Loss: 0.6848
+  Batch [1150/1368] Loss: 0.9976
+  Batch [1200/1368] Loss: 0.8531
+  Batch [1250/1368] Loss: 0.8549
+  Batch [1300/1368] Loss: 0.7032
+  Batch [1350/1368] Loss: 0.7512
+  Train Loss: 0.9024, Train Acc: 0.6713
+  Val Loss: 0.9244, Val Acc: 0.6606
+  LR: 0.000144
+
+Epoch [67/100]
+  Batch [0/1368] Loss: 0.9550
+  Batch [50/1368] Loss: 0.8440
+  Batch [100/1368] Loss: 1.2065
+  Batch [150/1368] Loss: 0.8438
+  Batch [200/1368] Loss: 0.7462
+  Batch [250/1368] Loss: 1.0644
+  Batch [300/1368] Loss: 0.8947
+  Batch [350/1368] Loss: 1.0367
+  Batch [400/1368] Loss: 0.7953
+  Batch [450/1368] Loss: 0.5998
+  Batch [500/1368] Loss: 0.7957
+  Batch [550/1368] Loss: 0.6673
+  Batch [600/1368] Loss: 0.9116
+  Batch [650/1368] Loss: 1.0196
+  Batch [700/1368] Loss: 0.6303
+  Batch [750/1368] Loss: 1.3268
+  Batch [800/1368] Loss: 0.8976
+  Batch [850/1368] Loss: 1.0713
+  Batch [900/1368] Loss: 0.9528
+  Batch [950/1368] Loss: 0.6805
+  Batch [1000/1368] Loss: 1.4504
+  Batch [1050/1368] Loss: 1.0407
+  Batch [1100/1368] Loss: 1.2433
+  Batch [1150/1368] Loss: 0.9452
+  Batch [1200/1368] Loss: 0.7571
+  Batch [1250/1368] Loss: 1.0729
+  Batch [1300/1368] Loss: 0.8114
+  Batch [1350/1368] Loss: 0.9418
+  Train Loss: 0.8998, Train Acc: 0.6754
+  Val Loss: 0.8417, Val Acc: 0.6841
+  LR: 0.000137
+
+Epoch [68/100]
+  Batch [0/1368] Loss: 0.9272
+  Batch [50/1368] Loss: 0.8835
+  Batch [100/1368] Loss: 0.8327
+  Batch [150/1368] Loss: 0.4911
+  Batch [200/1368] Loss: 0.9283
+  Batch [250/1368] Loss: 0.8198
+  Batch [300/1368] Loss: 0.8069
+  Batch [350/1368] Loss: 0.6940
+  Batch [400/1368] Loss: 0.8170
+  Batch [450/1368] Loss: 1.0569
+  Batch [500/1368] Loss: 1.1066
+  Batch [550/1368] Loss: 0.8487
+  Batch [600/1368] Loss: 1.2770
+  Batch [650/1368] Loss: 1.3054
+  Batch [700/1368] Loss: 1.1253
+  Batch [750/1368] Loss: 1.0398
+  Batch [800/1368] Loss: 1.0913
+  Batch [850/1368] Loss: 1.0552
+  Batch [900/1368] Loss: 0.5992
+  Batch [950/1368] Loss: 1.1115
+  Batch [1000/1368] Loss: 0.9814
+  Batch [1050/1368] Loss: 0.5981
+  Batch [1100/1368] Loss: 0.9162
+  Batch [1150/1368] Loss: 0.7703
+  Batch [1200/1368] Loss: 0.8111
+  Batch [1250/1368] Loss: 0.8751
+  Batch [1300/1368] Loss: 1.0404
+  Batch [1350/1368] Loss: 0.9116
+  Train Loss: 0.8891, Train Acc: 0.6771
+  Val Loss: 0.8593, Val Acc: 0.7058
+  LR: 0.000130
+  ✨ 新的最佳模型! Acc: 0.7058
+
+Epoch [69/100]
+  Batch [0/1368] Loss: 0.7859
+  Batch [50/1368] Loss: 1.2145
+  Batch [100/1368] Loss: 1.0224
+  Batch [150/1368] Loss: 0.7389
+  Batch [200/1368] Loss: 0.6976
+  Batch [250/1368] Loss: 0.8336
+  Batch [300/1368] Loss: 0.6649
+  Batch [350/1368] Loss: 0.9133
+  Batch [400/1368] Loss: 0.9964
+  Batch [450/1368] Loss: 0.7063
+  Batch [500/1368] Loss: 0.9888
+  Batch [550/1368] Loss: 0.9812
+  Batch [600/1368] Loss: 1.2065
+  Batch [650/1368] Loss: 0.6152
+  Batch [700/1368] Loss: 0.9703
+  Batch [750/1368] Loss: 1.0856
+  Batch [800/1368] Loss: 0.8533
+  Batch [850/1368] Loss: 1.0197
+  Batch [900/1368] Loss: 0.7590
+  Batch [950/1368] Loss: 0.8169
+  Batch [1000/1368] Loss: 0.8205
+  Batch [1050/1368] Loss: 0.8505
+  Batch [1100/1368] Loss: 1.0548
+  Batch [1150/1368] Loss: 0.7000
+  Batch [1200/1368] Loss: 0.9409
+  Batch [1250/1368] Loss: 0.9289
+  Batch [1300/1368] Loss: 0.9342
+  Batch [1350/1368] Loss: 0.9908
+  Train Loss: 0.8860, Train Acc: 0.6774
+  Val Loss: 0.8201, Val Acc: 0.7058
+  LR: 0.000124
+
+Epoch [70/100]
+  Batch [0/1368] Loss: 1.1578
+  Batch [50/1368] Loss: 0.8102
+  Batch [100/1368] Loss: 0.8164
+  Batch [150/1368] Loss: 1.0009
+  Batch [200/1368] Loss: 0.6571
+  Batch [250/1368] Loss: 0.9172
+  Batch [300/1368] Loss: 0.8462
+  Batch [350/1368] Loss: 0.6929
+  Batch [400/1368] Loss: 1.0443
+  Batch [450/1368] Loss: 0.5475
+  Batch [500/1368] Loss: 0.9196
+  Batch [550/1368] Loss: 0.7094
+  Batch [600/1368] Loss: 0.9121
+  Batch [650/1368] Loss: 0.9434
+  Batch [700/1368] Loss: 0.9198
+  Batch [750/1368] Loss: 0.8544
+  Batch [800/1368] Loss: 0.6762
+  Batch [850/1368] Loss: 0.7266
+  Batch [900/1368] Loss: 0.9972
+  Batch [950/1368] Loss: 0.8842
+  Batch [1000/1368] Loss: 0.8196
+  Batch [1050/1368] Loss: 0.8042
+  Batch [1100/1368] Loss: 0.7004
+  Batch [1150/1368] Loss: 1.0836
+  Batch [1200/1368] Loss: 0.7826
+  Batch [1250/1368] Loss: 0.9532
+  Batch [1300/1368] Loss: 0.6649
+  Batch [1350/1368] Loss: 0.9360
+  Train Loss: 0.8839, Train Acc: 0.6809
+  Val Loss: 0.8750, Val Acc: 0.6986
+  LR: 0.000117
+
+Epoch [71/100]
+  Batch [0/1368] Loss: 0.8145
+  Batch [50/1368] Loss: 0.7084
+  Batch [100/1368] Loss: 0.9997
+  Batch [150/1368] Loss: 1.3492
+  Batch [200/1368] Loss: 0.7853
+  Batch [250/1368] Loss: 0.8303
+  Batch [300/1368] Loss: 0.9795
+  Batch [350/1368] Loss: 0.6596
+  Batch [400/1368] Loss: 0.8700
+  Batch [450/1368] Loss: 0.7306
+  Batch [500/1368] Loss: 0.6517
+  Batch [550/1368] Loss: 0.7332
+  Batch [600/1368] Loss: 0.8147
+  Batch [650/1368] Loss: 0.7522
+  Batch [700/1368] Loss: 0.9649
+  Batch [750/1368] Loss: 1.0586
+  Batch [800/1368] Loss: 0.8364
+  Batch [850/1368] Loss: 1.2897
+  Batch [900/1368] Loss: 0.6715
+  Batch [950/1368] Loss: 0.7686
+  Batch [1000/1368] Loss: 0.9110
+  Batch [1050/1368] Loss: 1.1314
+  Batch [1100/1368] Loss: 1.3659
+  Batch [1150/1368] Loss: 0.9552
+  Batch [1200/1368] Loss: 0.6736
+  Batch [1250/1368] Loss: 1.2246
+  Batch [1300/1368] Loss: 0.9413
+  Batch [1350/1368] Loss: 0.5710
+  Train Loss: 0.8835, Train Acc: 0.6772
+  Val Loss: 0.8645, Val Acc: 0.6931
+  LR: 0.000111
+
+Epoch [72/100]
+  Batch [0/1368] Loss: 1.0053
+  Batch [50/1368] Loss: 1.4487
+  Batch [100/1368] Loss: 1.1106
+  Batch [150/1368] Loss: 1.3453
+  Batch [200/1368] Loss: 0.7103
+  Batch [250/1368] Loss: 0.7518
+  Batch [300/1368] Loss: 0.9331
+  Batch [350/1368] Loss: 0.6594
+  Batch [400/1368] Loss: 0.9076
+  Batch [450/1368] Loss: 0.7857
+  Batch [500/1368] Loss: 0.5979
+  Batch [550/1368] Loss: 0.4789
+  Batch [600/1368] Loss: 0.8301
+  Batch [650/1368] Loss: 0.7436
+  Batch [700/1368] Loss: 0.9861
+  Batch [750/1368] Loss: 0.9767
+  Batch [800/1368] Loss: 1.0019
+  Batch [850/1368] Loss: 0.9287
+  Batch [900/1368] Loss: 0.6645
+  Batch [950/1368] Loss: 0.6596
+  Batch [1000/1368] Loss: 0.8847
+  Batch [1050/1368] Loss: 0.7495
+  Batch [1100/1368] Loss: 0.7912
+  Batch [1150/1368] Loss: 0.7890
+  Batch [1200/1368] Loss: 0.8411
+  Batch [1250/1368] Loss: 0.7457
+  Batch [1300/1368] Loss: 0.7740
+  Batch [1350/1368] Loss: 0.6205
+  Train Loss: 0.8782, Train Acc: 0.6825
+  Val Loss: 0.8862, Val Acc: 0.6679
+  LR: 0.000105
+
+Epoch [73/100]
+  Batch [0/1368] Loss: 0.4943
+  Batch [50/1368] Loss: 0.8701
+  Batch [100/1368] Loss: 0.7310
+  Batch [150/1368] Loss: 0.8355
+  Batch [200/1368] Loss: 0.6262
+  Batch [250/1368] Loss: 0.9418
+  Batch [300/1368] Loss: 0.8567
+  Batch [350/1368] Loss: 0.7967
+  Batch [400/1368] Loss: 0.7977
+  Batch [450/1368] Loss: 1.1041
+  Batch [500/1368] Loss: 0.6063
+  Batch [550/1368] Loss: 0.8503
+  Batch [600/1368] Loss: 1.0091
+  Batch [650/1368] Loss: 1.1162
+  Batch [700/1368] Loss: 0.9782
+  Batch [750/1368] Loss: 0.7419
+  Batch [800/1368] Loss: 0.9656
+  Batch [850/1368] Loss: 0.9659
+  Batch [900/1368] Loss: 1.3950
+  Batch [950/1368] Loss: 0.7828
+  Batch [1000/1368] Loss: 0.7231
+  Batch [1050/1368] Loss: 1.3236
+  Batch [1100/1368] Loss: 0.8627
+  Batch [1150/1368] Loss: 0.9471
+  Batch [1200/1368] Loss: 0.6353
+  Batch [1250/1368] Loss: 0.9639
+  Batch [1300/1368] Loss: 1.0281
+  Batch [1350/1368] Loss: 0.7220
+  Train Loss: 0.8653, Train Acc: 0.6863
+  Val Loss: 0.8218, Val Acc: 0.7112
+  LR: 0.000099
+  ✨ 新的最佳模型! Acc: 0.7112
+
+Epoch [74/100]
+  Batch [0/1368] Loss: 0.7893
+  Batch [50/1368] Loss: 0.8652
+  Batch [100/1368] Loss: 0.8591
+  Batch [150/1368] Loss: 1.0017
+  Batch [200/1368] Loss: 0.8056
+  Batch [250/1368] Loss: 0.8370
+  Batch [300/1368] Loss: 0.8397
+  Batch [350/1368] Loss: 0.7223
+  Batch [400/1368] Loss: 0.7340
+  Batch [450/1368] Loss: 0.6064
+  Batch [500/1368] Loss: 0.7882
+  Batch [550/1368] Loss: 0.6270
+  Batch [600/1368] Loss: 0.8308
+  Batch [650/1368] Loss: 0.7171
+  Batch [700/1368] Loss: 1.0103
+  Batch [750/1368] Loss: 0.7350
+  Batch [800/1368] Loss: 0.8772
+  Batch [850/1368] Loss: 0.6927
+  Batch [900/1368] Loss: 0.9687
+  Batch [950/1368] Loss: 1.0305
+  Batch [1000/1368] Loss: 0.9483
+  Batch [1050/1368] Loss: 0.6675
+  Batch [1100/1368] Loss: 0.8548
+  Batch [1150/1368] Loss: 0.9390
+  Batch [1200/1368] Loss: 0.9225
+  Batch [1250/1368] Loss: 0.7635
+  Batch [1300/1368] Loss: 0.7400
+  Batch [1350/1368] Loss: 0.8676
+  Train Loss: 0.8604, Train Acc: 0.6884
+  Val Loss: 0.7745, Val Acc: 0.7148
+  LR: 0.000093
+  ✨ 新的最佳模型! Acc: 0.7148
+
+Epoch [75/100]
+  Batch [0/1368] Loss: 0.5098
+  Batch [50/1368] Loss: 1.0812
+  Batch [100/1368] Loss: 0.8417
+  Batch [150/1368] Loss: 1.3152
+  Batch [200/1368] Loss: 0.9151
+  Batch [250/1368] Loss: 0.5855
+  Batch [300/1368] Loss: 0.7281
+  Batch [350/1368] Loss: 0.6565
+  Batch [400/1368] Loss: 0.7287
+  Batch [450/1368] Loss: 0.5099
+  Batch [500/1368] Loss: 0.8308
+  Batch [550/1368] Loss: 0.8706
+  Batch [600/1368] Loss: 0.8123
+  Batch [650/1368] Loss: 0.8842
+  Batch [700/1368] Loss: 0.7083
+  Batch [750/1368] Loss: 0.7915
+  Batch [800/1368] Loss: 0.9062
+  Batch [850/1368] Loss: 0.9161
+  Batch [900/1368] Loss: 0.7392
+  Batch [950/1368] Loss: 0.9660
+  Batch [1000/1368] Loss: 0.9725
+  Batch [1050/1368] Loss: 0.8286
+  Batch [1100/1368] Loss: 0.9758
+  Batch [1150/1368] Loss: 0.9558
+  Batch [1200/1368] Loss: 0.8032
+  Batch [1250/1368] Loss: 0.6389
+  Batch [1300/1368] Loss: 0.7126
+  Batch [1350/1368] Loss: 0.9177
+  Train Loss: 0.8509, Train Acc: 0.6927
+  Val Loss: 0.8595, Val Acc: 0.6733
+  LR: 0.000087
+
+Epoch [76/100]
+  Batch [0/1368] Loss: 1.0294
+  Batch [50/1368] Loss: 1.0563
+  Batch [100/1368] Loss: 0.7164
+  Batch [150/1368] Loss: 0.8737
+  Batch [200/1368] Loss: 0.8290
+  Batch [250/1368] Loss: 0.9592
+  Batch [300/1368] Loss: 0.8081
+  Batch [350/1368] Loss: 0.7351
+  Batch [400/1368] Loss: 0.9488
+  Batch [450/1368] Loss: 1.0558
+  Batch [500/1368] Loss: 0.9491
+  Batch [550/1368] Loss: 0.8449
+  Batch [600/1368] Loss: 0.4161
+  Batch [650/1368] Loss: 0.8080
+  Batch [700/1368] Loss: 1.0363
+  Batch [750/1368] Loss: 0.8241
+  Batch [800/1368] Loss: 0.5637
+  Batch [850/1368] Loss: 0.9929
+  Batch [900/1368] Loss: 0.7637
+  Batch [950/1368] Loss: 0.8189
+  Batch [1000/1368] Loss: 0.4875
+  Batch [1050/1368] Loss: 0.9343
+  Batch [1100/1368] Loss: 0.8734
+  Batch [1150/1368] Loss: 0.9069
+  Batch [1200/1368] Loss: 0.5763
+  Batch [1250/1368] Loss: 0.8442
+  Batch [1300/1368] Loss: 0.9611
+  Batch [1350/1368] Loss: 0.8343
+  Train Loss: 0.8481, Train Acc: 0.6915
+  Val Loss: 0.8286, Val Acc: 0.7004
+  LR: 0.000082
+
+Epoch [77/100]
+  Batch [0/1368] Loss: 1.0297
+  Batch [50/1368] Loss: 0.9362
+  Batch [100/1368] Loss: 0.5713
+  Batch [150/1368] Loss: 0.8805
+  Batch [200/1368] Loss: 0.6182
+  Batch [250/1368] Loss: 0.8632
+  Batch [300/1368] Loss: 0.6833
+  Batch [350/1368] Loss: 1.1993
+  Batch [400/1368] Loss: 0.5612
+  Batch [450/1368] Loss: 1.0665
+  Batch [500/1368] Loss: 0.8123
+  Batch [550/1368] Loss: 0.9448
+  Batch [600/1368] Loss: 0.7290
+  Batch [650/1368] Loss: 0.8860
+  Batch [700/1368] Loss: 0.8068
+  Batch [750/1368] Loss: 0.7489
+  Batch [800/1368] Loss: 0.7328
+  Batch [850/1368] Loss: 0.8631
+  Batch [900/1368] Loss: 0.6705
+  Batch [950/1368] Loss: 0.6575
+  Batch [1000/1368] Loss: 0.7631
+  Batch [1050/1368] Loss: 0.6770
+  Batch [1100/1368] Loss: 0.7828
+  Batch [1150/1368] Loss: 0.6122
+  Batch [1200/1368] Loss: 0.7974
+  Batch [1250/1368] Loss: 0.9815
+  Batch [1300/1368] Loss: 0.7721
+  Batch [1350/1368] Loss: 1.0263
+  Train Loss: 0.8450, Train Acc: 0.6936
+  Val Loss: 0.7669, Val Acc: 0.7148
+  LR: 0.000076
+
+Epoch [78/100]
+  Batch [0/1368] Loss: 0.6380
+  Batch [50/1368] Loss: 0.7297
+  Batch [100/1368] Loss: 0.7398
+  Batch [150/1368] Loss: 1.0383
+  Batch [200/1368] Loss: 0.6141
+  Batch [250/1368] Loss: 0.6023
+  Batch [300/1368] Loss: 0.8281
+  Batch [350/1368] Loss: 0.7616
+  Batch [400/1368] Loss: 0.9809
+  Batch [450/1368] Loss: 1.0395
+  Batch [500/1368] Loss: 0.8435
+  Batch [550/1368] Loss: 1.1019
+  Batch [600/1368] Loss: 1.3745
+  Batch [650/1368] Loss: 0.7389
+  Batch [700/1368] Loss: 0.8250
+  Batch [750/1368] Loss: 0.7410
+  Batch [800/1368] Loss: 0.7742
+  Batch [850/1368] Loss: 0.6164
+  Batch [900/1368] Loss: 0.7734
+  Batch [950/1368] Loss: 0.6313
+  Batch [1000/1368] Loss: 0.9359
+  Batch [1050/1368] Loss: 0.7947
+  Batch [1100/1368] Loss: 0.7483
+  Batch [1150/1368] Loss: 0.4162
+  Batch [1200/1368] Loss: 0.7943
+  Batch [1250/1368] Loss: 1.0137
+  Batch [1300/1368] Loss: 1.0797
+  Batch [1350/1368] Loss: 0.6625
+  Train Loss: 0.8379, Train Acc: 0.6992
+  Val Loss: 0.7755, Val Acc: 0.7401
+  LR: 0.000071
+  ✨ 新的最佳模型! Acc: 0.7401
+
+Epoch [79/100]
+  Batch [0/1368] Loss: 1.2134
+  Batch [50/1368] Loss: 1.0915
+  Batch [100/1368] Loss: 0.6001
+  Batch [150/1368] Loss: 0.7737
+  Batch [200/1368] Loss: 1.1264
+  Batch [250/1368] Loss: 0.7741
+  Batch [300/1368] Loss: 0.6060
+  Batch [350/1368] Loss: 0.9368
+  Batch [400/1368] Loss: 0.8490
+  Batch [450/1368] Loss: 0.6691
+  Batch [500/1368] Loss: 0.9313
+  Batch [550/1368] Loss: 0.6213
+  Batch [600/1368] Loss: 0.5776
+  Batch [650/1368] Loss: 1.0170
+  Batch [700/1368] Loss: 0.9057
+  Batch [750/1368] Loss: 0.6557
+  Batch [800/1368] Loss: 0.6058
+  Batch [850/1368] Loss: 0.7482
+  Batch [900/1368] Loss: 0.7922
+  Batch [950/1368] Loss: 0.6195
+  Batch [1000/1368] Loss: 1.0718
+  Batch [1050/1368] Loss: 0.6078
+  Batch [1100/1368] Loss: 0.8998
+  Batch [1150/1368] Loss: 0.6149
+  Batch [1200/1368] Loss: 0.6573
+  Batch [1250/1368] Loss: 0.7528
+  Batch [1300/1368] Loss: 0.7098
+  Batch [1350/1368] Loss: 0.7774
+  Train Loss: 0.8331, Train Acc: 0.6972
+  Val Loss: 0.7865, Val Acc: 0.7202
+  LR: 0.000066
+
+Epoch [80/100]
+  Batch [0/1368] Loss: 0.9047
+  Batch [50/1368] Loss: 0.9638
+  Batch [100/1368] Loss: 0.8351
+  Batch [150/1368] Loss: 0.8974
+  Batch [200/1368] Loss: 0.9779
+  Batch [250/1368] Loss: 0.8954
+  Batch [300/1368] Loss: 0.9154
+  Batch [350/1368] Loss: 0.9011
+  Batch [400/1368] Loss: 0.7827
+  Batch [450/1368] Loss: 1.0633
+  Batch [500/1368] Loss: 1.1598
+  Batch [550/1368] Loss: 0.7313
+  Batch [600/1368] Loss: 1.0318
+  Batch [650/1368] Loss: 0.8684
+  Batch [700/1368] Loss: 0.7539
+  Batch [750/1368] Loss: 0.8549
+  Batch [800/1368] Loss: 0.8361
+  Batch [850/1368] Loss: 0.6982
+  Batch [900/1368] Loss: 0.7625
+  Batch [950/1368] Loss: 0.7166
+  Batch [1000/1368] Loss: 0.6657
+  Batch [1050/1368] Loss: 1.1104
+  Batch [1100/1368] Loss: 0.7299
+  Batch [1150/1368] Loss: 1.0160
+  Batch [1200/1368] Loss: 0.7164
+  Batch [1250/1368] Loss: 0.9855
+  Batch [1300/1368] Loss: 0.5676
+  Batch [1350/1368] Loss: 0.7015
+  Train Loss: 0.8299, Train Acc: 0.7004
+  Val Loss: 0.7568, Val Acc: 0.7166
+  LR: 0.000061
+
+Epoch [81/100]
+  Batch [0/1368] Loss: 0.6414
+  Batch [50/1368] Loss: 0.8828
+  Batch [100/1368] Loss: 0.9531
+  Batch [150/1368] Loss: 0.6700
+  Batch [200/1368] Loss: 0.8374
+  Batch [250/1368] Loss: 0.7662
+  Batch [300/1368] Loss: 0.9373
+  Batch [350/1368] Loss: 0.7261
+  Batch [400/1368] Loss: 0.8193
+  Batch [450/1368] Loss: 1.0480
+  Batch [500/1368] Loss: 1.0311
+  Batch [550/1368] Loss: 1.4286
+  Batch [600/1368] Loss: 0.7693
+  Batch [650/1368] Loss: 1.2592
+  Batch [700/1368] Loss: 0.8708
+  Batch [750/1368] Loss: 0.7598
+  Batch [800/1368] Loss: 0.8064
+  Batch [850/1368] Loss: 0.9155
+  Batch [900/1368] Loss: 0.9007
+  Batch [950/1368] Loss: 0.5471
+  Batch [1000/1368] Loss: 0.5596
+  Batch [1050/1368] Loss: 0.9636
+  Batch [1100/1368] Loss: 1.1481
+  Batch [1150/1368] Loss: 0.9475
+  Batch [1200/1368] Loss: 0.6906
+  Batch [1250/1368] Loss: 0.7348
+  Batch [1300/1368] Loss: 0.8945
+  Batch [1350/1368] Loss: 0.9092
+  Train Loss: 0.8231, Train Acc: 0.7044
+  Val Loss: 0.7655, Val Acc: 0.7202
+  LR: 0.000057
+
+Epoch [82/100]
+  Batch [0/1368] Loss: 0.5897
+  Batch [50/1368] Loss: 0.9453
+  Batch [100/1368] Loss: 0.8124
+  Batch [150/1368] Loss: 0.5789
+  Batch [200/1368] Loss: 0.5783
+  Batch [250/1368] Loss: 0.8677
+  Batch [300/1368] Loss: 0.9466
+  Batch [350/1368] Loss: 1.2578
+  Batch [400/1368] Loss: 0.9227
+  Batch [450/1368] Loss: 0.5060
+  Batch [500/1368] Loss: 0.7790
+  Batch [550/1368] Loss: 0.7029
+  Batch [600/1368] Loss: 0.6198
+  Batch [650/1368] Loss: 0.7211
+  Batch [700/1368] Loss: 0.8533
+  Batch [750/1368] Loss: 1.0408
+  Batch [800/1368] Loss: 0.9829
+  Batch [850/1368] Loss: 0.7841
+  Batch [900/1368] Loss: 1.1204
+  Batch [950/1368] Loss: 0.5977
+  Batch [1000/1368] Loss: 0.5531
+  Batch [1050/1368] Loss: 0.8542
+  Batch [1100/1368] Loss: 0.5502
+  Batch [1150/1368] Loss: 0.9554
+  Batch [1200/1368] Loss: 1.1424
+  Batch [1250/1368] Loss: 0.9588
+  Batch [1300/1368] Loss: 0.7710
+  Batch [1350/1368] Loss: 0.5249
+  Train Loss: 0.8166, Train Acc: 0.7055
+  Val Loss: 0.7604, Val Acc: 0.7184
+  LR: 0.000052
+
+Epoch [83/100]
+  Batch [0/1368] Loss: 0.7218
+  Batch [50/1368] Loss: 0.9958
+  Batch [100/1368] Loss: 0.7493
+  Batch [150/1368] Loss: 0.8027
+  Batch [200/1368] Loss: 0.8197
+  Batch [250/1368] Loss: 0.8693
+  Batch [300/1368] Loss: 0.7559
+  Batch [350/1368] Loss: 0.6925
+  Batch [400/1368] Loss: 0.5672
+  Batch [450/1368] Loss: 0.8201
+  Batch [500/1368] Loss: 0.5495
+  Batch [550/1368] Loss: 0.6127
+  Batch [600/1368] Loss: 0.7275
+  Batch [650/1368] Loss: 0.8248
+  Batch [700/1368] Loss: 0.8375
+  Batch [750/1368] Loss: 0.5799
+  Batch [800/1368] Loss: 0.8358
+  Batch [850/1368] Loss: 0.8160
+  Batch [900/1368] Loss: 1.2745
+  Batch [950/1368] Loss: 0.4990
+  Batch [1000/1368] Loss: 1.1321
+  Batch [1050/1368] Loss: 0.8815
+  Batch [1100/1368] Loss: 0.7257
+  Batch [1150/1368] Loss: 0.8002
+  Batch [1200/1368] Loss: 0.7970
+  Batch [1250/1368] Loss: 0.5653
+  Batch [1300/1368] Loss: 1.2887
+  Batch [1350/1368] Loss: 0.9701
+  Train Loss: 0.8132, Train Acc: 0.7063
+  Val Loss: 0.7474, Val Acc: 0.7202
+  LR: 0.000048
+
+Epoch [84/100]
+  Batch [0/1368] Loss: 0.5545
+  Batch [50/1368] Loss: 0.6232
+  Batch [100/1368] Loss: 0.8948
+  Batch [150/1368] Loss: 0.9228
+  Batch [200/1368] Loss: 1.0733
+  Batch [250/1368] Loss: 1.0944
+  Batch [300/1368] Loss: 0.7426
+  Batch [350/1368] Loss: 0.7486
+  Batch [400/1368] Loss: 0.9553
+  Batch [450/1368] Loss: 1.1183
+  Batch [500/1368] Loss: 1.0504
+  Batch [550/1368] Loss: 0.7697
+  Batch [600/1368] Loss: 0.9723
+  Batch [650/1368] Loss: 0.6784
+  Batch [700/1368] Loss: 1.0114
+  Batch [750/1368] Loss: 1.0492
+  Batch [800/1368] Loss: 0.8473
+  Batch [850/1368] Loss: 0.8123
+  Batch [900/1368] Loss: 1.0236
+  Batch [950/1368] Loss: 0.8780
+  Batch [1000/1368] Loss: 0.6138
+  Batch [1050/1368] Loss: 0.6437
+  Batch [1100/1368] Loss: 0.8491
+  Batch [1150/1368] Loss: 0.9870
+  Batch [1200/1368] Loss: 0.9846
+  Batch [1250/1368] Loss: 0.8289
+  Batch [1300/1368] Loss: 0.9796
+  Batch [1350/1368] Loss: 1.0841
+  Train Loss: 0.8143, Train Acc: 0.7049
+  Val Loss: 0.7403, Val Acc: 0.7274
+  LR: 0.000044
+
+Epoch [85/100]
+  Batch [0/1368] Loss: 0.8558
+  Batch [50/1368] Loss: 0.8059
+  Batch [100/1368] Loss: 0.6666
+  Batch [150/1368] Loss: 0.8427
+  Batch [200/1368] Loss: 0.7473
+  Batch [250/1368] Loss: 0.8243
+  Batch [300/1368] Loss: 0.8094
+  Batch [350/1368] Loss: 1.2668
+  Batch [400/1368] Loss: 0.6290
+  Batch [450/1368] Loss: 0.7717
+  Batch [500/1368] Loss: 0.7741
+  Batch [550/1368] Loss: 0.9427
+  Batch [600/1368] Loss: 0.7606
+  Batch [650/1368] Loss: 0.7086
+  Batch [700/1368] Loss: 1.0127
+  Batch [750/1368] Loss: 0.9031
+  Batch [800/1368] Loss: 0.9159
+  Batch [850/1368] Loss: 0.8927
+  Batch [900/1368] Loss: 0.6151
+  Batch [950/1368] Loss: 0.7624
+  Batch [1000/1368] Loss: 0.9492
+  Batch [1050/1368] Loss: 0.6855
+  Batch [1100/1368] Loss: 0.7322
+  Batch [1150/1368] Loss: 0.8382
+  Batch [1200/1368] Loss: 0.7549
+  Batch [1250/1368] Loss: 0.4823
+  Batch [1300/1368] Loss: 0.6169
+  Batch [1350/1368] Loss: 0.8428
+  Train Loss: 0.8073, Train Acc: 0.7094
+  Val Loss: 0.7601, Val Acc: 0.7238
+  LR: 0.000040
+
+Epoch [86/100]
+  Batch [0/1368] Loss: 0.8970
+  Batch [50/1368] Loss: 0.5329
+  Batch [100/1368] Loss: 0.6878
+  Batch [150/1368] Loss: 0.5789
+  Batch [200/1368] Loss: 0.9522
+  Batch [250/1368] Loss: 0.7020
+  Batch [300/1368] Loss: 0.8252
+  Batch [350/1368] Loss: 0.8823
+  Batch [400/1368] Loss: 0.8360
+  Batch [450/1368] Loss: 0.5108
+  Batch [500/1368] Loss: 1.2345
+  Batch [550/1368] Loss: 0.5244
+  Batch [600/1368] Loss: 0.5579
+  Batch [650/1368] Loss: 0.8020
+  Batch [700/1368] Loss: 0.8275
+  Batch [750/1368] Loss: 0.8546
+  Batch [800/1368] Loss: 0.3724
+  Batch [850/1368] Loss: 0.5599
+  Batch [900/1368] Loss: 1.0431
+  Batch [950/1368] Loss: 0.7611
+  Batch [1000/1368] Loss: 0.7529
+  Batch [1050/1368] Loss: 0.7523
+  Batch [1100/1368] Loss: 1.0089
+  Batch [1150/1368] Loss: 0.9377
+  Batch [1200/1368] Loss: 0.6902
+  Batch [1250/1368] Loss: 0.7199
+  Batch [1300/1368] Loss: 1.2183
+  Batch [1350/1368] Loss: 0.8476
+  Train Loss: 0.8001, Train Acc: 0.7102
+  Val Loss: 0.7787, Val Acc: 0.7274
+  LR: 0.000037
+
+Epoch [87/100]
+  Batch [0/1368] Loss: 0.5830
+  Batch [50/1368] Loss: 0.7944
+  Batch [100/1368] Loss: 0.8191
+  Batch [150/1368] Loss: 0.8942
+  Batch [200/1368] Loss: 0.7491
+  Batch [250/1368] Loss: 1.0974
+  Batch [300/1368] Loss: 0.7459
+  Batch [350/1368] Loss: 0.6126
+  Batch [400/1368] Loss: 0.8267
+  Batch [450/1368] Loss: 0.7675
+  Batch [500/1368] Loss: 0.8699
+  Batch [550/1368] Loss: 0.8663
+  Batch [600/1368] Loss: 0.6779
+  Batch [650/1368] Loss: 0.6914
+  Batch [700/1368] Loss: 0.8288
+  Batch [750/1368] Loss: 0.6681
+  Batch [800/1368] Loss: 0.6533
+  Batch [850/1368] Loss: 0.9564
+  Batch [900/1368] Loss: 0.6681
+  Batch [950/1368] Loss: 0.6227
+  Batch [1000/1368] Loss: 0.8396
+  Batch [1050/1368] Loss: 0.8811
+  Batch [1100/1368] Loss: 0.6347
+  Batch [1150/1368] Loss: 1.0985
+  Batch [1200/1368] Loss: 0.8161
+  Batch [1250/1368] Loss: 0.5737
+  Batch [1300/1368] Loss: 0.5662
+  Batch [1350/1368] Loss: 0.7176
+  Train Loss: 0.7940, Train Acc: 0.7123
+  Val Loss: 0.7658, Val Acc: 0.7148
+  LR: 0.000033
+
+Epoch [88/100]
+  Batch [0/1368] Loss: 0.6650
+  Batch [50/1368] Loss: 0.9208
+  Batch [100/1368] Loss: 0.7012
+  Batch [150/1368] Loss: 0.7236
+  Batch [200/1368] Loss: 0.5615
+  Batch [250/1368] Loss: 0.6446
+  Batch [300/1368] Loss: 0.5948
+  Batch [350/1368] Loss: 0.8270
+  Batch [400/1368] Loss: 1.1762
+  Batch [450/1368] Loss: 1.2005
+  Batch [500/1368] Loss: 0.6780
+  Batch [550/1368] Loss: 0.8638
+  Batch [600/1368] Loss: 0.5725
+  Batch [650/1368] Loss: 0.7808
+  Batch [700/1368] Loss: 0.7065
+  Batch [750/1368] Loss: 0.9362
+  Batch [800/1368] Loss: 0.7044
+  Batch [850/1368] Loss: 0.4886
+  Batch [900/1368] Loss: 0.3847
+  Batch [950/1368] Loss: 0.7295
+  Batch [1000/1368] Loss: 0.5854
+  Batch [1050/1368] Loss: 0.7793
+  Batch [1100/1368] Loss: 1.0408
+  Batch [1150/1368] Loss: 0.9912
+  Batch [1200/1368] Loss: 0.8876
+  Batch [1250/1368] Loss: 0.6960
+  Batch [1300/1368] Loss: 0.8665
+  Batch [1350/1368] Loss: 0.6058
+  Train Loss: 0.7899, Train Acc: 0.7146
+  Val Loss: 0.7246, Val Acc: 0.7401
+  LR: 0.000030
+
+Epoch [89/100]
+  Batch [0/1368] Loss: 0.7007
+  Batch [50/1368] Loss: 0.6821
+  Batch [100/1368] Loss: 1.0214
+  Batch [150/1368] Loss: 1.0715
+  Batch [200/1368] Loss: 0.6667
+  Batch [250/1368] Loss: 0.6053
+  Batch [300/1368] Loss: 0.8108
+  Batch [350/1368] Loss: 0.7103
+  Batch [400/1368] Loss: 0.8150
+  Batch [450/1368] Loss: 0.9124
+  Batch [500/1368] Loss: 0.8921
+  Batch [550/1368] Loss: 0.8629
+  Batch [600/1368] Loss: 0.8464
+  Batch [650/1368] Loss: 1.4179
+  Batch [700/1368] Loss: 1.1099
+  Batch [750/1368] Loss: 0.9044
+  Batch [800/1368] Loss: 0.8806
+  Batch [850/1368] Loss: 0.7318
+  Batch [900/1368] Loss: 0.7919
+  Batch [950/1368] Loss: 0.9035
+  Batch [1000/1368] Loss: 0.8682
+  Batch [1050/1368] Loss: 0.8189
+  Batch [1100/1368] Loss: 0.6228
+  Batch [1150/1368] Loss: 1.0109
+  Batch [1200/1368] Loss: 0.8174
+  Batch [1250/1368] Loss: 0.6429
+  Batch [1300/1368] Loss: 1.0005
+  Batch [1350/1368] Loss: 0.9371
+  Train Loss: 0.7886, Train Acc: 0.7156
+  Val Loss: 0.7216, Val Acc: 0.7292
+  LR: 0.000027
+
+Epoch [90/100]
+  Batch [0/1368] Loss: 0.7716
+  Batch [50/1368] Loss: 0.9728
+  Batch [100/1368] Loss: 0.6651
+  Batch [150/1368] Loss: 0.8698
+  Batch [200/1368] Loss: 0.6686
+  Batch [250/1368] Loss: 0.4963
+  Batch [300/1368] Loss: 0.9828
+  Batch [350/1368] Loss: 0.8797
+  Batch [400/1368] Loss: 0.6098
+  Batch [450/1368] Loss: 1.1304
+  Batch [500/1368] Loss: 0.7700
+  Batch [550/1368] Loss: 0.8840
+  Batch [600/1368] Loss: 0.9251
+  Batch [650/1368] Loss: 1.0289
+  Batch [700/1368] Loss: 0.7024
+  Batch [750/1368] Loss: 0.6979
+  Batch [800/1368] Loss: 0.5949
+  Batch [850/1368] Loss: 0.5920
+  Batch [900/1368] Loss: 0.7243
+  Batch [950/1368] Loss: 0.7338
+  Batch [1000/1368] Loss: 0.6189
+  Batch [1050/1368] Loss: 0.6880
+  Batch [1100/1368] Loss: 0.8823
+  Batch [1150/1368] Loss: 0.7904
+  Batch [1200/1368] Loss: 0.5170
+  Batch [1250/1368] Loss: 1.0930
+  Batch [1300/1368] Loss: 0.6737
+  Batch [1350/1368] Loss: 0.7381
+  Train Loss: 0.7857, Train Acc: 0.7191
+  Val Loss: 0.7401, Val Acc: 0.7329
+  LR: 0.000024
+
+Epoch [91/100]
+  Batch [0/1368] Loss: 0.6234
+  Batch [50/1368] Loss: 0.7927
+  Batch [100/1368] Loss: 1.3423
+  Batch [150/1368] Loss: 0.6447
+  Batch [200/1368] Loss: 0.5073
+  Batch [250/1368] Loss: 0.6768
+  Batch [300/1368] Loss: 0.6027
+  Batch [350/1368] Loss: 0.6155
+  Batch [400/1368] Loss: 0.6870
+  Batch [450/1368] Loss: 0.6797
+  Batch [500/1368] Loss: 0.6623
+  Batch [550/1368] Loss: 0.3888
+  Batch [600/1368] Loss: 0.7323
+  Batch [650/1368] Loss: 1.0460
+  Batch [700/1368] Loss: 0.7925
+  Batch [750/1368] Loss: 1.0100
+  Batch [800/1368] Loss: 0.5912
+  Batch [850/1368] Loss: 0.7614
+  Batch [900/1368] Loss: 0.7826
+  Batch [950/1368] Loss: 0.7701
+  Batch [1000/1368] Loss: 0.7098
+  Batch [1050/1368] Loss: 1.0652
+  Batch [1100/1368] Loss: 0.7389
+  Batch [1150/1368] Loss: 0.8558
+  Batch [1200/1368] Loss: 0.8851
+  Batch [1250/1368] Loss: 0.7001
+  Batch [1300/1368] Loss: 0.5709
+  Batch [1350/1368] Loss: 0.6887
+  Train Loss: 0.7822, Train Acc: 0.7198
+  Val Loss: 0.7119, Val Acc: 0.7437
+  LR: 0.000022
+  ✨ 新的最佳模型! Acc: 0.7437
+
+Epoch [92/100]
+  Batch [0/1368] Loss: 0.4557
+  Batch [50/1368] Loss: 0.7508
+  Batch [100/1368] Loss: 0.9073
+  Batch [150/1368] Loss: 0.7592
+  Batch [200/1368] Loss: 1.1090
+  Batch [250/1368] Loss: 0.6749
+  Batch [300/1368] Loss: 0.9197
+  Batch [350/1368] Loss: 1.1020
+  Batch [400/1368] Loss: 0.9731
+  Batch [450/1368] Loss: 0.8582
+  Batch [500/1368] Loss: 0.5298
+  Batch [550/1368] Loss: 1.0999
+  Batch [600/1368] Loss: 0.6392
+  Batch [650/1368] Loss: 0.7363
+  Batch [700/1368] Loss: 0.8142
+  Batch [750/1368] Loss: 0.9102
+  Batch [800/1368] Loss: 0.7012
+  Batch [850/1368] Loss: 0.8554
+  Batch [900/1368] Loss: 0.7387
+  Batch [950/1368] Loss: 0.7713
+  Batch [1000/1368] Loss: 0.7363
+  Batch [1050/1368] Loss: 0.7227
+  Batch [1100/1368] Loss: 0.6400
+  Batch [1150/1368] Loss: 0.4610
+  Batch [1200/1368] Loss: 0.8317
+  Batch [1250/1368] Loss: 0.7426
+  Batch [1300/1368] Loss: 0.5894
+  Batch [1350/1368] Loss: 1.0116
+  Train Loss: 0.7824, Train Acc: 0.7189
+  Val Loss: 0.7202, Val Acc: 0.7473
+  LR: 0.000020
+  ✨ 新的最佳模型! Acc: 0.7473
+
+Epoch [93/100]
+  Batch [0/1368] Loss: 0.6232
+  Batch [50/1368] Loss: 0.6631
+  Batch [100/1368] Loss: 0.7247
+  Batch [150/1368] Loss: 0.6317
+  Batch [200/1368] Loss: 0.6413
+  Batch [250/1368] Loss: 1.0959
+  Batch [300/1368] Loss: 0.7792
+  Batch [350/1368] Loss: 0.6771
+  Batch [400/1368] Loss: 0.9476
+  Batch [450/1368] Loss: 0.9135
+  Batch [500/1368] Loss: 1.0372
+  Batch [550/1368] Loss: 0.8217
+  Batch [600/1368] Loss: 0.8357
+  Batch [650/1368] Loss: 1.1989
+  Batch [700/1368] Loss: 0.6830
+  Batch [750/1368] Loss: 0.6050
+  Batch [800/1368] Loss: 0.8647
+  Batch [850/1368] Loss: 0.7885
+  Batch [900/1368] Loss: 0.8012
+  Batch [950/1368] Loss: 0.5472
+  Batch [1000/1368] Loss: 0.7580
+  Batch [1050/1368] Loss: 0.6060
+  Batch [1100/1368] Loss: 0.9278
+  Batch [1150/1368] Loss: 0.7823
+  Batch [1200/1368] Loss: 0.4238
+  Batch [1250/1368] Loss: 0.6622
+  Batch [1300/1368] Loss: 0.7536
+  Batch [1350/1368] Loss: 0.5287
+  Train Loss: 0.7766, Train Acc: 0.7220
+  Val Loss: 0.7145, Val Acc: 0.7347
+  LR: 0.000018
+
+Epoch [94/100]
+  Batch [0/1368] Loss: 0.8199
+  Batch [50/1368] Loss: 0.8121
+  Batch [100/1368] Loss: 0.7034
+  Batch [150/1368] Loss: 0.8643
+  Batch [200/1368] Loss: 0.6667
+  Batch [250/1368] Loss: 0.5261
+  Batch [300/1368] Loss: 0.7058
+  Batch [350/1368] Loss: 0.7945
+  Batch [400/1368] Loss: 1.2428
+  Batch [450/1368] Loss: 0.4560
+  Batch [500/1368] Loss: 0.7521
+  Batch [550/1368] Loss: 0.5997
+  Batch [600/1368] Loss: 0.6530
+  Batch [650/1368] Loss: 0.5399
+  Batch [700/1368] Loss: 0.8429
+  Batch [750/1368] Loss: 0.9707
+  Batch [800/1368] Loss: 0.7727
+  Batch [850/1368] Loss: 0.8070
+  Batch [900/1368] Loss: 0.7911
+  Batch [950/1368] Loss: 0.9254
+  Batch [1000/1368] Loss: 0.6838
+  Batch [1050/1368] Loss: 0.7065
+  Batch [1100/1368] Loss: 0.8912
+  Batch [1150/1368] Loss: 1.0028
+  Batch [1200/1368] Loss: 0.7123
+  Batch [1250/1368] Loss: 0.8604
+  Batch [1300/1368] Loss: 0.8678
+  Batch [1350/1368] Loss: 0.6654
+  Train Loss: 0.7734, Train Acc: 0.7217
+  Val Loss: 0.7165, Val Acc: 0.7292
+  LR: 0.000016
+
+Epoch [95/100]
+  Batch [0/1368] Loss: 0.6462
+  Batch [50/1368] Loss: 0.7638
+  Batch [100/1368] Loss: 0.6819
+  Batch [150/1368] Loss: 0.5833
+  Batch [200/1368] Loss: 0.7471
+  Batch [250/1368] Loss: 0.7233
+  Batch [300/1368] Loss: 0.7204
+  Batch [350/1368] Loss: 0.5620
+  Batch [400/1368] Loss: 0.7712
+  Batch [450/1368] Loss: 0.7364
+  Batch [500/1368] Loss: 0.8816
+  Batch [550/1368] Loss: 1.1136
+  Batch [600/1368] Loss: 0.8501
+  Batch [650/1368] Loss: 0.7212
+  Batch [700/1368] Loss: 0.8957
+  Batch [750/1368] Loss: 0.8754
+  Batch [800/1368] Loss: 0.7251
+  Batch [850/1368] Loss: 0.3900
+  Batch [900/1368] Loss: 0.9040
+  Batch [950/1368] Loss: 0.6108
+  Batch [1000/1368] Loss: 0.8949
+  Batch [1050/1368] Loss: 0.9611
+  Batch [1100/1368] Loss: 0.5814
+  Batch [1150/1368] Loss: 0.8529
+  Batch [1200/1368] Loss: 1.0638
+  Batch [1250/1368] Loss: 1.0066
+  Batch [1300/1368] Loss: 0.6751
+  Batch [1350/1368] Loss: 0.6220
+  Train Loss: 0.7711, Train Acc: 0.7231
+  Val Loss: 0.7192, Val Acc: 0.7473
+  LR: 0.000014
+
+Epoch [96/100]
+  Batch [0/1368] Loss: 1.0228
+  Batch [50/1368] Loss: 0.8507
+  Batch [100/1368] Loss: 0.7862
+  Batch [150/1368] Loss: 0.8351
+  Batch [200/1368] Loss: 0.5947
+  Batch [250/1368] Loss: 1.0297
+  Batch [300/1368] Loss: 0.5151
+  Batch [350/1368] Loss: 0.8406
+  Batch [400/1368] Loss: 0.5575
+  Batch [450/1368] Loss: 0.7966
+  Batch [500/1368] Loss: 0.5193
+  Batch [550/1368] Loss: 0.5869
+  Batch [600/1368] Loss: 0.8408
+  Batch [650/1368] Loss: 0.7735
+  Batch [700/1368] Loss: 0.8371
+  Batch [750/1368] Loss: 0.6828
+  Batch [800/1368] Loss: 0.6484
+  Batch [850/1368] Loss: 0.8865
+  Batch [900/1368] Loss: 1.1635
+  Batch [950/1368] Loss: 0.8850
+  Batch [1000/1368] Loss: 0.6449
+  Batch [1050/1368] Loss: 0.6234
+  Batch [1100/1368] Loss: 0.9011
+  Batch [1150/1368] Loss: 1.0098
+  Batch [1200/1368] Loss: 0.7932
+  Batch [1250/1368] Loss: 0.6478
+  Batch [1300/1368] Loss: 0.7383
+  Batch [1350/1368] Loss: 0.6899
+  Train Loss: 0.7706, Train Acc: 0.7223
+  Val Loss: 0.7169, Val Acc: 0.7419
+  LR: 0.000013
+
+Epoch [97/100]
+  Batch [0/1368] Loss: 0.8536
+  Batch [50/1368] Loss: 0.4933
+  Batch [100/1368] Loss: 0.8676
+  Batch [150/1368] Loss: 0.4830
+  Batch [200/1368] Loss: 0.6314
+  Batch [250/1368] Loss: 0.8619
+  Batch [300/1368] Loss: 0.7435
+  Batch [350/1368] Loss: 0.7811
+  Batch [400/1368] Loss: 0.5368
+  Batch [450/1368] Loss: 0.6732
+  Batch [500/1368] Loss: 0.8351
+  Batch [550/1368] Loss: 0.7536
+  Batch [600/1368] Loss: 1.0944
+  Batch [650/1368] Loss: 1.3058
+  Batch [700/1368] Loss: 0.9062
+  Batch [750/1368] Loss: 0.7395
+  Batch [800/1368] Loss: 0.7330
+  Batch [850/1368] Loss: 0.9678
+  Batch [900/1368] Loss: 0.8115
+  Batch [950/1368] Loss: 0.7432
+  Batch [1000/1368] Loss: 0.8386
+  Batch [1050/1368] Loss: 1.0102
+  Batch [1100/1368] Loss: 0.8242
+  Batch [1150/1368] Loss: 0.4397
+  Batch [1200/1368] Loss: 0.4540
+  Batch [1250/1368] Loss: 0.6818
+  Batch [1300/1368] Loss: 0.7348
+  Batch [1350/1368] Loss: 0.6417
+  Train Loss: 0.7666, Train Acc: 0.7249
+  Val Loss: 0.7153, Val Acc: 0.7292
+  LR: 0.000012
+
+Epoch [98/100]
+  Batch [0/1368] Loss: 0.8259
+  Batch [50/1368] Loss: 0.7805
+  Batch [100/1368] Loss: 0.8952
+  Batch [150/1368] Loss: 0.7334
+  Batch [200/1368] Loss: 0.7535
+  Batch [250/1368] Loss: 0.7370
+  Batch [300/1368] Loss: 0.7864
+  Batch [350/1368] Loss: 1.0071
+  Batch [400/1368] Loss: 0.9169
+  Batch [450/1368] Loss: 0.6947
+  Batch [500/1368] Loss: 0.5459
+  Batch [550/1368] Loss: 0.6487
+  Batch [600/1368] Loss: 0.6456
+  Batch [650/1368] Loss: 0.8641
+  Batch [700/1368] Loss: 0.8645
+  Batch [750/1368] Loss: 0.6697
+  Batch [800/1368] Loss: 1.0028
+  Batch [850/1368] Loss: 0.6597
+  Batch [900/1368] Loss: 0.7306
+  Batch [950/1368] Loss: 0.7966
+  Batch [1000/1368] Loss: 0.8823
+  Batch [1050/1368] Loss: 0.5252
+  Batch [1100/1368] Loss: 0.9520
+  Batch [1150/1368] Loss: 1.0616
+  Batch [1200/1368] Loss: 0.8833
+  Batch [1250/1368] Loss: 1.0789
+  Batch [1300/1368] Loss: 0.6033
+  Batch [1350/1368] Loss: 0.7622
+  Train Loss: 0.7692, Train Acc: 0.7244
+  Val Loss: 0.6996, Val Acc: 0.7599
+  LR: 0.000011
+  ✨ 新的最佳模型! Acc: 0.7599
+
+Epoch [99/100]
+  Batch [0/1368] Loss: 0.8991
+  Batch [50/1368] Loss: 0.8089
+  Batch [100/1368] Loss: 0.7063
+  Batch [150/1368] Loss: 0.8758
+  Batch [200/1368] Loss: 0.7013
+  Batch [250/1368] Loss: 0.8387
+  Batch [300/1368] Loss: 1.0451
+  Batch [350/1368] Loss: 0.9104
+  Batch [400/1368] Loss: 0.5925
+  Batch [450/1368] Loss: 0.6414
+  Batch [500/1368] Loss: 0.6614
+  Batch [550/1368] Loss: 0.8969
+  Batch [600/1368] Loss: 0.7572
+  Batch [650/1368] Loss: 0.7335
+  Batch [700/1368] Loss: 0.7501
+  Batch [750/1368] Loss: 0.8824
+  Batch [800/1368] Loss: 0.5802
+  Batch [850/1368] Loss: 0.7302
+  Batch [900/1368] Loss: 0.5420
+  Batch [950/1368] Loss: 0.5397
+  Batch [1000/1368] Loss: 0.7452
+  Batch [1050/1368] Loss: 0.5809
+  Batch [1100/1368] Loss: 0.8361
+  Batch [1150/1368] Loss: 0.6000
+  Batch [1200/1368] Loss: 0.8588
+  Batch [1250/1368] Loss: 0.9580
+  Batch [1300/1368] Loss: 0.9852
+  Batch [1350/1368] Loss: 0.8895
+  Train Loss: 0.7609, Train Acc: 0.7250
+  Val Loss: 0.7088, Val Acc: 0.7292
+  LR: 0.000010
+
+Epoch [100/100]
+  Batch [0/1368] Loss: 1.1004
+  Batch [50/1368] Loss: 0.8239
+  Batch [100/1368] Loss: 0.8762
+  Batch [150/1368] Loss: 0.8777
+  Batch [200/1368] Loss: 0.6541
+  Batch [250/1368] Loss: 0.5757
+  Batch [300/1368] Loss: 0.9038
+  Batch [350/1368] Loss: 1.0805
+  Batch [400/1368] Loss: 0.6555
+  Batch [450/1368] Loss: 0.8442
+  Batch [500/1368] Loss: 0.5116
+  Batch [550/1368] Loss: 0.5356
+  Batch [600/1368] Loss: 0.8055
+  Batch [650/1368] Loss: 0.8170
+  Batch [700/1368] Loss: 0.6584
+  Batch [750/1368] Loss: 0.9712
+  Batch [800/1368] Loss: 0.7015
+  Batch [850/1368] Loss: 0.8636
+  Batch [900/1368] Loss: 0.7618
+  Batch [950/1368] Loss: 0.9126
+  Batch [1000/1368] Loss: 0.5916
+  Batch [1050/1368] Loss: 1.0984
+  Batch [1100/1368] Loss: 0.5470
+  Batch [1150/1368] Loss: 0.6957
+  Batch [1200/1368] Loss: 0.5727
+  Batch [1250/1368] Loss: 1.0302
+  Batch [1300/1368] Loss: 0.7314
+  Batch [1350/1368] Loss: 0.5240
+/mnt/acmis_hby/Paper_experiment_one/legacy_galaxy-master/han_dcn_galaxy_classification.py:462: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(output_dir / f'{model_name}_best.pth', map_location=device)
+  Train Loss: 0.7627, Train Acc: 0.7256
+  Val Loss: 0.6979, Val Acc: 0.7383
+  LR: 0.000010
+
+⏱️ 训练完成，用时: 873.5分钟
+   最佳Epoch: 98, 最佳验证准确率: 0.7599
+
+📊 开始测试评估...
+
+🎯 测试结果:
+   准确率: 0.7353
+   宏平均 F1: 0.7077
+   加权平均 F1: 0.7290
+
+💾 结果已保存到 result/:
+   预测结果: han_dcn_galaxy_8_classes_predictions.csv
+   完整结果: han_dcn_galaxy_8_classes_results.json
+   混淆矩阵图: han_dcn_galaxy_8_classes_confusion_matrix.png
+   混淆矩阵数据: han_dcn_galaxy_8_classes_confusion_matrix_data.json
+   训练历史: han_dcn_galaxy_8_classes_history.csv
+   最佳模型: han_dcn_galaxy_8_classes_best.pth
+
+✨ HAN-DCN星系分类任务完成!
