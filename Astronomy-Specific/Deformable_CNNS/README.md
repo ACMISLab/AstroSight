@@ -29,7 +29,7 @@ This repository contains the implementation of HAN-DCN model for classifying gal
 ## Key Files
 
 - `han_dcn_galaxy_classification.py` - Main training and evaluation script
-- `dis_main_train.py` - Original training script（https://github.com/kustcn/legacy_galaxy）
+- `dis_main_train.py` - Original training script(https://github.com/kustcn/legacy_galaxy)
 - `models/han_dcn.py` - Model architecture
 - `engine.py` - Training/evaluation engine
 - `utils.py` - Utility functions
