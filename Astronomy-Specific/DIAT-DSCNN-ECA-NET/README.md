@@ -29,7 +29,7 @@ This repository contains the implementation of ECA-CNN model for classifying gal
 ## Key Files
 
 - `eca_cnn_galaxy_classification.py` - Main training and evaluation script
-- `Galaxy_Classification_Using_ECA_Attention_Mechanism_(1)_(1)_(2).ipynb` - Original Jupyter notebook（https://github.com/ajaywagh007/Galaxy-Classification-Using-CNN.）
+- `Galaxy_Classification_Using_ECA_Attention_Mechanism_(1)_(1)_(2).ipynb` - Original Jupyter notebook（https://github.com/ajaywagh007/Galaxy-Classification-Using-CNN)
 
 ## Quick Start
 
