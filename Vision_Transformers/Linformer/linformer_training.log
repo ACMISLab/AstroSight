@@ -1,0 +1,176 @@
+nohup: ignoring input
+🚀 使用设备: cuda:1
+   GPU型号: NVIDIA L20
+🎯 实验配置:
+   数据路径: /mnt/acmis_hby/Paper_experiment_one/baselines_dataset
+   图像大小: 224x224
+   批次大小: 64
+   类别数: 8
+   学习率: 0.0001
+   最大轮数: 200
+🔄 创建数据集...
+📁 train 数据加载:
+   总样本数: 43796
+   barred_spirals: 6320
+   cigar_shaped_elliptical: 5857
+   edge_on: 6320
+   in_between_elliptical: 6320
+   irregular: 4680
+   merger: 1659
+   round_elliptical: 6320
+   unbarred_spirals: 6320
+📁 val 数据加载:
+   总样本数: 554
+   barred_spirals: 80
+   cigar_shaped_elliptical: 74
+   edge_on: 80
+   in_between_elliptical: 80
+   irregular: 59
+   merger: 21
+   round_elliptical: 80
+   unbarred_spirals: 80
+📁 test 数据加载:
+   总样本数: 11090
+   barred_spirals: 1600
+   cigar_shaped_elliptical: 1483
+   edge_on: 1600
+   in_between_elliptical: 1600
+   irregular: 1186
+   merger: 421
+   round_elliptical: 1600
+   unbarred_spirals: 1600
+✅ 数据加载器创建完成:
+   训练样本: 43796 (685 批次)
+   验证样本: 554 (9 批次)
+   测试样本: 11090 (174 批次)
+🏗️  模型架构:
+   模型: Linformer + Vision Transformer
+   Patch大小: 28
+   深度: 12
+   隐藏维度: 128
+   K维度: 64
+   注意力头数: 8
+   总参数量: 2,790,376
+   可训练参数: 2,790,376
+🚀 开始训练Linformer...
+   类别权重: [0.8662183 0.9346935 0.8662183 0.8662183 1.169765  3.2998796 0.8662183
+ 0.8662183]
+Epoch 1/200	Train loss: 1.6602	Train acc: 0.3681	Val loss: 1.3812	Val acc: 0.5144	Time: 1m 29s	<--
+Epoch 2/200	Train loss: 1.3707	Train acc: 0.5060	Val loss: 1.1940	Val acc: 0.5812	Time: 1m 25s	<--
+Epoch 3/200	Train loss: 1.2771	Train acc: 0.5429	Val loss: 1.1785	Val acc: 0.6029	Time: 1m 13s	<--
+Epoch 4/200	Train loss: 1.2142	Train acc: 0.5658	Val loss: 1.1385	Val acc: 0.5939	Time: 1m 10s
+Epoch 5/200	Train loss: 1.1775	Train acc: 0.5811	Val loss: 1.1397	Val acc: 0.5975	Time: 1m 10s
+Epoch 6/200	Train loss: 1.1426	Train acc: 0.5906	Val loss: 1.0898	Val acc: 0.6227	Time: 1m 9s	<--
+Epoch 7/200	Train loss: 1.1185	Train acc: 0.6023	Val loss: 1.0721	Val acc: 0.6101	Time: 1m 9s
+Epoch 8/200	Train loss: 1.0947	Train acc: 0.6078	Val loss: 1.0960	Val acc: 0.5812	Time: 1m 8s
+Epoch 9/200	Train loss: 1.0771	Train acc: 0.6145	Val loss: 1.0129	Val acc: 0.6155	Time: 1m 9s
+Epoch 10/200	Train loss: 1.0621	Train acc: 0.6210	Val loss: 0.9766	Val acc: 0.6336	Time: 1m 8s	<--
+Epoch 11/200	Train loss: 1.0392	Train acc: 0.6282	Val loss: 0.9551	Val acc: 0.6444	Time: 1m 7s	<--
+Epoch 12/200	Train loss: 1.0331	Train acc: 0.6326	Val loss: 0.9425	Val acc: 0.6534	Time: 1m 9s	<--
+Epoch 13/200	Train loss: 1.0086	Train acc: 0.6409	Val loss: 0.9568	Val acc: 0.6679	Time: 1m 10s	<--
+Epoch 14/200	Train loss: 0.9987	Train acc: 0.6403	Val loss: 0.9385	Val acc: 0.6715	Time: 1m 7s	<--
+Epoch 15/200	Train loss: 0.9846	Train acc: 0.6465	Val loss: 0.9134	Val acc: 0.6679	Time: 1m 10s
+Epoch 16/200	Train loss: 0.9735	Train acc: 0.6482	Val loss: 0.8792	Val acc: 0.6715	Time: 1m 9s
+Epoch 17/200	Train loss: 0.9628	Train acc: 0.6528	Val loss: 0.8933	Val acc: 0.6606	Time: 1m 10s
+Epoch 18/200	Train loss: 0.9559	Train acc: 0.6568	Val loss: 0.8878	Val acc: 0.6841	Time: 1m 10s	<--
+Epoch 19/200	Train loss: 0.9479	Train acc: 0.6591	Val loss: 0.8773	Val acc: 0.6823	Time: 1m 10s
+Epoch 20/200	Train loss: 0.9343	Train acc: 0.6631	Val loss: 0.8555	Val acc: 0.6895	Time: 1m 10s	<--
+Epoch 21/200	Train loss: 0.9310	Train acc: 0.6665	Val loss: 0.8653	Val acc: 0.6931	Time: 1m 7s	<--
+Epoch 22/200	Train loss: 0.9192	Train acc: 0.6693	Val loss: 0.8281	Val acc: 0.6913	Time: 1m 8s
+Epoch 23/200	Train loss: 0.9130	Train acc: 0.6714	Val loss: 0.8350	Val acc: 0.6895	Time: 1m 10s
+Epoch 24/200	Train loss: 0.9010	Train acc: 0.6744	Val loss: 0.8286	Val acc: 0.7076	Time: 1m 9s	<--
+Epoch 25/200	Train loss: 0.8958	Train acc: 0.6772	Val loss: 0.8233	Val acc: 0.6931	Time: 1m 9s
+Epoch 26/200	Train loss: 0.8912	Train acc: 0.6790	Val loss: 0.8111	Val acc: 0.6968	Time: 1m 10s
+Epoch 27/200	Train loss: 0.8825	Train acc: 0.6819	Val loss: 0.8126	Val acc: 0.7004	Time: 1m 8s
+Epoch 28/200	Train loss: 0.8779	Train acc: 0.6844	Val loss: 0.8070	Val acc: 0.6841	Time: 1m 7s
+Epoch 29/200	Train loss: 0.8791	Train acc: 0.6816	Val loss: 0.8166	Val acc: 0.6913	Time: 1m 8s
+Epoch 30/200	Train loss: 0.8653	Train acc: 0.6880	Val loss: 0.8217	Val acc: 0.6733	Time: 1m 10s
+Epoch 31/200	Train loss: 0.8636	Train acc: 0.6881	Val loss: 0.7959	Val acc: 0.6968	Time: 1m 8s
+Epoch 32/200	Train loss: 0.8589	Train acc: 0.6881	Val loss: 0.8035	Val acc: 0.6805	Time: 1m 11s
+Epoch 33/200	Train loss: 0.8565	Train acc: 0.6881	Val loss: 0.7663	Val acc: 0.7184	Time: 1m 9s	<--
+Epoch 34/200	Train loss: 0.8454	Train acc: 0.6938	Val loss: 0.8116	Val acc: 0.6949	Time: 1m 8s
+Epoch 35/200	Train loss: 0.8439	Train acc: 0.6949	Val loss: 0.7801	Val acc: 0.7040	Time: 1m 8s
+Epoch 36/200	Train loss: 0.8413	Train acc: 0.6935	Val loss: 0.7791	Val acc: 0.7148	Time: 1m 8s
+Epoch 37/200	Train loss: 0.8411	Train acc: 0.6959	Val loss: 0.7761	Val acc: 0.7004	Time: 1m 9s
+Epoch 38/200	Train loss: 0.8264	Train acc: 0.6982	Val loss: 0.7681	Val acc: 0.7022	Time: 1m 8s
+Epoch 39/200	Train loss: 0.8253	Train acc: 0.7005	Val loss: 0.7667	Val acc: 0.7238	Time: 1m 9s	<--
+Epoch 40/200	Train loss: 0.8228	Train acc: 0.7020	Val loss: 0.7735	Val acc: 0.7220	Time: 1m 10s
+Epoch 41/200	Train loss: 0.8175	Train acc: 0.7048	Val loss: 0.7565	Val acc: 0.7238	Time: 1m 8s
+Epoch 42/200	Train loss: 0.8198	Train acc: 0.7009	Val loss: 0.7804	Val acc: 0.6986	Time: 1m 9s
+Epoch 43/200	Train loss: 0.8106	Train acc: 0.7018	Val loss: 0.7591	Val acc: 0.7238	Time: 1m 7s
+Epoch 44/200	Train loss: 0.8062	Train acc: 0.7087	Val loss: 0.7905	Val acc: 0.7184	Time: 1m 8s
+Epoch 45/200	Train loss: 0.8023	Train acc: 0.7088	Val loss: 0.7595	Val acc: 0.7256	Time: 1m 7s	<--
+Epoch 46/200	Train loss: 0.8049	Train acc: 0.7080	Val loss: 0.7575	Val acc: 0.7130	Time: 1m 9s
+Epoch 47/200	Train loss: 0.7928	Train acc: 0.7094	Val loss: 0.7606	Val acc: 0.7166	Time: 1m 9s
+Epoch 48/200	Train loss: 0.7902	Train acc: 0.7121	Val loss: 0.7410	Val acc: 0.7166	Time: 1m 8s
+Epoch 49/200	Train loss: 0.7902	Train acc: 0.7137	Val loss: 0.7557	Val acc: 0.7112	Time: 1m 8s
+Epoch 50/200	Train loss: 0.7888	Train acc: 0.7122	Val loss: 0.7531	Val acc: 0.7310	Time: 1m 8s	<--
+Epoch 51/200	Train loss: 0.7878	Train acc: 0.7138	Val loss: 0.7457	Val acc: 0.7166	Time: 1m 10s
+Epoch 52/200	Train loss: 0.7821	Train acc: 0.7151	Val loss: 0.7534	Val acc: 0.7166	Time: 1m 10s
+Epoch 53/200	Train loss: 0.7727	Train acc: 0.7185	Val loss: 0.7387	Val acc: 0.7184	Time: 1m 10s
+Epoch 54/200	Train loss: 0.7748	Train acc: 0.7187	Val loss: 0.7325	Val acc: 0.7112	Time: 1m 8s
+Epoch 55/200	Train loss: 0.7727	Train acc: 0.7184	Val loss: 0.7351	Val acc: 0.7401	Time: 1m 8s	<--
+Epoch 56/200	Train loss: 0.7676	Train acc: 0.7203	Val loss: 0.7385	Val acc: 0.7274	Time: 1m 9s
+Epoch 57/200	Train loss: 0.7665	Train acc: 0.7212	Val loss: 0.7424	Val acc: 0.7256	Time: 1m 7s
+Epoch 58/200	Train loss: 0.7619	Train acc: 0.7199	Val loss: 0.7350	Val acc: 0.7220	Time: 1m 8s
+Epoch 59/200	Train loss: 0.7592	Train acc: 0.7237	Val loss: 0.7588	Val acc: 0.7220	Time: 1m 8s
+Epoch 60/200	Train loss: 0.7552	Train acc: 0.7232	Val loss: 0.7417	Val acc: 0.7256	Time: 1m 10s
+Epoch 61/200	Train loss: 0.7582	Train acc: 0.7252	Val loss: 0.7390	Val acc: 0.6986	Time: 1m 10s
+Epoch 62/200	Train loss: 0.7516	Train acc: 0.7249	Val loss: 0.7296	Val acc: 0.7238	Time: 1m 10s
+Epoch 63/200	Train loss: 0.7489	Train acc: 0.7258	Val loss: 0.7280	Val acc: 0.7274	Time: 1m 8s
+Epoch 64/200	Train loss: 0.7460	Train acc: 0.7249	Val loss: 0.7273	Val acc: 0.7473	Time: 1m 8s	<--
+Epoch 65/200	Train loss: 0.7459	Train acc: 0.7254	Val loss: 0.7430	Val acc: 0.7004	Time: 1m 10s
+Epoch 66/200	Train loss: 0.7425	Train acc: 0.7287	Val loss: 0.7227	Val acc: 0.7220	Time: 1m 8s
+Epoch 67/200	Train loss: 0.7370	Train acc: 0.7292	Val loss: 0.7024	Val acc: 0.7401	Time: 1m 9s
+Epoch 68/200	Train loss: 0.7362	Train acc: 0.7295	Val loss: 0.7102	Val acc: 0.7473	Time: 1m 7s
+Epoch 69/200	Train loss: 0.7300	Train acc: 0.7324	Val loss: 0.7268	Val acc: 0.7383	Time: 1m 7s
+Epoch 70/200	Train loss: 0.7365	Train acc: 0.7298	Val loss: 0.6960	Val acc: 0.7166	Time: 1m 10s
+Epoch 71/200	Train loss: 0.7296	Train acc: 0.7290	Val loss: 0.7039	Val acc: 0.7419	Time: 1m 8s
+Epoch 72/200	Train loss: 0.7280	Train acc: 0.7310	Val loss: 0.7220	Val acc: 0.7347	Time: 1m 8s
+Epoch 73/200	Train loss: 0.7242	Train acc: 0.7342	Val loss: 0.6995	Val acc: 0.7473	Time: 1m 8s
+Epoch 74/200	Train loss: 0.7193	Train acc: 0.7341	Val loss: 0.7182	Val acc: 0.7383	Time: 1m 8s
+Early stopping... (Model did not improve after 10 epochs)
+Best epoch = 64, with training accuracy = 0.7249 and validation accuracy = 0.7473
+🧪 开始测试集评估...
+
+🎯 测试结果:
+   准确率: 0.7375
+   Macro F1-Score: 0.7185
+   Weighted F1-Score: 0.7361
+
+📋 各类别准确率:
+   barred_spirals: 0.7681 (支持样本: 1600)
+   cigar_shaped_elliptical: 0.7559 (支持样本: 1483)
+   edge_on: 0.8550 (支持样本: 1600)
+   in_between_elliptical: 0.6863 (支持样本: 1600)
+   irregular: 0.5422 (支持样本: 1186)
+   merger: 0.7316 (支持样本: 421)
+   round_elliptical: 0.8744 (支持样本: 1600)
+   unbarred_spirals: 0.6331 (支持样本: 1600)
+
+📋 详细分类报告:
+                         precision    recall  f1-score   support
+
+         barred_spirals     0.7744    0.7681    0.7713      1600
+cigar_shaped_elliptical     0.7585    0.7559    0.7572      1483
+                edge_on     0.7768    0.8550    0.8140      1600
+  in_between_elliptical     0.8068    0.6863    0.7416      1600
+              irregular     0.6608    0.5422    0.5956      1186
+                 merger     0.4976    0.7316    0.5923       421
+       round_elliptical     0.8003    0.8744    0.8357      1600
+       unbarred_spirals     0.6481    0.6331    0.6405      1600
+
+               accuracy                         0.7375     11090
+              macro avg     0.7154    0.7308    0.7185     11090
+           weighted avg     0.7402    0.7375    0.7361     11090
+
+
+💾 结果已保存:
+   预测结果: linformer_galaxy_28_128_12_predictions.csv
+   完整结果: linformer_galaxy_28_128_12_results.json
+   混淆矩阵图: linformer_galaxy_28_128_12_confusion_matrix.png
+   混淆矩阵原始数据: linformer_galaxy_28_128_12_confusion_matrix_data.json
+   训练历史: linformer_galaxy_28_128_12_history.csv
+   最佳模型: linformer_galaxy_28_128_12_best.pth
+
+✅ Linformer星系分类实验完成!
