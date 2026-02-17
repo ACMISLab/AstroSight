@@ -1,0 +1,166 @@
+{
+  "overall": {
+    "total_samples": 11076,
+    "accuracy": 33.3875
+  },
+  "macro": {
+    "precision": 42.0972,
+    "recall": 32.9242,
+    "f1_score": 28.2427
+  },
+  "weighted": {
+    "precision": 40.9884,
+    "recall": 33.3875,
+    "f1_score": 27.1703
+  },
+  "per_class": {
+    "A": {
+      "category": "round elliptical",
+      "precision": 32.5018,
+      "recall": 86.4746,
+      "f1_score": 47.246,
+      "support": 1597
+    },
+    "B": {
+      "category": "in-between elliptical",
+      "precision": 20.6463,
+      "recall": 14.402,
+      "f1_score": 16.9679,
+      "support": 1597
+    },
+    "C": {
+      "category": "cigar-shaped elliptical",
+      "precision": 27.1053,
+      "recall": 69.4538,
+      "f1_score": 38.993,
+      "support": 1483
+    },
+    "D": {
+      "category": "edge-on",
+      "precision": 62.1302,
+      "recall": 39.4243,
+      "f1_score": 48.2389,
+      "support": 1598
+    },
+    "E": {
+      "category": "Barred spirals",
+      "precision": 56.0,
+      "recall": 0.8755,
+      "f1_score": 1.7241,
+      "support": 1599
+    },
+    "F": {
+      "category": "Unbarred spirals",
+      "precision": 36.6516,
+      "recall": 5.072,
+      "f1_score": 8.9109,
+      "support": 1597
+    },
+    "G": {
+      "category": "Irregular",
+      "precision": 50.7463,
+      "recall": 17.2152,
+      "f1_score": 25.7089,
+      "support": 1185
+    },
+    "H": {
+      "category": "merger",
+      "precision": 50.996,
+      "recall": 30.4762,
+      "f1_score": 38.152,
+      "support": 420
+    }
+  },
+  "confusion_matrix": [
+    [
+      1381,
+      61,
+      115,
+      7,
+      0,
+      0,
+      23,
+      10
+    ],
+    [
+      1023,
+      230,
+      310,
+      2,
+      0,
+      2,
+      24,
+      6
+    ],
+    [
+      66,
+      137,
+      1030,
+      237,
+      0,
+      1,
+      4,
+      8
+    ],
+    [
+      21,
+      57,
+      879,
+      630,
+      0,
+      0,
+      1,
+      10
+    ],
+    [
+      717,
+      263,
+      407,
+      22,
+      14,
+      120,
+      34,
+      22
+    ],
+    [
+      780,
+      238,
+      379,
+      31,
+      5,
+      81,
+      61,
+      22
+    ],
+    [
+      218,
+      113,
+      509,
+      77,
+      6,
+      13,
+      204,
+      45
+    ],
+    [
+      43,
+      15,
+      171,
+      8,
+      0,
+      4,
+      51,
+      128
+    ]
+  ],
+  "labels": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H"
+  ]
+}
