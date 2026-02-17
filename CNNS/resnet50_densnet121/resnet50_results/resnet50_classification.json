@@ -1,0 +1,14 @@
+                         precision    recall  f1-score   support
+
+         barred_spirals     0.8368    0.8462    0.8415      1600
+cigar_shaped_elliptical     0.7296    0.8786    0.7972      1483
+                edge_on     0.8753    0.7588    0.8129      1600
+  in_between_elliptical     0.7746    0.7731    0.7739      1600
+              irregular     0.6925    0.6400    0.6652      1186
+                 merger     0.6427    0.7648    0.6985       421
+       round_elliptical     0.7802    0.9050    0.8380      1600
+       unbarred_spirals     0.7814    0.6100    0.6852      1600
+
+               accuracy                         0.7766     11090
+              macro avg     0.7641    0.7721    0.7640     11090
+           weighted avg     0.7801    0.7766    0.7743     11090
