@@ -23,7 +23,7 @@ This repository contains the implementation of Linformer model for classifying g
 - **Hidden Dimension**: 128
 - **Linformer K Dimension**: 64
 - **Classes**: 8
-- **Original code** :https://github.com/C-JIe123/Galaxy-Morphology
+- **Original code** :https://github.com/soliao/Galaxy-Zoo-Classification
 
 ## Key Files
 
