@@ -1,0 +1,264 @@
+{
+  "model_info": {
+    "name": "Swin Transformer (Fixed)",
+    "version": "Swin-Base-Patch4-Window7-224",
+    "paper": "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows (ICCV 2021)",
+    "pretrained": "microsoft/swin-base-patch4-window7-224",
+    "total_parameters": 87405769,
+    "task": "Galaxy Morphological Attribute Regression",
+    "num_attributes": 17
+  },
+  "training_config": {
+    "epochs": 1,
+    "batch_size": 32,
+    "learning_rate": 5e-05,
+    "weight_decay": 0.05,
+    "image_size": 224,
+    "optimizer": "AdamW",
+    "scheduler": "CosineAnnealingLR",
+    "loss_function": "MSELoss",
+    "validation_split": 0.01
+  },
+  "overall_metrics": {
+    "MAE": 0.11321347206830978,
+    "MSE": 0.043819576501846313,
+    "RMSE": 0.20933126021176654,
+    "R2_overall": 0.7120559215545654,
+    "R2_attribute_average": 0.5498224496841431,
+    "R2_sample_average": 0.7016938547620027,
+    "R2_variance_weighted": 0.5921676158905029,
+    "R2_manual_verification": 0.7120559215545654,
+    "pearson_correlation": 0.8492617057866968,
+    "max_absolute_error": 0.9996634721755981,
+    "median_absolute_error": 0.04416750743985176,
+    "std_absolute_error": 0.17607462406158447,
+    "percentile_errors": {
+      "P50": 0.04416750743985176,
+      "P75": 0.13186007738113403,
+      "P90": 0.30108970403671265,
+      "P95": 0.48051491379737854,
+      "P99": 0.9363250732421875
+    },
+    "error_within_threshold_percent": {
+      "within_0.05": 52.86790351417099,
+      "within_0.1": 68.76618111120881,
+      "within_0.15": 77.76116924098987,
+      "within_0.2": 83.50381507859746
+    },
+    "total_predictions": 102357,
+    "num_samples": 6021,
+    "num_attributes": 17,
+    "prediction_mean": 0.34946468472480774,
+    "prediction_std": 0.36865872144699097,
+    "prediction_min": 1.822747253754642e-05,
+    "prediction_max": 0.9997615218162537,
+    "label_mean": 0.3511371612548828,
+    "label_std": 0.39010360836982727,
+    "label_min": 0.0,
+    "label_max": 1.0
+  },
+  "per_attribute_metrics": {
+    "f_bar/no": {
+      "MAE": 0.21266694366931915,
+      "MSE": 0.1219693198800087,
+      "RMSE": 0.3492410627059892,
+      "R2": 0.29039013385772705,
+      "mean_prediction": 0.6609906554222107,
+      "mean_label": 0.6386557221412659,
+      "std_prediction": 0.3620540499687195,
+      "std_label": 0.41458678245544434
+    },
+    "f_bar/yes": {
+      "MAE": 0.1605932116508484,
+      "MSE": 0.07228159159421921,
+      "RMSE": 0.2688523602169399,
+      "R2": 0.42175543308258057,
+      "mean_prediction": 0.25242310762405396,
+      "mean_label": 0.25644510984420776,
+      "std_prediction": 0.3101315498352051,
+      "std_label": 0.3535558879375458
+    },
+    "f_cigar-shaped": {
+      "MAE": 0.05459819361567497,
+      "MSE": 0.01453811302781105,
+      "RMSE": 0.12057409766534043,
+      "R2": 0.9175858497619629,
+      "mean_prediction": 0.32697802782058716,
+      "mean_label": 0.3315763771533966,
+      "std_prediction": 0.4111250638961792,
+      "std_label": 0.4200037717819214
+    },
+    "f_completelyround": {
+      "MAE": 0.06932011246681213,
+      "MSE": 0.017339369282126427,
+      "RMSE": 0.13167903888670524,
+      "R2": 0.8492606282234192,
+      "mean_prediction": 0.25820258259773254,
+      "mean_label": 0.25474634766578674,
+      "std_prediction": 0.33094489574432373,
+      "std_label": 0.33915895223617554
+    },
+    "f_disturbed": {
+      "MAE": 0.15366491675376892,
+      "MSE": 0.06219860911369324,
+      "RMSE": 0.24939648977821086,
+      "R2": -0.028992414474487305,
+      "mean_prediction": 0.1410224586725235,
+      "mean_label": 0.1516256481409073,
+      "std_prediction": 0.1697015017271042,
+      "std_label": 0.24585795402526855
+    },
+    "f_dustlane": {
+      "MAE": 0.05409130081534386,
+      "MSE": 0.027112260460853577,
+      "RMSE": 0.16465801061853497,
+      "R2": 0.18719196319580078,
+      "mean_prediction": 0.04052433744072914,
+      "mean_label": 0.04501326009631157,
+      "std_prediction": 0.1306534856557846,
+      "std_label": 0.1826370507478714
+    },
+    "f_edge-on/no": {
+      "MAE": 0.08734789490699768,
+      "MSE": 0.02989734336733818,
+      "RMSE": 0.1729084826355786,
+      "R2": 0.7482366561889648,
+      "mean_prediction": 0.7691156268119812,
+      "mean_label": 0.7614499926567078,
+      "std_prediction": 0.32813215255737305,
+      "std_label": 0.3446037769317627
+    },
+    "f_edge-on/yes": {
+      "MAE": 0.06596499681472778,
+      "MSE": 0.017214294523000717,
+      "RMSE": 0.13120325652589845,
+      "R2": 0.8659467697143555,
+      "mean_prediction": 0.23790058493614197,
+      "mean_label": 0.2370470017194748,
+      "std_prediction": 0.35182926058769226,
+      "std_label": 0.3583487570285797
+    },
+    "f_features/disk": {
+      "MAE": 0.13221204280853271,
+      "MSE": 0.041873060166835785,
+      "RMSE": 0.20462907947512196,
+      "R2": 0.66936194896698,
+      "mean_prediction": 0.569108784198761,
+      "mean_label": 0.5830413699150085,
+      "std_prediction": 0.333293616771698,
+      "std_label": 0.3558696210384369
+    },
+    "f_in-between": {
+      "MAE": 0.10138124972581863,
+      "MSE": 0.02825886197388172,
+      "RMSE": 0.1681037238548918,
+      "R2": 0.7782498598098755,
+      "mean_prediction": 0.4212457835674286,
+      "mean_label": 0.41532331705093384,
+      "std_prediction": 0.3426196575164795,
+      "std_label": 0.3569812774658203
+    },
+    "f_irregular": {
+      "MAE": 0.10729407519102097,
+      "MSE": 0.03804856911301613,
+      "RMSE": 0.19506042426134557,
+      "R2": 0.31741398572921753,
+      "mean_prediction": 0.13128483295440674,
+      "mean_label": 0.13336484134197235,
+      "std_prediction": 0.1923528015613556,
+      "std_label": 0.23609700798988342
+    },
+    "f_merger": {
+      "MAE": 0.07181503623723984,
+      "MSE": 0.020602377131581306,
+      "RMSE": 0.14353528183544736,
+      "R2": 0.48398357629776,
+      "mean_prediction": 0.09332165122032166,
+      "mean_label": 0.08659330755472183,
+      "std_prediction": 0.170673206448555,
+      "std_label": 0.19981445372104645
+    },
+    "f_odd/no": {
+      "MAE": 0.07944388687610626,
+      "MSE": 0.012041173875331879,
+      "RMSE": 0.10973228274000263,
+      "R2": 0.8365956544876099,
+      "mean_prediction": 0.7169326543807983,
+      "mean_label": 0.7179176211357117,
+      "std_prediction": 0.2636723220348358,
+      "std_label": 0.2714579999446869
+    },
+    "f_odd/yes": {
+      "MAE": 0.07929085940122604,
+      "MSE": 0.012185524217784405,
+      "RMSE": 0.1103880619350861,
+      "R2": 0.8364242315292358,
+      "mean_prediction": 0.27854612469673157,
+      "mean_label": 0.2771841883659363,
+      "std_prediction": 0.26499077677726746,
+      "std_label": 0.2729371190071106
+    },
+    "f_other": {
+      "MAE": 0.17837171256542206,
+      "MSE": 0.07774244993925095,
+      "RMSE": 0.27882333105256984,
+      "R2": 0.040614545345306396,
+      "mean_prediction": 0.19893965125083923,
+      "mean_label": 0.2231786698102951,
+      "std_prediction": 0.20423513650894165,
+      "std_label": 0.28466400504112244
+    },
+    "f_smooth": {
+      "MAE": 0.11674802005290985,
+      "MSE": 0.03170107677578926,
+      "RMSE": 0.17804796200964856,
+      "R2": 0.7303743958473206,
+      "mean_prediction": 0.42103734612464905,
+      "mean_label": 0.40820080041885376,
+      "std_prediction": 0.32157012820243835,
+      "std_label": 0.34289127588272095
+    },
+    "f_spiral/yes": {
+      "MAE": 0.19982460141181946,
+      "MSE": 0.11992871761322021,
+      "RMSE": 0.34630725896697606,
+      "R2": 0.40257930755615234,
+      "mean_prediction": 0.4233260154724121,
+      "mean_label": 0.44796809554100037,
+      "std_prediction": 0.40645450353622437,
+      "std_label": 0.4480448365211487
+    }
+  },
+  "training_results": {
+    "best_val_mae": null,
+    "epochs_trained": 0,
+    "test_only_mode": true,
+    "model_path": "swin_transformer_attribute_regression_best.pth"
+  },
+  "r2_calculation_methods": {
+    "description": "Multiple R\u00b2 calculation methods for comprehensive evaluation",
+    "methods": {
+      "overall_r2": {
+        "value": 0.7120559215545654,
+        "method": "Flatten all samples\u00d7attributes and compute R\u00b2",
+        "use_case": "Standard ML evaluation"
+      },
+      "attribute_average_r2": {
+        "value": 0.5498224496841431,
+        "method": "Compute R\u00b2 for each attribute separately, then average",
+        "use_case": "Equal weight per attribute (sklearn default)"
+      },
+      "sample_average_r2": {
+        "value": 0.7016938547620027,
+        "method": "Compute R\u00b2 for each sample separately, then average",
+        "use_case": "Per-sample performance"
+      },
+      "variance_weighted_r2": {
+        "value": 0.5921676158905029,
+        "method": "Weight each attribute R\u00b2 by its variance",
+        "use_case": "Emphasize high-variance attributes"
+      }
+    },
+    "recommendation": "Use overall_r2 for paper reporting, attribute_average_r2 was the old default"
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "model_info": {
+    "name": "Swin Transformer (Official)",
+    "version": "microsoft/swin-base-patch4-window7-224",
+    "model_file": "swin_transformer_of_GalaxyMorphology_best.pth",
+    "total_parameters": 86751424,
+    "trainable_parameters": 86751424
+  },
+  "overall_metrics": {
+    "test_accuracy": 80.35166816952209,
+    "test_loss": 0.5365857739774483,
+    "macro_f1": 0.7977096032789217,
+    "weighted_f1": 0.8031982280454206,
+    "macro_precision": 0.7985070317501509,
+    "weighted_precision": 0.8046342413575188,
+    "macro_recall": 0.7985498342970272,
+    "weighted_recall": 0.803516681695221
+  },
+  "per_class_metrics": {
+    "barred_spirals": {
+      "precision": 0.8855788761002031,
+      "recall": 0.8175,
+      "f1_score": 0.8501787455313617,
+      "support": 1600,
+      "true_positives": 1308,
+      "false_positives": 169,
+      "false_negatives": 292
+    },
+    "cigar_shaped_elliptical": {
+      "precision": 0.7667478684531059,
+      "recall": 0.8489548213081591,
+      "f1_score": 0.8057599999999999,
+      "support": 1483,
+      "true_positives": 1259,
+      "false_positives": 383,
+      "false_negatives": 224
+    },
+    "edge_on": {
+      "precision": 0.8253873659117997,
+      "recall": 0.865625,
+      "f1_score": 0.8450274557657108,
+      "support": 1600,
+      "true_positives": 1385,
+      "false_positives": 293,
+      "false_negatives": 215
+    },
+    "in_between_elliptical": {
+      "precision": 0.8316361167684997,
+      "recall": 0.765625,
+      "f1_score": 0.7972665148063781,
+      "support": 1600,
+      "true_positives": 1225,
+      "false_positives": 248,
+      "false_negatives": 375
+    },
+    "irregular": {
+      "precision": 0.72875226039783,
+      "recall": 0.6795952782462057,
+      "f1_score": 0.7033158813263526,
+      "support": 1186,
+      "true_positives": 806,
+      "false_positives": 300,
+      "false_negatives": 380
+    },
+    "merger": {
+      "precision": 0.7685185185185185,
+      "recall": 0.7885985748218527,
+      "f1_score": 0.7784290738569754,
+      "support": 421,
+      "true_positives": 332,
+      "false_positives": 100,
+      "false_negatives": 89
+    },
+    "round_elliptical": {
+      "precision": 0.8627808136004858,
+      "recall": 0.888125,
+      "f1_score": 0.8752694795195566,
+      "support": 1600,
+      "true_positives": 1421,
+      "false_positives": 226,
+      "false_negatives": 179
+    },
+    "unbarred_spirals": {
+      "precision": 0.7186544342507645,
+      "recall": 0.734375,
+      "f1_score": 0.7264296754250384,
+      "support": 1600,
+      "true_positives": 1175,
+      "false_positives": 460,
+      "false_negatives": 425
+    }
+  },
+  "confusion_matrix": [
+    [
+      1308,
+      15,
+      21,
+      30,
+      63,
+      10,
+      15,
+      138
+    ],
+    [
+      1,
+      1259,
+      180,
+      13,
+      13,
+      0,
+      4,
+      13
+    ],
+    [
+      9,
+      187,
+      1385,
+      4,
+      7,
+      1,
+      0,
+      7
+    ],
+    [
+      27,
+      98,
+      1,
+      1225,
+      46,
+      3,
+      79,
+      121
+    ],
+    [
+      42,
+      37,
+      55,
+      43,
+      806,
+      49,
+      48,
+      106
+    ],
+    [
+      8,
+      2,
+      6,
+      8,
+      45,
+      332,
+      2,
+      18
+    ],
+    [
+      14,
+      0,
+      0,
+      59,
+      42,
+      7,
+      1421,
+      57
+    ],
+    [
+      68,
+      44,
+      30,
+      91,
+      84,
+      30,
+      78,
+      1175
+    ]
+  ],
+  "class_names": [
+    "barred_spirals",
+    "cigar_shaped_elliptical",
+    "edge_on",
+    "in_between_elliptical",
+    "irregular",
+    "merger",
+    "round_elliptical",
+    "unbarred_spirals"
+  ],
+  "test_samples": {
+    "total": 11090,
+    "per_class": [
+      1600,
+      1483,
+      1600,
+      1600,
+      1186,
+      421,
+      1600,
+      1600
+    ]
+  }
+}
