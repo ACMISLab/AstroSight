@@ -1,0 +1,119 @@
+================================================================================
+Galaxy Classification Performance Report - EfficientNet-B0
+================================================================================
+
+Generated at: 2026-01-31 17:22:06
+Best Epoch: 11
+Best Validation Accuracy: 0.7978
+
+================================================================================
+
+【Overall Accuracy】
+  Test Accuracy: 0.7771
+
+================================================================================
+
+【Macro Average】(unweighted mean of all classes)
+  Macro Precision:  0.7689
+  Macro Recall:     0.7719
+  Macro F1-Score:   0.7673
+
+================================================================================
+
+【Weighted Average】(weighted by support)
+  Weighted Precision:  0.7797
+  Weighted Recall:     0.7771
+  Weighted F1-Score:   0.7751
+
+================================================================================
+
+【Per-Class Performance】
+                         precision    recall  f1-score   support
+
+         barred_spirals     0.8590    0.7994    0.8281      1600
+cigar_shaped_elliptical     0.7923    0.8024    0.7973      1483
+                edge_on     0.8107    0.8675    0.8382      1600
+  in_between_elliptical     0.8398    0.6881    0.7564      1600
+              irregular     0.6939    0.6442    0.6681      1186
+                 merger     0.6910    0.7648    0.7260       421
+       round_elliptical     0.7417    0.9350    0.8272      1600
+       unbarred_spirals     0.7225    0.6737    0.6973      1600
+
+               accuracy                         0.7771     11090
+              macro avg     0.7689    0.7719    0.7673     11090
+           weighted avg     0.7797    0.7771    0.7751     11090
+
+================================================================================
+
+【Detailed Per-Class Metrics】
+--------------------------------------------------------------------------------
+
+barred_spirals:
+  Precision: 0.8590
+  Recall:    0.7994
+  F1-Score:  0.8281
+  Support:   1600
+
+cigar_shaped_elliptical:
+  Precision: 0.7923
+  Recall:    0.8024
+  F1-Score:  0.7973
+  Support:   1483
+
+edge_on:
+  Precision: 0.8107
+  Recall:    0.8675
+  F1-Score:  0.8382
+  Support:   1600
+
+in_between_elliptical:
+  Precision: 0.8398
+  Recall:    0.6881
+  F1-Score:  0.7564
+  Support:   1600
+
+irregular:
+  Precision: 0.6939
+  Recall:    0.6442
+  F1-Score:  0.6681
+  Support:   1186
+
+merger:
+  Precision: 0.6910
+  Recall:    0.7648
+  F1-Score:  0.7260
+  Support:   421
+
+round_elliptical:
+  Precision: 0.7417
+  Recall:    0.9350
+  F1-Score:  0.8272
+  Support:   1600
+
+unbarred_spirals:
+  Precision: 0.7225
+  Recall:    0.6737
+  F1-Score:  0.6973
+  Support:   1600
+
+================================================================================
+
+【Confusion Matrix】
+--------------------------------------------------------------------------------
+Confusion matrix visualization saved to: confusion_matrix_20260131_172204.png
+
+Confusion Matrix (Counts):
+Rows: True Labels, Columns: Predicted Labels
+
+True\Pred     barred_s  cigar_sh   edge_on  in_betwe  irregula    merger  round_el  unbarred
+--------------------------------------------------------------------------------------------
+barred_spi        1279        16        19        40        57        16        36       137
+cigar_shap           3      1190       233        10        30         1         6        10
+edge_on              7       149      1388         9        31        13         0         3
+in_between          28        64         2      1101        58         6       254        87
+irregular           54        25        41        31       764        66        87       118
+merger               9         4         5        11        39       322        13        18
+round_elli          14         1         1        10        29         8      1496        41
+unbarred_s          95        53        23        99        93        34       125      1078
+
+================================================================================
