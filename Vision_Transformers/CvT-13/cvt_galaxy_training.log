@@ -1,0 +1,151 @@
+nohup: ignoring input
+/root/miniconda3/envs/galaxy_baselines/lib/python3.9/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+=> merge config from experiments/galaxy/cvt/cvt-13-galaxy-224x224.yaml
+配置更新失败，使用默认配置: 'Non-existent config key: DATASET.VAL_SET'
+🚀 使用设备: cuda:0
+   GPU型号: NVIDIA L20
+📁 train 数据加载:
+   总样本数: 43796
+   barred_spirals: 6320
+   cigar_shaped_elliptical: 5857
+   edge_on: 6320
+   in_between_elliptical: 6320
+   irregular: 4680
+   merger: 1659
+   round_elliptical: 6320
+   unbarred_spirals: 6320
+📁 val 数据加载:
+   总样本数: 554
+   barred_spirals: 80
+   cigar_shaped_elliptical: 74
+   edge_on: 80
+   in_between_elliptical: 80
+   irregular: 59
+   merger: 21
+   round_elliptical: 80
+   unbarred_spirals: 80
+📁 test 数据加载:
+   总样本数: 11090
+   barred_spirals: 1600
+   cigar_shaped_elliptical: 1483
+   edge_on: 1600
+   in_between_elliptical: 1600
+   irregular: 1186
+   merger: 421
+   round_elliptical: 1600
+   unbarred_spirals: 1600
+
+📊 数据集统计:
+   训练集: 43796 样本
+   验证集: 554 样本
+   测试集: 11090 样本
+
+🏗️ 模型信息:
+   模型: CVT-13
+   总参数: 19,615,560
+   可训练参数: 19,615,560
+🚀 开始训练CVT...
+   类别权重: [0.8662183 0.9346935 0.8662183 0.8662183 1.169765  3.2998796 0.8662183
+ 0.8662183]
+Epoch 1/100	Train loss: 1.5443	Train acc: 0.4307	Val loss: 1.8505	Val acc: 0.2112	Time: 1m 59s	<--
+Epoch 2/100	Train loss: 1.1911	Train acc: 0.5680	Val loss: 1.5891	Val acc: 0.4278	Time: 1m 60s	<--
+Epoch 3/100	Train loss: 1.0754	Train acc: 0.6070	Val loss: 1.0110	Val acc: 0.6300	Time: 1m 59s	<--
+Epoch 4/100	Train loss: 1.0065	Train acc: 0.6336	Val loss: 0.9499	Val acc: 0.6318	Time: 2m 0s	<--
+Epoch 5/100	Train loss: 0.9618	Train acc: 0.6526	Val loss: 0.8877	Val acc: 0.6552	Time: 2m 0s	<--
+Epoch 6/100	Train loss: 0.9183	Train acc: 0.6660	Val loss: 0.8888	Val acc: 0.6895	Time: 2m 1s	<--
+Epoch 7/100	Train loss: 0.8868	Train acc: 0.6775	Val loss: 0.9582	Val acc: 0.6408	Time: 1m 60s
+Epoch 8/100	Train loss: 0.8631	Train acc: 0.6840	Val loss: 0.8262	Val acc: 0.6805	Time: 1m 59s
+Epoch 9/100	Train loss: 0.8352	Train acc: 0.6965	Val loss: 0.8582	Val acc: 0.6769	Time: 1m 59s
+Epoch 10/100	Train loss: 0.8187	Train acc: 0.7013	Val loss: 0.8197	Val acc: 0.6968	Time: 1m 59s	<--
+Epoch 11/100	Train loss: 0.8034	Train acc: 0.7076	Val loss: 0.7580	Val acc: 0.7238	Time: 1m 59s	<--
+Epoch 12/100	Train loss: 0.7810	Train acc: 0.7144	Val loss: 0.7671	Val acc: 0.7220	Time: 1m 59s
+Epoch 13/100	Train loss: 0.7707	Train acc: 0.7181	Val loss: 0.8203	Val acc: 0.7112	Time: 1m 59s
+Epoch 14/100	Train loss: 0.7627	Train acc: 0.7233	Val loss: 0.7740	Val acc: 0.7256	Time: 1m 60s	<--
+Epoch 15/100	Train loss: 0.7456	Train acc: 0.7280	Val loss: 0.9702	Val acc: 0.6625	Time: 1m 59s
+Epoch 16/100	Train loss: 0.7334	Train acc: 0.7297	Val loss: 0.7771	Val acc: 0.7184	Time: 1m 59s
+Epoch 17/100	Train loss: 0.7274	Train acc: 0.7308	Val loss: 0.7585	Val acc: 0.7238	Time: 1m 59s
+Epoch 18/100	Train loss: 0.7197	Train acc: 0.7343	Val loss: 0.6953	Val acc: 0.7491	Time: 1m 60s	<--
+Epoch 19/100	Train loss: 0.7117	Train acc: 0.7361	Val loss: 0.7252	Val acc: 0.7130	Time: 1m 59s
+Epoch 20/100	Train loss: 0.7037	Train acc: 0.7380	Val loss: 0.8611	Val acc: 0.6787	Time: 1m 59s
+Epoch 21/100	Train loss: 0.7005	Train acc: 0.7410	Val loss: 0.7576	Val acc: 0.7220	Time: 1m 59s
+Epoch 22/100	Train loss: 0.6918	Train acc: 0.7416	Val loss: 0.7533	Val acc: 0.7347	Time: 1m 59s
+Epoch 23/100	Train loss: 0.6858	Train acc: 0.7467	Val loss: 0.7042	Val acc: 0.7455	Time: 1m 59s
+Epoch 24/100	Train loss: 0.6769	Train acc: 0.7496	Val loss: 0.7016	Val acc: 0.7509	Time: 1m 60s	<--
+Epoch 25/100	Train loss: 0.6735	Train acc: 0.7484	Val loss: 0.7426	Val acc: 0.7256	Time: 1m 59s
+Epoch 26/100	Train loss: 0.6699	Train acc: 0.7491	Val loss: 0.8202	Val acc: 0.7094	Time: 2m 0s
+Epoch 27/100	Train loss: 0.6637	Train acc: 0.7545	Val loss: 0.6756	Val acc: 0.7599	Time: 1m 58s	<--
+Epoch 28/100	Train loss: 0.6631	Train acc: 0.7528	Val loss: 0.6762	Val acc: 0.7491	Time: 1m 60s
+Epoch 29/100	Train loss: 0.6547	Train acc: 0.7572	Val loss: 0.6838	Val acc: 0.7509	Time: 1m 59s
+Epoch 30/100	Train loss: 0.6502	Train acc: 0.7560	Val loss: 0.7104	Val acc: 0.7220	Time: 1m 60s
+Epoch 31/100	Train loss: 0.6437	Train acc: 0.7574	Val loss: 0.6675	Val acc: 0.7581	Time: 1m 58s
+Epoch 32/100	Train loss: 0.6369	Train acc: 0.7606	Val loss: 0.6725	Val acc: 0.7419	Time: 1m 59s
+Epoch 33/100	Train loss: 0.6386	Train acc: 0.7597	Val loss: 0.7090	Val acc: 0.7401	Time: 1m 59s
+Epoch 34/100	Train loss: 0.6320	Train acc: 0.7643	Val loss: 0.6528	Val acc: 0.7599	Time: 1m 60s
+Epoch 35/100	Train loss: 0.6254	Train acc: 0.7655	Val loss: 0.6470	Val acc: 0.7599	Time: 1m 60s
+Epoch 36/100	Train loss: 0.6196	Train acc: 0.7671	Val loss: 0.6981	Val acc: 0.7383	Time: 1m 59s
+Epoch 37/100	Train loss: 0.6134	Train acc: 0.7678	Val loss: 0.6430	Val acc: 0.7491	Time: 1m 60s
+Epoch 38/100	Train loss: 0.6109	Train acc: 0.7714	Val loss: 0.6771	Val acc: 0.7473	Time: 1m 59s
+Epoch 39/100	Train loss: 0.6098	Train acc: 0.7713	Val loss: 0.7249	Val acc: 0.7347	Time: 1m 58s
+Epoch 40/100	Train loss: 0.6086	Train acc: 0.7710	Val loss: 0.6328	Val acc: 0.7708	Time: 1m 59s	<--
+Epoch 41/100	Train loss: 0.6049	Train acc: 0.7708	Val loss: 0.6954	Val acc: 0.7491	Time: 1m 59s
+Epoch 42/100	Train loss: 0.6025	Train acc: 0.7736	Val loss: 0.6467	Val acc: 0.7437	Time: 1m 59s
+Epoch 43/100	Train loss: 0.5942	Train acc: 0.7743	Val loss: 0.6686	Val acc: 0.7599	Time: 1m 59s
+Epoch 44/100	Train loss: 0.5909	Train acc: 0.7761	Val loss: 0.7591	Val acc: 0.7076	Time: 1m 59s
+Epoch 45/100	Train loss: 0.5857	Train acc: 0.7788	Val loss: 0.6272	Val acc: 0.7708	Time: 1m 58s
+Epoch 46/100	Train loss: 0.5813	Train acc: 0.7762	Val loss: 0.5976	Val acc: 0.7690	Time: 1m 58s
+Epoch 47/100	Train loss: 0.5832	Train acc: 0.7799	Val loss: 0.6639	Val acc: 0.7563	Time: 1m 59s
+Epoch 48/100	Train loss: 0.5785	Train acc: 0.7806	Val loss: 0.6074	Val acc: 0.7744	Time: 1m 59s	<--
+Epoch 49/100	Train loss: 0.5747	Train acc: 0.7800	Val loss: 0.6247	Val acc: 0.7744	Time: 1m 60s
+Epoch 50/100	Train loss: 0.5691	Train acc: 0.7815	Val loss: 0.6888	Val acc: 0.7274	Time: 2m 1s
+Epoch 51/100	Train loss: 0.5678	Train acc: 0.7819	Val loss: 0.6131	Val acc: 0.7527	Time: 2m 0s
+Epoch 52/100	Train loss: 0.5622	Train acc: 0.7841	Val loss: 0.6381	Val acc: 0.7653	Time: 1m 58s
+Epoch 53/100	Train loss: 0.5599	Train acc: 0.7865	Val loss: 0.6190	Val acc: 0.7635	Time: 1m 59s
+Epoch 54/100	Train loss: 0.5577	Train acc: 0.7870	Val loss: 0.5836	Val acc: 0.7798	Time: 1m 59s	<--
+Epoch 55/100	Train loss: 0.5505	Train acc: 0.7878	Val loss: 0.5993	Val acc: 0.7690	Time: 2m 1s
+Epoch 56/100	Train loss: 0.5510	Train acc: 0.7858	Val loss: 0.6011	Val acc: 0.7671	Time: 1m 59s
+Epoch 57/100	Train loss: 0.5481	Train acc: 0.7906	Val loss: 0.6069	Val acc: 0.7527	Time: 1m 58s
+Epoch 58/100	Train loss: 0.5414	Train acc: 0.7917	Val loss: 0.6080	Val acc: 0.7834	Time: 1m 59s	<--
+Epoch 59/100	Train loss: 0.5433	Train acc: 0.7906	Val loss: 0.5838	Val acc: 0.7726	Time: 1m 59s
+Epoch 60/100	Train loss: 0.5379	Train acc: 0.7932	Val loss: 0.5686	Val acc: 0.7780	Time: 1m 59s
+Epoch 61/100	Train loss: 0.5330	Train acc: 0.7945	Val loss: 0.5911	Val acc: 0.7942	Time: 1m 58s	<--
+Epoch 62/100	Train loss: 0.5294	Train acc: 0.7972	Val loss: 0.6081	Val acc: 0.7852	Time: 2m 1s
+Epoch 63/100	Train loss: 0.5248	Train acc: 0.7954	Val loss: 0.5660	Val acc: 0.7870	Time: 1m 60s
+Epoch 64/100	Train loss: 0.5244	Train acc: 0.7961	Val loss: 0.5802	Val acc: 0.7978	Time: 2m 1s	<--
+Epoch 65/100	Train loss: 0.5240	Train acc: 0.7961	Val loss: 0.5879	Val acc: 0.7852	Time: 2m 1s
+Epoch 66/100	Train loss: 0.5182	Train acc: 0.8011	Val loss: 0.6016	Val acc: 0.7671	Time: 1m 59s
+Epoch 67/100	Train loss: 0.5134	Train acc: 0.8004	Val loss: 0.5947	Val acc: 0.7816	Time: 1m 58s
+Epoch 68/100	Train loss: 0.5117	Train acc: 0.8022	Val loss: 0.5926	Val acc: 0.7816	Time: 1m 59s
+Epoch 69/100	Train loss: 0.5083	Train acc: 0.8006	Val loss: 0.6154	Val acc: 0.7852	Time: 2m 0s
+Epoch 70/100	Train loss: 0.5100	Train acc: 0.8032	Val loss: 0.5950	Val acc: 0.7798	Time: 1m 60s
+Epoch 71/100	Train loss: 0.5051	Train acc: 0.8042	Val loss: 0.5961	Val acc: 0.7635	Time: 1m 59s
+Epoch 72/100	Train loss: 0.5033	Train acc: 0.8048	Val loss: 0.5892	Val acc: 0.7726	Time: 2m 1s
+Epoch 73/100	Train loss: 0.4990	Train acc: 0.8045	Val loss: 0.5842	Val acc: 0.7870	Time: 1m 60s
+Epoch 74/100	Train loss: 0.4970	Train acc: 0.8073	Val loss: 0.5950	Val acc: 0.7888	Time: 1m 58s
+Epoch 75/100	Train loss: 0.4921	Train acc: 0.8068	Val loss: 0.6087	Val acc: 0.7708	Time: 1m 59s
+Epoch 76/100	Train loss: 0.4889	Train acc: 0.8086	Val loss: 0.5797	Val acc: 0.7852	Time: 1m 59s
+Epoch 77/100	Train loss: 0.4903	Train acc: 0.8070	Val loss: 0.5802	Val acc: 0.7834	Time: 1m 59s
+Epoch 78/100	Train loss: 0.4856	Train acc: 0.8102	Val loss: 0.5818	Val acc: 0.7942	Time: 1m 60s
+Epoch 79/100	Train loss: 0.4857	Train acc: 0.8116	Val loss: 0.5775	Val acc: 0.7852	Time: 1m 60s
+Early stopping... (Model did not improve after 15 epochs)
+Best epoch = 64, with training accuracy = 0.7961 and validation accuracy = 0.7978
+💾 训练历史保存: cvt_galaxy_8_classes_history.csv
+
+📊 开始测试评估...
+/mnt/acmis_hby/Paper_experiment_one/Transformer/CVT-13/CVT/cvt_galaxy_classification.py:304: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+
+🎯 测试结果:
+   准确率: 0.7893
+   宏平均 F1: 0.7811
+   加权平均 F1: 0.7880
+
+💾 结果已保存:
+   预测结果: cvt_galaxy_8_classes_predictions.csv
+   完整结果: cvt_galaxy_8_classes_results.json
+   混淆矩阵图: cvt_galaxy_8_classes_confusion_matrix.png
+   混淆矩阵原始数据: cvt_galaxy_8_classes_confusion_matrix_data.json
+   训练历史: cvt_galaxy_8_classes_history.csv
+   最佳模型: cvt_galaxy_8_classes_best.pth
+
+✨ CVT星系分类任务完成!
