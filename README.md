@@ -36,10 +36,11 @@ pip install -e .
 
 For reproducing baseline model experiments, install PyTorch and navigate to the corresponding directories:
 
-- **CNNs/**: ResNet, DenseNet, EfficientNet implementations
+- **CNNs/**: ResNet, DenseNet, EfficientNet, VGG implementations
 - **Vision_Transformers/**: Swin Transformer, CVT, Linformer models  
-- **Astronomy-Specific/**: AstroCLIP, Deformable CNNs, DIAT-DSCNN-ECA
-- **Traditional ML/**: Classical machine learning baselines
+- **Astronomy-Specific/**: Deformable CNNs, DIAT-DSCNN-ECA-Net
+- **Traditional ML/**: SVM+ZMs
+- ⭐**Model_weights**:https://drive.google.com/drive/folders/1eDC4ixZS9GX98ipRkLIil19FjHD9WP8v?usp=sharing
 
 ## 📥 Dataset
 
