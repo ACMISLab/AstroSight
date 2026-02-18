@@ -1,0 +1,305 @@
+{
+  "model_info": {
+    "name": "AstroSight (InternVL2.5-38B)",
+    "task": "Galaxy Morphological Attribute Regression",
+    "num_attributes": 17,
+    "model_type": "Vision-Language Model (VLM)",
+    "training_method": "LoRA Fine-tuning"
+  },
+  "overall_metrics": {
+    "MAE": 0.0980406105518341,
+    "MSE": 0.04643504321575165,
+    "RMSE": 0.21548791895545247,
+    "R2_overall": 0.694869339466095,
+    "R2_attribute_average": 0.5033768064835492,
+    "R2_sample_average": 0.6805323197821449,
+    "R2_variance_weighted": 0.5678249597549438,
+    "R2_manual_verification": 0.694869339466095,
+    "pearson_correlation": 0.8562297291121481,
+    "max_absolute_error": 1.0,
+    "median_absolute_error": 0.018999993801116943,
+    "std_absolute_error": 0.19189341366291046,
+    "percentile_errors": {
+      "P50": 0.018999993801116943,
+      "P75": 0.10541000962257385,
+      "P90": 0.26856398582458496,
+      "P95": 0.49970734119415283,
+      "P99": 1.0
+    },
+    "error_within_threshold_percent": {
+      "within_0.05": 61.99087507449417,
+      "within_0.1": 74.0320642457282,
+      "within_0.15": 81.42579403460437,
+      "within_0.2": 86.1611809646629
+    },
+    "total_predictions": 102357,
+    "num_samples": 6021,
+    "num_attributes": 17,
+    "prediction_mean": 0.33463943004608154,
+    "prediction_std": 0.4085184335708618,
+    "prediction_min": 0.0,
+    "prediction_max": 1.0,
+    "label_mean": 0.3511371612548828,
+    "label_std": 0.39010360836982727,
+    "label_min": 0.0,
+    "label_max": 1.0
+  },
+  "per_attribute_metrics": {
+    "f_bar/no": {
+      "MAE": 0.17698873579502106,
+      "MSE": 0.12677668035030365,
+      "RMSE": 0.35605713073930095,
+      "R2": 0.262421190738678,
+      "mean_prediction": 0.7511760592460632,
+      "mean_label": 0.6386557221412659,
+      "std_prediction": 0.3926421105861664,
+      "std_label": 0.41458678245544434
+    },
+    "f_bar/yes": {
+      "MAE": 0.11631202697753906,
+      "MSE": 0.06333298981189728,
+      "RMSE": 0.25166046533354675,
+      "R2": 0.4933432340621948,
+      "mean_prediction": 0.17945177853107452,
+      "mean_label": 0.25644510984420776,
+      "std_prediction": 0.33100247383117676,
+      "std_label": 0.3535558879375458
+    },
+    "f_cigar-shaped": {
+      "MAE": 0.047181352972984314,
+      "MSE": 0.015199550427496433,
+      "RMSE": 0.1232864567886369,
+      "R2": 0.9138363003730774,
+      "mean_prediction": 0.3141942620277405,
+      "mean_label": 0.3315763771533966,
+      "std_prediction": 0.4233444333076477,
+      "std_label": 0.4200037717819214
+    },
+    "f_completelyround": {
+      "MAE": 0.0628756657242775,
+      "MSE": 0.02011025883257389,
+      "RMSE": 0.14181064428516602,
+      "R2": 0.825171947479248,
+      "mean_prediction": 0.22628581523895264,
+      "mean_label": 0.25474634766578674,
+      "std_prediction": 0.33696675300598145,
+      "std_label": 0.33915895223617554
+    },
+    "f_disturbed": {
+      "MAE": 0.13236002624034882,
+      "MSE": 0.07097253203392029,
+      "RMSE": 0.26640670418351015,
+      "R2": -0.17414510250091553,
+      "mean_prediction": 0.048831451684236526,
+      "mean_label": 0.1516256481409073,
+      "std_prediction": 0.14707811176776886,
+      "std_label": 0.24585795402526855
+    },
+    "f_dustlane": {
+      "MAE": 0.043224941939115524,
+      "MSE": 0.033032942563295364,
+      "RMSE": 0.18174967005003162,
+      "R2": 0.009693741798400879,
+      "mean_prediction": 0.025809863582253456,
+      "mean_label": 0.04501326009631157,
+      "std_prediction": 0.15313886106014252,
+      "std_label": 0.1826370507478714
+    },
+    "f_edge-on/no": {
+      "MAE": 0.08182044327259064,
+      "MSE": 0.03220108896493912,
+      "RMSE": 0.17944661870578424,
+      "R2": 0.7288369536399841,
+      "mean_prediction": 0.7994129657745361,
+      "mean_label": 0.7614499926567078,
+      "std_prediction": 0.3372552990913391,
+      "std_label": 0.3446037769317627
+    },
+    "f_edge-on/yes": {
+      "MAE": 0.059623684734106064,
+      "MSE": 0.01724466122686863,
+      "RMSE": 0.13131892943086548,
+      "R2": 0.8657102584838867,
+      "mean_prediction": 0.21302883327007294,
+      "mean_label": 0.2370470017194748,
+      "std_prediction": 0.35579606890678406,
+      "std_label": 0.3583487570285797
+    },
+    "f_features/disk": {
+      "MAE": 0.10421673208475113,
+      "MSE": 0.03261934220790863,
+      "RMSE": 0.18060825620084103,
+      "R2": 0.7424311637878418,
+      "mean_prediction": 0.590242326259613,
+      "mean_label": 0.5830413699150085,
+      "std_prediction": 0.3761398494243622,
+      "std_label": 0.3558696210384369
+    },
+    "f_in-between": {
+      "MAE": 0.09776311367750168,
+      "MSE": 0.03426215052604675,
+      "RMSE": 0.18510037959455067,
+      "R2": 0.7311414480209351,
+      "mean_prediction": 0.42770636081695557,
+      "mean_label": 0.41532331705093384,
+      "std_prediction": 0.3853832185268402,
+      "std_label": 0.3569812774658203
+    },
+    "f_irregular": {
+      "MAE": 0.0935688316822052,
+      "MSE": 0.044513341039419174,
+      "RMSE": 0.21098185002369083,
+      "R2": 0.2014368772506714,
+      "mean_prediction": 0.0846497118473053,
+      "mean_label": 0.13336484134197235,
+      "std_prediction": 0.2105492651462555,
+      "std_label": 0.23609700798988342
+    },
+    "f_merger": {
+      "MAE": 0.05131315439939499,
+      "MSE": 0.019133303314447403,
+      "RMSE": 0.13832318429839374,
+      "R2": 0.5207787156105042,
+      "mean_prediction": 0.07319715619087219,
+      "mean_label": 0.08659330755472183,
+      "std_prediction": 0.19568291306495667,
+      "std_label": 0.19981445372104645
+    },
+    "f_odd/no": {
+      "MAE": 0.07921809703111649,
+      "MSE": 0.012318073771893978,
+      "RMSE": 0.11098681800959057,
+      "R2": 0.8328379988670349,
+      "mean_prediction": 0.7621832489967346,
+      "mean_label": 0.7179176211357117,
+      "std_prediction": 0.27576884627342224,
+      "std_label": 0.2714579999446869
+    },
+    "f_odd/yes": {
+      "MAE": 0.07836946099996567,
+      "MSE": 0.012343790382146835,
+      "RMSE": 0.1111026119501555,
+      "R2": 0.8342996835708618,
+      "mean_prediction": 0.2335294932126999,
+      "mean_label": 0.2771841883659363,
+      "std_prediction": 0.2761351466178894,
+      "std_label": 0.2729371190071106
+    },
+    "f_other": {
+      "MAE": 0.1964525729417801,
+      "MSE": 0.11975233256816864,
+      "RMSE": 0.34605249972824736,
+      "R2": -0.47781097888946533,
+      "mean_prediction": 0.22124747931957245,
+      "mean_label": 0.2231786698102951,
+      "std_prediction": 0.3175922930240631,
+      "std_label": 0.28466400504112244
+    },
+    "f_smooth": {
+      "MAE": 0.08883558213710785,
+      "MSE": 0.02190180867910385,
+      "RMSE": 0.14799259670369952,
+      "R2": 0.813719630241394,
+      "mean_prediction": 0.387297123670578,
+      "mean_label": 0.40820080041885376,
+      "std_prediction": 0.36155593395233154,
+      "std_label": 0.34289127588272095
+    },
+    "f_spiral/yes": {
+      "MAE": 0.15656588971614838,
+      "MSE": 0.1136808916926384,
+      "RMSE": 0.33716597054364544,
+      "R2": 0.43370264768600464,
+      "mean_prediction": 0.3506263196468353,
+      "mean_label": 0.44796809554100037,
+      "std_prediction": 0.45530903339385986,
+      "std_label": 0.4480448365211487
+    }
+  },
+  "r2_calculation_methods": {
+    "description": "Multiple R² calculation methods for comprehensive evaluation",
+    "methods": {
+      "overall_r2": {
+        "value": 0.694869339466095,
+        "method": "Flatten all samples×attributes and compute R²",
+        "formula": "R² = 1 - SSE/SST where all N×K points are used",
+        "use_case": "Standard ML evaluation, reflects overall model performance"
+      },
+      "attribute_average_r2": {
+        "value": 0.5033768064835492,
+        "method": "Compute R² for each attribute separately, then average",
+        "formula": "R² = mean(R²₁, R²₂, ..., R²₁₇)",
+        "use_case": "Equal weight per attribute, fair comparison across attributes"
+      },
+      "sample_average_r2": {
+        "value": 0.6805323197821449,
+        "method": "Compute R² for each sample separately, then average",
+        "formula": "R² = mean(R²_sample₁, R²_sample₂, ...)",
+        "use_case": "Per-sample performance evaluation"
+      },
+      "variance_weighted_r2": {
+        "value": 0.5678249597549438,
+        "method": "Weight each attribute R² by its variance",
+        "formula": "R² = Σ(wᵢ × R²ᵢ), where wᵢ = Var(attrᵢ) / Σ Var",
+        "use_case": "Emphasize attributes with higher variance"
+      }
+    },
+    "recommendation": "Use overall_r2 as primary metric for paper reporting"
+  },
+  "summary": {
+    "best_attributes": [
+      {
+        "name": "f_dustlane",
+        "MAE": 0.043224941939115524,
+        "R2": 0.009693741798400879
+      },
+      {
+        "name": "f_cigar-shaped",
+        "MAE": 0.047181352972984314,
+        "R2": 0.9138363003730774
+      },
+      {
+        "name": "f_merger",
+        "MAE": 0.05131315439939499,
+        "R2": 0.5207787156105042
+      },
+      {
+        "name": "f_edge-on/yes",
+        "MAE": 0.059623684734106064,
+        "R2": 0.8657102584838867
+      },
+      {
+        "name": "f_completelyround",
+        "MAE": 0.0628756657242775,
+        "R2": 0.825171947479248
+      }
+    ],
+    "worst_attributes": [
+      {
+        "name": "f_bar/yes",
+        "MAE": 0.11631202697753906,
+        "R2": 0.4933432340621948
+      },
+      {
+        "name": "f_disturbed",
+        "MAE": 0.13236002624034882,
+        "R2": -0.17414510250091553
+      },
+      {
+        "name": "f_spiral/yes",
+        "MAE": 0.15656588971614838,
+        "R2": 0.43370264768600464
+      },
+      {
+        "name": "f_bar/no",
+        "MAE": 0.17698873579502106,
+        "R2": 0.262421190738678
+      },
+      {
+        "name": "f_other",
+        "MAE": 0.1964525729417801,
+        "R2": -0.47781097888946533
+      }
+    ]
+  }
+}
