@@ -10,7 +10,7 @@
   },
   "training_config": {
     "epochs": 50,
-    "batch_size": 32,
+    "batch_size": 16,
     "learning_rate": 5e-05,
     "weight_decay": 0.05,
     "image_size": 224,
