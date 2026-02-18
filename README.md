@@ -55,6 +55,7 @@ Our trained AstroSight models are publicly available:
 
 - **AstroSight Classification Model**: [🤗 kk1999ddk/AstroSight](https://huggingface.co/kk1999ddk/AstroSight)
   - Fine-tuned for galaxy morphology classification and attribute prediction
+  - raw inference outputs, evaluation scripts, and computed metrics for all AstroSight (MLLM-based) models on the Galaxy Zoo 2 (GZ2) test set:AstroSight_GalaxyMorph_LLM_infer_result/
     
 
 
