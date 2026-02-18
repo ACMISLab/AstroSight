@@ -9,7 +9,6 @@ This directory contains the raw inference outputs, evaluation scripts, and compu
 ```
 AstroSight_GalaxyMorph_LLM_infer_result/
 ├── README.md                                        # This file
-├── EVALUATION_METRICS_GUIDE.md                      # Detailed explanation of R² calculation methods
 ├── AstroSight_LLM_infer_raw_result.zip              # Archived raw inference outputs (all models)
 │
 ├── # --- Classification inference outputs (one line per test sample) ---
@@ -74,14 +73,3 @@ Output is saved to `LLM_metrics/InternVL2.5_38B_attribute_regression.json`.
 
 ---
 
-## Notes on R² Calculation
-
-See `EVALUATION_METRICS_GUIDE.md` for a full explanation of the three R² variants used:
-
-| Metric | Method | Used in paper |
-|---|---|---|
-| `R2_overall` | Flatten all N×17 pairs, compute global R² | ✅ Primary metric |
-| `R2_attribute_average` | Per-attribute R², then average | Reference only |
-| `R2_sample_average` | Per-sample R², then average | Reference only |
-
-The paper reports `R2_overall` as the "Overall R²" in Table 3.
