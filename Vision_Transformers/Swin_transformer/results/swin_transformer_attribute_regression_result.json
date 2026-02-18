@@ -9,7 +9,7 @@
     "num_attributes": 17
   },
   "training_config": {
-    "epochs": 1,
+    "epochs": 50,
     "batch_size": 32,
     "learning_rate": 5e-05,
     "weight_decay": 0.05,
