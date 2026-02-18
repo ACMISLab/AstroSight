@@ -55,6 +55,6 @@ Our trained AstroSight models are publicly available:
 
 - **AstroSight Classification Model**: [🤗 kk1999ddk/AstroSight](https://huggingface.co/kk1999ddk/AstroSight)
   - Fine-tuned for galaxy morphology classification and attribute prediction
-  - If you need any other model weights mentioned in the paper, please feel free to contact us.
+    
 
 
