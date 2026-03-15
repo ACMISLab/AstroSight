@@ -1,6 +1,7 @@
 # ZooBot Baseline Experiments
 
 Fine-tuning ZooBot pretrained models on GZ2 dataset for comparison with AstroSight.
+Model Weight: https://drive.google.com/drive/folders/10mMsWKp1muN48gMfp2-e83d455kywXmv?usp=sharing
 
 ## Overview
 
