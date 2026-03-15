@@ -38,8 +38,9 @@ For reproducing baseline model experiments, install PyTorch and navigate to the 
 
 - **CNNs/**: ResNet, DenseNet, EfficientNet, VGG implementations
 - **Vision_Transformers/**: Swin Transformer, CVT, Linformer models  
-- **Astronomy-Specific/**: Deformable CNNs, DIAT-DSCNN-ECA-Net
+- **Astronomy-Specific/**: Deformable CNNs, DIAT-DSCNN-ECA-Net, ZooBot experiement
 - **Traditional ML/**: SVM+ZMs
+-  **Cross-Dataset Generalization and Color Robustness Experiments/**: Experiments for evaluating AstroSight models on grayscale images and Galaxy Zoo DECaLS dataset to address reviewer concerns about color-morphology bias and dataset generalization.
 - ⭐**Model_weights**:https://drive.google.com/drive/folders/1eDC4ixZS9GX98ipRkLIil19FjHD9WP8v?usp=sharing
 
 ## 📥 Dataset
