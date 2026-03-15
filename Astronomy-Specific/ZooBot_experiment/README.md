@@ -1,12 +1,13 @@
 # ZooBot Baseline Experiments
 
-Fine-tuning ZooBot pretrained models on GZ2 dataset for comparison with AstroSight.
-Model Weight: https://drive.google.com/drive/folders/10mMsWKp1muN48gMfp2-e83d455kywXmv?usp=sharing
+Fine-tuning ZooBot pretrained models on GZ2 dataset.
+
+Fine-tuned Model Weight: https://drive.google.com/drive/folders/10mMsWKp1muN48gMfp2-e83d455kywXmv?usp=sharing
 
 ## Overview
 
 **Task:** 8-class galaxy morphology classification  
-**Dataset:** GZ2 (44,352 train / 11,088 test)  
+**Dataset:** GZ2  
 **Models:** ZooBot variants pretrained models
 
 ## Models Tested
