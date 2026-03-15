@@ -1,0 +1,4 @@
+Model,Accuracy,Macro-Precision,Macro-Recall,Macro-F1,Weighted-Precision,Weighted-Recall,Weighted-F1
+convnext_nano,79.29,78.7,78.68,78.64,79.21,79.29,79.2
+maxvit_base,79.42,78.6,78.15,78.27,79.25,79.42,79.24
+maxvit_rmlp_small,79.89,79.46,78.76,79.03,80.06,79.89,79.9

@@ -1,0 +1,25 @@
+Model,Class,Class_Name,Precision,Recall,F1-Score,Support
+convnext_nano,A,Round Smooth,80.0,86.9,83.3,1600
+convnext_nano,B,In-Between Smooth,77.8,76.4,77.1,1600
+convnext_nano,C,Cigar-Shaped Smooth,78.3,83.0,80.6,1483
+convnext_nano,D,Edge-On,85.4,85.1,85.2,1600
+convnext_nano,E,Barred Spirals,84.7,83.8,84.2,1600
+convnext_nano,F,Unbarred Spirals,74.3,68.3,71.2,1600
+convnext_nano,G,Irregular,73.3,70.7,72.0,1186
+convnext_nano,H,Merger,75.8,75.3,75.6,421
+maxvit_base,A,Round Smooth,79.5,90.4,84.6,1600
+maxvit_base,B,In-Between Smooth,79.1,77.0,78.0,1600
+maxvit_base,C,Cigar-Shaped Smooth,80.2,80.4,80.3,1483
+maxvit_base,D,Edge-On,83.1,86.2,84.7,1600
+maxvit_base,E,Barred Spirals,84.4,86.3,85.4,1600
+maxvit_base,F,Unbarred Spirals,75.5,69.4,72.3,1600
+maxvit_base,G,Irregular,72.6,64.9,68.6,1186
+maxvit_base,H,Merger,74.4,70.5,72.4,421
+maxvit_rmlp_small,A,Round Smooth,80.9,87.9,84.2,1600
+maxvit_rmlp_small,B,In-Between Smooth,80.4,75.6,77.9,1600
+maxvit_rmlp_small,C,Cigar-Shaped Smooth,79.2,83.6,81.3,1483
+maxvit_rmlp_small,D,Edge-On,85.9,84.5,85.2,1600
+maxvit_rmlp_small,E,Barred Spirals,89.1,81.4,85.1,1600
+maxvit_rmlp_small,F,Unbarred Spirals,72.3,75.3,73.8,1600
+maxvit_rmlp_small,G,Irregular,71.1,71.7,71.4,1186
+maxvit_rmlp_small,H,Merger,76.8,70.1,73.3,421

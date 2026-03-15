@@ -1,0 +1,155 @@
+nohup: ignoring input
+2026-03-08 18:44:37,846 - INFO - ================================================================================
+2026-03-08 18:44:37,846 - INFO - Training maxvit_base
+2026-03-08 18:44:37,846 - INFO - ================================================================================
+2026-03-08 18:44:37,846 - INFO - Train CSV: /mnt/acmis_hby/Paper_experiment_one/ZooBot_experiments/data/train_catalog.csv
+2026-03-08 18:44:37,846 - INFO - Val CSV: /mnt/acmis_hby/Paper_experiment_one/ZooBot_experiments/data/val_catalog.csv
+2026-03-08 18:44:37,847 - INFO - Save dir: /mnt/acmis_hby/Paper_experiment_one/ZooBot_experiments/checkpoints/maxvit_base
+2026-03-08 18:44:37,847 - INFO - GPU: 1 (local index: 1)
+2026-03-08 18:44:37,847 - INFO - Batch size: 32
+2026-03-08 18:44:37,847 - INFO - Epochs: 30
+2026-03-08 18:44:37,847 - INFO - Learning rate: 1e-05
+2026-03-08 18:44:37,847 - INFO - 
+Loading data...
+2026-03-08 18:44:37,900 - INFO - Train samples: 43796
+2026-03-08 18:44:37,900 - INFO - 
+Creating transforms...
+2026-03-08 18:44:37,903 - INFO - Using view transform config: {'pil_to_tensor': True, 'flux_to_jpg_like_dynamic_range': False, 'fixed_crop': False, 'output_size': 224, 'greyscale': False, 'interpolation_method': 'bilinear', 'random_affine': {'degrees': 90, 'translate': [0.1, 0.1], 'scale': [1.2, 1.4], 'shear': [0, 20, 0, 20]}, 'random_perspective': False, 'center_crop': False, 'random_resized_crop': False, 'flip_prob': 0.5, 'rotation_prob': 0.0, 'color_jitter_prob': 0.0, 'erase_iterations': 5, 'random_erasing': {'p': 1.0, 'scale': [0.002, 0.007], 'ratio': [0.5, 2.0]}, 'posterize': False, 'elastic_prob': 0.0, 'normalize': False}
+2026-03-08 18:44:37,904 - INFO - Using RandomAffine with safety crop, {'degrees': 90, 'translate': [0.1, 0.1], 'scale': [1.2, 1.4], 'shear': [0, 20, 0, 20]}
+2026-03-08 18:44:37,907 - INFO - Creating DataModule...
+2026-03-08 18:44:37,907 - INFO - Num workers: 4
+2026-03-08 18:44:37,907 - INFO - Prefetch factor: 4
+2026-03-08 18:44:37,907 - INFO - 
+Loading pretrained model: hf_hub:mwalmsley/zoobot-encoder-maxvit_base_rw_224
+2026-03-08 18:44:38,437 - INFO - HTTP Request: HEAD https://huggingface.co/mwalmsley/zoobot-encoder-maxvit_base_rw_224/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-08 18:44:38,594 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mwalmsley/zoobot-encoder-maxvit_base_rw_224/490cbe7a7c1dc48f649829bb86b30d65ca718ae1/config.json "HTTP/1.1 200 OK"
+2026-03-08 18:44:39,868 - INFO - Loading pretrained weights from Hugging Face hub (mwalmsley/zoobot-encoder-maxvit_base_rw_224)
+2026-03-08 18:44:40,186 - INFO - HTTP Request: HEAD https://huggingface.co/mwalmsley/zoobot-encoder-maxvit_base_rw_224/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-03-08 18:44:40,530 - INFO - HTTP Request: HEAD https://huggingface.co/mwalmsley/zoobot-encoder-maxvit_base_rw_224/resolve/main/pytorch_model.bin "HTTP/1.1 302 Found"
+2026-03-08 18:44:41,408 - INFO - Using classification head and cross-entropy loss
+2026-03-08 18:44:41,408 - INFO - num_classes: 8
+2026-03-08 18:44:41,408 - INFO - Using multi-class classification
+2026-03-08 18:44:41,410 - INFO - ✓ Model loaded
+2026-03-08 18:44:41,410 - INFO - 
+Creating trainer...
+INFO: GPU available: True (cuda), used: True
+2026-03-08 18:44:41,467 - INFO - GPU available: True (cuda), used: True
+INFO: TPU available: False, using: 0 TPU cores
+2026-03-08 18:44:41,468 - INFO - TPU available: False, using: 0 TPU cores
+/root/miniconda3/envs/zoobot_env/lib/python3.10/site-packages/lightning/pytorch/trainer/connectors/logger_connector/logger_connector.py:76: Starting from v1.9.0, `tensorboardX` has been removed as a dependency of the `lightning.pytorch` package, due to potential conflicts with other packages in the ML ecosystem. For this reason, `logger=True` will use `CSVLogger` as the default logger, unless the `tensorboard` or `tensorboardX` packages are found. Please `pip install lightning[extra]` or one of them to enable TensorBoard support by default
+INFO: 💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+2026-03-08 18:44:41,470 - INFO - 💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+2026-03-08 18:44:41,470 - INFO - ✓ Trainer created
+2026-03-08 18:44:41,470 - INFO - 
+================================================================================
+2026-03-08 18:44:41,470 - INFO - Starting training...
+2026-03-08 18:44:41,471 - INFO - ================================================================================
+INFO: You are using a CUDA device ('NVIDIA L20') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+2026-03-08 18:44:41,527 - INFO - You are using a CUDA device ('NVIDIA L20') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+INFO: LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+2026-03-08 18:44:41,625 - INFO - LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+2026-03-08 18:44:41,752 - INFO - Encoder architecture to finetune: <class 'timm.models.maxxvit.MaxxVit'>
+2026-03-08 18:44:41,752 - INFO - Training all parameters, not just the head
+2026-03-08 18:44:41,840 - INFO - Optimizer ready
+2026-03-08 18:44:41,840 - INFO - Learning rate scheduler not used
+2026-03-08 18:44:41,840 - INFO - Manually applying lr_scale to optimizer param groups (because timm scheduler normally does this, but there is no scheduler)
+GZDESI/GZRings/GZCD not available from galaxy_datasets.pytorch.datasets - skipping
+┏━━━┳━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━┓
+┃   ┃ Name              ┃ Type               ┃ Params ┃ Mode  ┃ FLOPs ┃
+┡━━━╇━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━┩
+│ 0 │ encoder           │ MaxxVit            │  115 M │ train │     0 │
+│ 1 │ train_loss_metric │ MeanMetric         │      0 │ train │     0 │
+│ 2 │ val_loss_metric   │ MeanMetric         │      0 │ train │     0 │
+│ 3 │ test_loss_metric  │ MeanMetric         │      0 │ train │     0 │
+│ 4 │ head              │ LinearHead         │  6.2 K │ train │     0 │
+│ 5 │ train_acc         │ MulticlassAccuracy │      0 │ train │     0 │
+│ 6 │ val_acc           │ MulticlassAccuracy │      0 │ train │     0 │
+│ 7 │ test_acc          │ MulticlassAccuracy │      0 │ train │     0 │
+└───┴───────────────────┴────────────────────┴────────┴───────┴───────┘
+Trainable params: 115 M                                                         
+Non-trainable params: 0                                                         
+Total params: 115 M                                                             
+Total estimated model params size (MB): 461                                     
+Modules in train mode: 1941                                                     
+Modules in eval mode: 0                                                         
+Total FLOPs: 0                                                                  
+/root/miniconda3/envs/zoobot_env/lib/python3.10/site-packages/lightning/pytorch/utilities/_pytree.py:21: `isinstance(treespec, LeafSpec)` is deprecated, use `isinstance(treespec, TreeSpec) and treespec.is_leaf()` instead.
+INFO: Epoch 0, global step 958: 'finetuning/val_loss' reached 0.88287 (best 0.88287), saving model to '/mnt/acmis_hby/Paper_experiment_one/ZooBot_experiments/checkpoints/maxvit_base/checkpoints/0.ckpt' as top 1
+2026-03-08 18:50:57,823 - INFO - Epoch 0, global step 958: 'finetuning/val_loss' reached 0.88287 (best 0.88287), saving model to '/mnt/acmis_hby/Paper_experiment_one/ZooBot_experiments/checkpoints/maxvit_base/checkpoints/0.ckpt' as top 1
+INFO: Epoch 1, global step 1916: 'finetuning/val_loss' reached 0.71790 (best 0.71790), saving model to '/mnt/acmis_hby/Paper_experiment_one/ZooBot_experiments/checkpoints/maxvit_base/checkpoints/1.ckpt' as top 1
+2026-03-08 18:57:13,610 - INFO - Epoch 1, global step 1916: 'finetuning/val_loss' reached 0.71790 (best 0.71790), saving model to '/mnt/acmis_hby/Paper_experiment_one/ZooBot_experiments/checkpoints/maxvit_base/checkpoints/1.ckpt' as top 1
+INFO: Epoch 2, global step 2874: 'finetuning/val_loss' reached 0.64361 (best 0.64361), saving model to '/mnt/acmis_hby/Paper_experiment_one/ZooBot_experiments/checkpoints/maxvit_base/checkpoints/2.ckpt' as top 1
+2026-03-08 19:03:29,643 - INFO - Epoch 2, global step 2874: 'finetuning/val_loss' reached 0.64361 (best 0.64361), saving model to '/mnt/acmis_hby/Paper_experiment_one/ZooBot_experiments/checkpoints/maxvit_base/checkpoints/2.ckpt' as top 1
+INFO: Epoch 3, global step 3832: 'finetuning/val_loss' reached 0.62101 (best 0.62101), saving model to '/mnt/acmis_hby/Paper_experiment_one/ZooBot_experiments/checkpoints/maxvit_base/checkpoints/3.ckpt' as top 1
+2026-03-08 19:09:45,377 - INFO - Epoch 3, global step 3832: 'finetuning/val_loss' reached 0.62101 (best 0.62101), saving model to '/mnt/acmis_hby/Paper_experiment_one/ZooBot_experiments/checkpoints/maxvit_base/checkpoints/3.ckpt' as top 1
+INFO: Epoch 4, global step 4790: 'finetuning/val_loss' reached 0.60363 (best 0.60363), saving model to '/mnt/acmis_hby/Paper_experiment_one/ZooBot_experiments/checkpoints/maxvit_base/checkpoints/4.ckpt' as top 1
+2026-03-08 19:16:00,825 - INFO - Epoch 4, global step 4790: 'finetuning/val_loss' reached 0.60363 (best 0.60363), saving model to '/mnt/acmis_hby/Paper_experiment_one/ZooBot_experiments/checkpoints/maxvit_base/checkpoints/4.ckpt' as top 1
+INFO: Epoch 5, global step 5748: 'finetuning/val_loss' reached 0.58702 (best 0.58702), saving model to '/mnt/acmis_hby/Paper_experiment_one/ZooBot_experiments/checkpoints/maxvit_base/checkpoints/5.ckpt' as top 1
+2026-03-08 19:22:16,754 - INFO - Epoch 5, global step 5748: 'finetuning/val_loss' reached 0.58702 (best 0.58702), saving model to '/mnt/acmis_hby/Paper_experiment_one/ZooBot_experiments/checkpoints/maxvit_base/checkpoints/5.ckpt' as top 1
+INFO: Epoch 6, global step 6706: 'finetuning/val_loss' reached 0.57669 (best 0.57669), saving model to '/mnt/acmis_hby/Paper_experiment_one/ZooBot_experiments/checkpoints/maxvit_base/checkpoints/6.ckpt' as top 1
+2026-03-08 19:28:32,866 - INFO - Epoch 6, global step 6706: 'finetuning/val_loss' reached 0.57669 (best 0.57669), saving model to '/mnt/acmis_hby/Paper_experiment_one/ZooBot_experiments/checkpoints/maxvit_base/checkpoints/6.ckpt' as top 1
+INFO: Epoch 7, global step 7664: 'finetuning/val_loss' reached 0.56952 (best 0.56952), saving model to '/mnt/acmis_hby/Paper_experiment_one/ZooBot_experiments/checkpoints/maxvit_base/checkpoints/7.ckpt' as top 1
+2026-03-08 19:34:48,626 - INFO - Epoch 7, global step 7664: 'finetuning/val_loss' reached 0.56952 (best 0.56952), saving model to '/mnt/acmis_hby/Paper_experiment_one/ZooBot_experiments/checkpoints/maxvit_base/checkpoints/7.ckpt' as top 1
+INFO: Epoch 8, global step 8622: 'finetuning/val_loss' reached 0.55209 (best 0.55209), saving model to '/mnt/acmis_hby/Paper_experiment_one/ZooBot_experiments/checkpoints/maxvit_base/checkpoints/8.ckpt' as top 1
+2026-03-08 19:41:04,250 - INFO - Epoch 8, global step 8622: 'finetuning/val_loss' reached 0.55209 (best 0.55209), saving model to '/mnt/acmis_hby/Paper_experiment_one/ZooBot_experiments/checkpoints/maxvit_base/checkpoints/8.ckpt' as top 1
+INFO: Epoch 9, global step 9580: 'finetuning/val_loss' reached 0.54334 (best 0.54334), saving model to '/mnt/acmis_hby/Paper_experiment_one/ZooBot_experiments/checkpoints/maxvit_base/checkpoints/9.ckpt' as top 1
+2026-03-08 19:47:19,822 - INFO - Epoch 9, global step 9580: 'finetuning/val_loss' reached 0.54334 (best 0.54334), saving model to '/mnt/acmis_hby/Paper_experiment_one/ZooBot_experiments/checkpoints/maxvit_base/checkpoints/9.ckpt' as top 1
+INFO: Epoch 10, global step 10538: 'finetuning/val_loss' was not in top 1
+2026-03-08 19:53:36,149 - INFO - Epoch 10, global step 10538: 'finetuning/val_loss' was not in top 1
+INFO: Epoch 11, global step 11496: 'finetuning/val_loss' reached 0.54233 (best 0.54233), saving model to '/mnt/acmis_hby/Paper_experiment_one/ZooBot_experiments/checkpoints/maxvit_base/checkpoints/11.ckpt' as top 1
+2026-03-08 19:59:50,313 - INFO - Epoch 11, global step 11496: 'finetuning/val_loss' reached 0.54233 (best 0.54233), saving model to '/mnt/acmis_hby/Paper_experiment_one/ZooBot_experiments/checkpoints/maxvit_base/checkpoints/11.ckpt' as top 1
+INFO: Epoch 12, global step 12454: 'finetuning/val_loss' reached 0.53787 (best 0.53787), saving model to '/mnt/acmis_hby/Paper_experiment_one/ZooBot_experiments/checkpoints/maxvit_base/checkpoints/12.ckpt' as top 1
+2026-03-08 20:06:06,464 - INFO - Epoch 12, global step 12454: 'finetuning/val_loss' reached 0.53787 (best 0.53787), saving model to '/mnt/acmis_hby/Paper_experiment_one/ZooBot_experiments/checkpoints/maxvit_base/checkpoints/12.ckpt' as top 1
+INFO: Epoch 13, global step 13412: 'finetuning/val_loss' was not in top 1
+2026-03-08 20:12:22,114 - INFO - Epoch 13, global step 13412: 'finetuning/val_loss' was not in top 1
+INFO: Epoch 14, global step 14370: 'finetuning/val_loss' was not in top 1
+2026-03-08 20:18:35,841 - INFO - Epoch 14, global step 14370: 'finetuning/val_loss' was not in top 1
+INFO: Epoch 15, global step 15328: 'finetuning/val_loss' was not in top 1
+2026-03-08 20:24:49,151 - INFO - Epoch 15, global step 15328: 'finetuning/val_loss' was not in top 1
+INFO: Epoch 16, global step 16286: 'finetuning/val_loss' was not in top 1
+2026-03-08 20:31:02,573 - INFO - Epoch 16, global step 16286: 'finetuning/val_loss' was not in top 1
+INFO: Epoch 17, global step 17244: 'finetuning/val_loss' was not in top 1
+2026-03-08 20:37:17,309 - INFO - Epoch 17, global step 17244: 'finetuning/val_loss' was not in top 1
+INFO: Epoch 18, global step 18202: 'finetuning/val_loss' was not in top 1
+2026-03-08 20:43:31,928 - INFO - Epoch 18, global step 18202: 'finetuning/val_loss' was not in top 1
+INFO: Epoch 19, global step 19160: 'finetuning/val_loss' was not in top 1
+2026-03-08 20:49:45,612 - INFO - Epoch 19, global step 19160: 'finetuning/val_loss' was not in top 1
+INFO: Epoch 20, global step 20118: 'finetuning/val_loss' was not in top 1
+2026-03-08 20:55:58,908 - INFO - Epoch 20, global step 20118: 'finetuning/val_loss' was not in top 1
+INFO: Epoch 21, global step 21076: 'finetuning/val_loss' was not in top 1
+2026-03-08 21:02:12,744 - INFO - Epoch 21, global step 21076: 'finetuning/val_loss' was not in top 1
+INFO: Epoch 22, global step 22034: 'finetuning/val_loss' reached 0.53782 (best 0.53782), saving model to '/mnt/acmis_hby/Paper_experiment_one/ZooBot_experiments/checkpoints/maxvit_base/checkpoints/22.ckpt' as top 1
+2026-03-08 21:08:26,365 - INFO - Epoch 22, global step 22034: 'finetuning/val_loss' reached 0.53782 (best 0.53782), saving model to '/mnt/acmis_hby/Paper_experiment_one/ZooBot_experiments/checkpoints/maxvit_base/checkpoints/22.ckpt' as top 1
+INFO: Epoch 23, global step 22992: 'finetuning/val_loss' was not in top 1
+2026-03-08 21:14:42,331 - INFO - Epoch 23, global step 22992: 'finetuning/val_loss' was not in top 1
+INFO: Epoch 24, global step 23950: 'finetuning/val_loss' was not in top 1
+2026-03-08 21:20:55,939 - INFO - Epoch 24, global step 23950: 'finetuning/val_loss' was not in top 1
+INFO: Epoch 25, global step 24908: 'finetuning/val_loss' was not in top 1
+2026-03-08 21:27:09,759 - INFO - Epoch 25, global step 24908: 'finetuning/val_loss' was not in top 1
+INFO: Epoch 26, global step 25866: 'finetuning/val_loss' was not in top 1
+2026-03-08 21:33:23,696 - INFO - Epoch 26, global step 25866: 'finetuning/val_loss' was not in top 1
+INFO: Epoch 27, global step 26824: 'finetuning/val_loss' was not in top 1
+2026-03-08 21:39:37,446 - INFO - Epoch 27, global step 26824: 'finetuning/val_loss' was not in top 1
+INFO: Epoch 28, global step 27782: 'finetuning/val_loss' was not in top 1
+2026-03-08 21:45:51,148 - INFO - Epoch 28, global step 27782: 'finetuning/val_loss' was not in top 1
+INFO: Epoch 29, global step 28740: 'finetuning/val_loss' was not in top 1
+2026-03-08 21:52:05,055 - INFO - Epoch 29, global step 28740: 'finetuning/val_loss' was not in top 1
+INFO: `Trainer.fit` stopped: `max_epochs=30` reached.
+2026-03-08 21:52:05,057 - INFO - `Trainer.fit` stopped: `max_epochs=30` reached.
+Epoch 29/29 ━━━━━━━━━━━━━━━━ 958/958 0:05:58 •        2.67it/s v_num: 20.000    
+                                     0:00:00                   finetuning/val_l…
+                                                               0.602            
+                                                               finetuning/val_a…
+                                                               0.799            
+                                                               finetuning/train…
+                                                               0.328            
+                                                               finetuning/train…
+                                                               0.877            
+2026-03-08 21:52:06,514 - INFO - 
+================================================================================
+2026-03-08 21:52:06,515 - INFO - Training completed!
+2026-03-08 21:52:06,515 - INFO - ================================================================================
+2026-03-08 21:52:06,515 - INFO - Best checkpoint: /mnt/acmis_hby/Paper_experiment_one/ZooBot_experiments/checkpoints/maxvit_base/checkpoints/22.ckpt
+2026-03-08 21:52:06,515 - INFO - Best val loss: 0.5378
+2026-03-08 21:52:06,515 - INFO - Training info saved to: /mnt/acmis_hby/Paper_experiment_one/ZooBot_experiments/checkpoints/maxvit_base/training_info.json
+2026-03-08 21:52:06,515 - INFO - ================================================================================
