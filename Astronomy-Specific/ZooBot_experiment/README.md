@@ -11,11 +11,11 @@ Model Weight: https://drive.google.com/drive/folders/10mMsWKp1muN48gMfp2-e83d455
 
 ## Models Tested
 
-| Model | Parameters | Accuracy | Macro-F1 | Pretrained Checkpoint |
-|-------|-----------|----------|----------|----------------------|
-| ZooBot-ConvNeXt-Nano | 15.6M | 79.29% | 78.64% | `mwalmsley/zoobot-encoder-convnext_nano` |
-| ZooBot-MaxViT-Small | 64.9M | 79.89% | 79.03% | `mwalmsley/zoobot-encoder-maxvit_rmlp_small_rw_224` |
-| ZooBot-MaxViT-Base | 124.5M | 79.42% | 78.27% | `mwalmsley/zoobot-encoder-maxvit_base_rw_224` |
+| Model | Parameters |  Pretrained Checkpoint |
+|-------|-----------|----------------------|
+| ZooBot-ConvNeXt-Nano | 15.6M | `mwalmsley/zoobot-encoder-convnext_nano` |
+| ZooBot-MaxViT-Small | 64.9M | `mwalmsley/zoobot-encoder-maxvit_rmlp_small_rw_224` |
+| ZooBot-MaxViT-Base | 124.5M | `mwalmsley/zoobot-encoder-maxvit_base_rw_224` |
 
 ## Training Configuration
 
