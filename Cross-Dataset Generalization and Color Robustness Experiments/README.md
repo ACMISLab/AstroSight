@@ -33,7 +33,8 @@ experiments_for_revision/
 │   ├── convert_gz2_to_grayscale.py    # Convert GZ2 to grayscale
 │   ├── convert_GZ_decals.py           # Convert DECaLS to GZ2 format
 ├── Testing Scripts
-│   ├── test_swin_on_decals.py         # Test Swin on DECaLS
+│   ├── test_swin_on_decals.py         # Test Swin on DECaLS(color and grayscale)
+│   ├── test_swin_on_gz2_grayscale.sh  # Test Swin on gz2 grayscale
 │
 ├── Analysis Scripts
 │   ├── analyze_inference_results.py   # Main analysis tool
