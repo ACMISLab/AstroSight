@@ -5,7 +5,8 @@ Experiments for evaluating AstroSight models on Gz2 grayscale images and Galaxy 
 ## Overview
 
 **Purpose:** Evaluate cross-dataset generalization and color robustness  
-**Datasets:** GZ2 test set (11,088 galaxies), Galaxy Zoo DECaLS (31,191 galaxies)  
+**Datasets:** GZ2 test set (11,088 galaxies), Galaxy Zoo DECaLS (31,191 galaxies) 
+[https://drive.google.com/drive/folders/1-JklU4-9JuBDgdjnD7wCKCO02rTaeVT2?usp=sharing]
 **Models Tested:** All 6 AstroSight variants + Swin Transformer baseline
 
 ## Experiments Conducted
