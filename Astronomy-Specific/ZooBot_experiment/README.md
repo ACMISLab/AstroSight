@@ -7,7 +7,7 @@ Model Weight: https://drive.google.com/drive/folders/10mMsWKp1muN48gMfp2-e83d455
 
 **Task:** 8-class galaxy morphology classification  
 **Dataset:** GZ2 (44,352 train / 11,088 test)  
-**Models:** ZooBot variants pretrained on GZ Evo (820k galaxies, 100M+ votes)
+**Models:** ZooBot variants pretrained models
 
 ## Models Tested
 
@@ -73,13 +73,7 @@ ZooBot_experiments/
 
 All models fine-tuned on unified 8-class GZ2 dataset. Results differ from original publications due to dataset and taxonomy differences.
 
-**Comparison with AstroSight:**
-- AstroSight (InternVL2.5-38B): 82.94% accuracy, 82.33% macro-F1
-- Best ZooBot (MaxViT-Small): 79.89% accuracy, 79.03% macro-F1
-- Performance gap: ~3% accuracy
-
 ## References
 
-- ZooBot Documentation: https://zoobot.readthedocs.io/
-- Walmsley et al. 2022: https://doi.org/10.1093/mnras/stab2093
-- Pretrained Models: https://zoobot.readthedocs.io/en/latest/data_notes/pretrained_models.html
+- ZooBot Documentation: https://zoobot.readthedocs.io/en/latest/index.html
+- Pretrained Models: https://zoobot.readthedocs.io/en/latest/pretrained_models.html
